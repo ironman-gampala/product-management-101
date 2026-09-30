@@ -1,0 +1,1478 @@
+{
+  "size": 512,
+  "mode": "hybrid",
+  "answer_accuracy": 0.16666666666666666,
+  "citation_accuracy": 1.0,
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "According to the AI Product Manager Playbook, what is Prodigy described as in the KEY TAKEAWAY?",
+      "gold_answer": "An embedded agent harness where skills are procedures, tools are typed adapters, MCP is for external harnesses, chat proposes, forms own truth, and the change-request workflow is the only path to apply.",
+      "pred_answer": "The AI Product Manager Playbook The core job: own a product whose behaviour is",
+      "citations": [
+        {
+          "chunk_id": "doc_01#c000",
+          "quote": "The AI Product Manager Playbook"
+        },
+        {
+          "chunk_id": "doc_02#c005",
+          "quote": "The core job: own a product whose behaviour is"
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "quote": "\u2022 Not a substitute for SPI intakes or the actual Product Center AI architecture decision - it explains"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c005",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q02",
+      "question": "How many phases does the AI Product Manager Playbook cover?",
+      "gold_answer": "8 phases.",
+      "pred_answer": "The AI Product Manager Playbook \u2022 Not a substitute for SPI intakes or the actual Product Center AI architecture decision - it explains",
+      "citations": [
+        {
+          "chunk_id": "doc_01#c000",
+          "quote": "The AI Product Manager Playbook"
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "quote": "\u2022 Not a substitute for SPI intakes or the actual Product Center AI architecture decision - it explains"
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "quote": "The AI Product Manager Playbook - Powered by Prodigy - Prepared for Kaushik - Tachyon CLM / Product Center AI - September"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c057",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q03",
+      "question": "What default story world does the playbook recommend using in interviews?",
+      "gold_answer": "Regalia Gold US / Alex.",
+      "pred_answer": "The AI Product Manager Playbook [ ] Deliver the 90-second spine story without notes",
+      "citations": [
+        {
+          "chunk_id": "doc_01#c000",
+          "quote": "The AI Product Manager Playbook"
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "quote": "[ ] Deliver the 90-second spine story without notes"
+        },
+        {
+          "chunk_id": "doc_01#c037",
+          "quote": "What I want next is to do that at a place where the AI product is"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c037",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c031",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c005",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q04",
+      "question": "Which phase of the playbook is described as your proof / portfolio narration of Path 1 to human deploy?",
+      "gold_answer": "Phase 5.",
+      "pred_answer": "foundations, architecture, orchestration, evals - and then turns your real Prodigy work into the portfolio adjacent & advanced -> role tracks -> proof of work) and the \"what a hiring loop actually tests\" framing",
+      "citations": [
+        {
+          "chunk_id": "doc_01#c000",
+          "quote": "foundations, architecture, orchestration, evals - and then turns your real Prodigy work into the portfolio"
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "quote": "adjacent & advanced -> role tracks -> proof of work) and the \"what a hiring loop actually tests\" framing"
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "quote": "[ ] Name your two Phase 6 portfolio artefacts and where they'd live in a portfolio site"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c036",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c064",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q05",
+      "question": "In the Ground-Up AI Roadmap, how many weeks is the structured path planned for at 5\u20138 hrs/week?",
+      "gold_answer": "24 weeks.",
+      "pred_answer": "systems\" \u2014 a structured six-phase path built for an engineer- The Ground-Up AI Roadmap 58",
+      "citations": [
+        {
+          "chunk_id": "doc_02#c000",
+          "quote": "systems\" \u2014 a structured six-phase path built for an engineer-"
+        },
+        {
+          "chunk_id": "doc_02#c067",
+          "quote": "The Ground-Up AI Roadmap 58"
+        },
+        {
+          "chunk_id": "doc_02#c003",
+          "quote": "The foundation for search, RAG, clustering and"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c067",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c003",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c002",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c070",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q06",
+      "question": "What are the two role tracks in the Ground-Up AI Roadmap?",
+      "gold_answer": "Track A \u2014 AI Product Manager and Track B \u2014 AI Forward Deployed Engineer.",
+      "pred_answer": "Role tracks with separate The fork \u2014 role tracks",
+      "citations": [
+        {
+          "chunk_id": "doc_02#c000",
+          "quote": "Role tracks with separate"
+        },
+        {
+          "chunk_id": "doc_02#c004",
+          "quote": "The fork \u2014 role tracks"
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "quote": "adjacent & advanced -> role tracks -> proof of work) and the \"what a hiring loop actually tests\" framing"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c004",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c002",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c015",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q07",
+      "question": "In the AI Roadmap, at which phase do the two roles separate?",
+      "gold_answer": "Phase 4.",
+      "pred_answer": "Phase\u00a04 is where the two roles separate. DEPTH: MAXIMUM \u2014 THIS IS THE ROLE",
+      "citations": [
+        {
+          "chunk_id": "doc_02#c000",
+          "quote": "Phase\u00a04 is where the two roles separate."
+        },
+        {
+          "chunk_id": "doc_02#c015",
+          "quote": "DEPTH: MAXIMUM \u2014 THIS IS THE ROLE"
+        },
+        {
+          "chunk_id": "doc_02#c056",
+          "quote": "From this point the two roles"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c015",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c056",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c004",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 1.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q08",
+      "question": "What four parts does every concept card in the AI Roadmap include?",
+      "gold_answer": "Plain English, Analogy, Concrete example, and PM depth vs FDE depth.",
+      "pred_answer": "Every concept has the same four parts Every concept card has the same four parts.",
+      "citations": [
+        {
+          "chunk_id": "doc_02#c000",
+          "quote": "Every concept has the same four parts"
+        },
+        {
+          "chunk_id": "doc_01#c000",
+          "quote": "Every concept card has the same four parts."
+        },
+        {
+          "chunk_id": "doc_02#c003",
+          "quote": "Loop & graph engineering 2 The 2026 abstraction ladder, the four parts of a loop, and when a graph is"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_02#c000",
+          "doc_id": "doc_02",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c003",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c002",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q09",
+      "question": "Which companies are listed as the minimum target set in the PM Interview Prep context?",
+      "gold_answer": "OpenAI, Anthropic, Google, Meta, Apple, Microsoft, Amazon, Nvidia.",
+      "pred_answer": "This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category. - **Section 1**: News from target companies in the last 24h (launches, exec changes, earnings, partnerships, regulatory actions).",
+      "citations": [
+        {
+          "chunk_id": "doc_03#c000",
+          "quote": "This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category."
+        },
+        {
+          "chunk_id": "doc_03#c001",
+          "quote": "- **Section 1**: News from target companies in the last 24h (launches, exec changes, earnings, partnerships, regulatory actions)."
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "quote": "- **Behavioral over hypothetical**: Interview answers (and prep questions) should be graded on what's actually been done/observed, not hypothetical willingness."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_03#c000",
+          "doc_id": "doc_03",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_03#c001",
+          "doc_id": "doc_03",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "doc_id": "doc_03",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_08#c005",
+          "doc_id": "doc_08",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q10",
+      "question": "What are the three layers of the staying-current system for interview prep?",
+      "gold_answer": "Passive intake, Active synthesis, and Hands-on fluency.",
+      "pred_answer": "This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category. WHAT THE THREE LAYERS LOOK LIKE AROUND ONE REQUEST",
+      "citations": [
+        {
+          "chunk_id": "doc_03#c000",
+          "quote": "This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category."
+        },
+        {
+          "chunk_id": "doc_01#c026",
+          "quote": "WHAT THE THREE LAYERS LOOK LIKE AROUND ONE REQUEST"
+        },
+        {
+          "chunk_id": "doc_02#c077",
+          "quote": "Transformer The architecture behind modern language models: stacked attention layers that let every position see"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_03#c000",
+          "doc_id": "doc_03",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c026",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c077",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c020",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c043",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q11",
+      "question": "How often should Layer 2 active synthesis be done according to the interview prep doc?",
+      "gold_answer": "10 minutes, 3x/week.",
+      "pred_answer": "### Layer 2 \u2014 Active Synthesis (manual, 3x/week discipline) - **Behavioral over hypothetical**: Interview answers (and prep questions) should be graded on what's actually been done/observed, not hypothetical willingness.",
+      "citations": [
+        {
+          "chunk_id": "doc_03#c001",
+          "quote": "### Layer 2 \u2014 Active Synthesis (manual, 3x/week discipline)"
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "quote": "- **Behavioral over hypothetical**: Interview answers (and prep questions) should be graded on what's actually been done/observed, not hypothetical willingness."
+        },
+        {
+          "chunk_id": "doc_03#c000",
+          "quote": "This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_03#c001",
+          "doc_id": "doc_03",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "doc_id": "doc_03",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_03#c000",
+          "doc_id": "doc_03",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c036",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q12",
+      "question": "What worked example is used for Layer 2 active synthesis in the interview prep doc?",
+      "gold_answer": "Why would ChatGPT create a family product?",
+      "pred_answer": "### Layer 2 \u2014 Active Synthesis (manual, 3x/week discipline) - **Synthesis-first**: Each category's cheat sheet is the artifact meant to be reviewed cold, right before an interview \u2014 it should stand alone without needing the full worked examples re-read.",
+      "citations": [
+        {
+          "chunk_id": "doc_03#c001",
+          "quote": "### Layer 2 \u2014 Active Synthesis (manual, 3x/week discipline)"
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "quote": "- **Synthesis-first**: Each category's cheat sheet is the artifact meant to be reviewed cold, right before an interview \u2014 it should stand alone without needing the full worked examples re-read."
+        },
+        {
+          "chunk_id": "doc_03#c000",
+          "quote": "user-facing features, wants behavioral-grade rigor (what happened, not what would happen) applied to interview prep the same way it'd be applied to real user research."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_03#c001",
+          "doc_id": "doc_03",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_03#c006",
+          "doc_id": "doc_03",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_03#c000",
+          "doc_id": "doc_03",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q13",
+      "question": "How many Tachyon Credit repositories are listed in the platform codebase index?",
+      "gold_answer": "101.",
+      "pred_answer": "# Tachyon Platform Codebase Index - Tachyon Credit Codebases: 101 repos extracted",
+      "citations": [
+        {
+          "chunk_id": "doc_04#c000",
+          "quote": "# Tachyon Platform Codebase Index"
+        },
+        {
+          "chunk_id": "doc_04#c008",
+          "quote": "- Tachyon Credit Codebases: 101 repos extracted"
+        },
+        {
+          "chunk_id": "doc_09#c000",
+          "quote": "Tachyon Credit - <Please fill the Tachyon overview Diagram & integrations>"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_04#c000",
+          "doc_id": "doc_04",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_04#c008",
+          "doc_id": "doc_04",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_09#c000",
+          "doc_id": "doc_09",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_04#c003",
+          "doc_id": "doc_04",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_08#c002",
+          "doc_id": "doc_08",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q14",
+      "question": "What is the total repo count across all Tachyon domains in the codebase index?",
+      "gold_answer": "215.",
+      "pred_answer": "# Tachyon Platform Codebase Index Genuinely an agent: \"Investigate why this customer's invoice is wrong.\" The model must decide what to look up,",
+      "citations": [
+        {
+          "chunk_id": "doc_04#c000",
+          "quote": "# Tachyon Platform Codebase Index"
+        },
+        {
+          "chunk_id": "doc_02#c036",
+          "quote": "Genuinely an agent: \"Investigate why this customer's invoice is wrong.\" The model must decide what to look up,"
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "quote": "\u2022 Consistency across the zone"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_04#c000",
+          "doc_id": "doc_04",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c036",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "doc_id": "doc_10",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c018",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c040",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q15",
+      "question": "Which Tachyon domain includes Bundle, Product Center, Aether, and Aries?",
+      "gold_answer": "Tachyon CLM (Customer Lifecycle Management).",
+      "pred_answer": "- **Tachyon CLM**: Customer Lifecycle Management (Bundle, Product Center, Aether, Aries) Product Center UI \u2502 \u2190 Hercules micro-frontend",
+      "citations": [
+        {
+          "chunk_id": "doc_04#c000",
+          "quote": "- **Tachyon CLM**: Customer Lifecycle Management (Bundle, Product Center, Aether, Aries)"
+        },
+        {
+          "chunk_id": "doc_05#c001",
+          "quote": "Product Center UI \u2502 \u2190 Hercules micro-frontend"
+        },
+        {
+          "chunk_id": "doc_05#c000",
+          "quote": "**Product Center** is a Hercules-based workbench that lets bank operators **create, view, configure, and manage product bundles** across their lifecycle on the Zeta Tachyon platform."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_04#c000",
+          "doc_id": "doc_04",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_05#c001",
+          "doc_id": "doc_05",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_05#c000",
+          "doc_id": "doc_05",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_04#c004",
+          "doc_id": "doc_04",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_09#c000",
+          "doc_id": "doc_09",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 1.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q16",
+      "question": "Is Garnet marked as deprecated in the Tachyon codebase index?",
+      "gold_answer": "Yes \u2014 Garnet is marked deprecated / should be deprecated.",
+      "pred_answer": "| garnet | Garnet service | 8 | Should be deprecated | One 2026 analysis of Claude Code's design space found only about 1.6% of the codebase is AI decision logic.",
+      "citations": [
+        {
+          "chunk_id": "doc_04#c001",
+          "quote": "| garnet | Garnet service | 8 | Should be deprecated |"
+        },
+        {
+          "chunk_id": "doc_02#c044",
+          "quote": "One 2026 analysis of Claude Code's design space found only about 1.6% of the codebase is AI decision logic."
+        },
+        {
+          "chunk_id": "doc_04#c000",
+          "quote": "# Tachyon Platform Codebase Index"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_04#c001",
+          "doc_id": "doc_04",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c044",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_04#c000",
+          "doc_id": "doc_04",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_04#c008",
+          "doc_id": "doc_04",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_09#c000",
+          "doc_id": "doc_09",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 1.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q17",
+      "question": "According to the Product Center implementation reference, what does Product Center talk to directly for reads and runtime actions?",
+      "gold_answer": "GitDB, bundle-hub, and aether.",
+      "pred_answer": "Embedded mode provides guided AI in Product Center with the current user, page, form, and service context. GitDB and Product Center change requests remain the records for product changes and approvals.",
+      "citations": [
+        {
+          "chunk_id": "doc_06#c000",
+          "quote": "Embedded mode provides guided AI in Product Center with the current user, page, form, and service context."
+        },
+        {
+          "chunk_id": "doc_06#c002",
+          "quote": "GitDB and Product Center change requests remain the records for product changes and approvals."
+        },
+        {
+          "chunk_id": "doc_05#c003",
+          "quote": "Product Center talks to GitDB, bundle-hub, and aether **directly** for reads and runtime actions."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_06#c000",
+          "doc_id": "doc_06",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_06#c002",
+          "doc_id": "doc_06",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_05#c003",
+          "doc_id": "doc_05",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_05#c000",
+          "doc_id": "doc_05",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_06#c003",
+          "doc_id": "doc_06",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q18",
+      "question": "When is the Aether Operator involved according to the Product Center implementation key insight?",
+      "gold_answer": "Only on the deploy/provisioning path after Subscription Orchestrator creates RRSD CRDs; it is invisible to the UI.",
+      "pred_answer": "Product Center is the operator-facing UI; **bundle-hub** is the system of record for bundle runtime state; **aether-operator** provisions backend resources when configurations are deployed. Product Center talks to GitDB, bundle-hub, and aether **directly** for reads and runtime actions.",
+      "citations": [
+        {
+          "chunk_id": "doc_05#c000",
+          "quote": "Product Center is the operator-facing UI; **bundle-hub** is the system of record for bundle runtime state; **aether-operator** provisions backend resources when configurations are deployed."
+        },
+        {
+          "chunk_id": "doc_05#c003",
+          "quote": "Product Center talks to GitDB, bundle-hub, and aether **directly** for reads and runtime actions."
+        },
+        {
+          "chunk_id": "doc_05#c009",
+          "quote": "Aether Operator is a Kubernetes operator (Java Operator SDK) deployed in the olympus-aether cluster."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_05#c000",
+          "doc_id": "doc_05",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_05#c003",
+          "doc_id": "doc_05",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_05#c009",
+          "doc_id": "doc_05",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_06#c000",
+          "doc_id": "doc_06",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_06#c002",
+          "doc_id": "doc_06",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q19",
+      "question": "What two AI modes does the Product Center AI architecture decision support?",
+      "gold_answer": "Embedded service mode and agent harness mode.",
+      "pred_answer": "Both modes use the same Product Center skills, named tool contracts, and service operations to keep workflows and controls consistent. \u2022 Not a substitute for SPI intakes or the actual Product Center AI architecture decision - it explains",
+      "citations": [
+        {
+          "chunk_id": "doc_06#c000",
+          "quote": "Both modes use the same Product Center skills, named tool contracts, and service operations to keep workflows and controls consistent."
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "quote": "\u2022 Not a substitute for SPI intakes or the actual Product Center AI architecture decision - it explains"
+        },
+        {
+          "chunk_id": "doc_01#c017",
+          "quote": "Case study: reading the Product Center AI Architecture decision"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_06#c000",
+          "doc_id": "doc_06",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c017",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c044",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c000",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q20",
+      "question": "Who owns the shared chat interface in Product Center AI architecture?",
+      "gold_answer": "Product Center V2.",
+      "pred_answer": "Product Center V2 owns the shared chat interface. the same \"propose a fee change\" tool Prodigy uses inside Product Center - same rules, same audit",
+      "citations": [
+        {
+          "chunk_id": "doc_06#c000",
+          "quote": "Product Center V2 owns the shared chat interface."
+        },
+        {
+          "chunk_id": "doc_01#c017",
+          "quote": "the same \"propose a fee change\" tool Prodigy uses inside Product Center - same rules, same audit"
+        },
+        {
+          "chunk_id": "doc_06#c002",
+          "quote": "After a restart, Product Center Service reloads the stored state."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_06#c000",
+          "doc_id": "doc_06",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c017",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_06#c002",
+          "doc_id": "doc_06",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_06#c001",
+          "doc_id": "doc_06",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 1.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q21",
+      "question": "What tracing stack does Product Center Service use for traces?",
+      "gold_answer": "W3C trace context via OpenTelemetry to Jaeger.",
+      "pred_answer": "Product Center Service propagates W3C trace context and sends traces through OpenTelemetry to Jaeger. Both modes use the same Product Center skills, named tool contracts, and service operations to keep workflows and controls consistent.",
+      "citations": [
+        {
+          "chunk_id": "doc_06#c004",
+          "quote": "Product Center Service propagates W3C trace context and sends traces through OpenTelemetry to Jaeger."
+        },
+        {
+          "chunk_id": "doc_06#c000",
+          "quote": "Both modes use the same Product Center skills, named tool contracts, and service operations to keep workflows and controls consistent."
+        },
+        {
+          "chunk_id": "doc_05#c004",
+          "quote": "| `hercules-apps.product-center-v2` | v2 frontend \u2014 main Product Center UI | Vue 3, Pinia, `@hercules/app-core`, module federation |"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_06#c004",
+          "doc_id": "doc_06",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_06#c000",
+          "doc_id": "doc_06",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_05#c004",
+          "doc_id": "doc_05",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_05#c003",
+          "doc_id": "doc_05",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_06#c003",
+          "doc_id": "doc_06",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 1.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q22",
+      "question": "In the PRD Builder skill, what exact phrase must be written when information is missing?",
+      "gold_answer": "Insufficient context",
+      "pred_answer": "# Skill: PRD Builder Exactly where the loop must pause for a human",
+      "citations": [
+        {
+          "chunk_id": "doc_07#c000",
+          "quote": "# Skill: PRD Builder"
+        },
+        {
+          "chunk_id": "doc_01#c021",
+          "quote": "Exactly where the loop must pause for a human"
+        },
+        {
+          "chunk_id": "doc_01#c036",
+          "quote": "The three-issuer synthesis, reframed as a PRD input"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_07#c000",
+          "doc_id": "doc_07",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c021",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_01#c036",
+          "doc_id": "doc_01",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c020",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c013",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q23",
+      "question": "Who is the PRD Builder skill designed for?",
+      "gold_answer": "B2B SaaS fintech platform teams (Product Line Engineering).",
+      "pred_answer": "# Skill: PRD Builder Skill anatomy - checklist you can paste into a PRD",
+      "citations": [
+        {
+          "chunk_id": "doc_07#c000",
+          "quote": "# Skill: PRD Builder"
+        },
+        {
+          "chunk_id": "doc_01#c021",
+          "quote": "Skill anatomy - checklist you can paste into a PRD"
+        },
+        {
+          "chunk_id": "doc_07#c001",
+          "quote": "Provide input context and invoke this skill to generate a PRD."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_07#c000",
+          "doc_id": "doc_07",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_01#c021",
+          "doc_id": "doc_01",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_07#c001",
+          "doc_id": "doc_07",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_01#c015",
+          "doc_id": "doc_01",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c056",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q24",
+      "question": "In Tachyon Credit, which component handles end-to-end orchestration of Transaction Conversion to EMI?",
+      "gold_answer": "AION.",
+      "pred_answer": "In Tachyon Credit, Transaction conversion to EMI is handled as a generic use case. \u2022 Processing Fee: Transaction conversion to EMI is generally associated with a processing fee, which can be a fixed amount or % of the transaction amount",
+      "citations": [
+        {
+          "chunk_id": "doc_08#c002",
+          "quote": "In Tachyon Credit, Transaction conversion to EMI is handled as a generic use case."
+        },
+        {
+          "chunk_id": "doc_08#c001",
+          "quote": "\u2022 Processing Fee: Transaction conversion to EMI is generally associated with a processing fee, which can be a fixed amount or % of the transaction amount"
+        },
+        {
+          "chunk_id": "doc_08#c018",
+          "quote": "The Merchant Category Codes(MCC) related to such transactions can be specified here.If this parameter is not specified, this check will not be done during transaction conversion to loan."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_08#c002",
+          "doc_id": "doc_08",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_08#c001",
+          "doc_id": "doc_08",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_08#c018",
+          "doc_id": "doc_08",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_08#c005",
+          "doc_id": "doc_08",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_08#c004",
+          "doc_id": "doc_08",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q25",
+      "question": "Where are loan accounts opened for Transaction Conversion to EMI in Tachyon Credit?",
+      "gold_answer": "Emerald.",
+      "pred_answer": "\u2022 Initiating Transaction Conversion to EMI: Customers may opt for transaction conversion to EMI either at the time of purchase or post purchase. Only Loan Types specified in the Loan Conversion Policy can be offered as Loan for transaction conversion.",
+      "citations": [
+        {
+          "chunk_id": "doc_08#c002",
+          "quote": "\u2022 Initiating Transaction Conversion to EMI: Customers may opt for transaction conversion to EMI either at the time of purchase or post purchase."
+        },
+        {
+          "chunk_id": "doc_08#c004",
+          "quote": "Only Loan Types specified in the Loan Conversion Policy can be offered as Loan for transaction conversion."
+        },
+        {
+          "chunk_id": "doc_08#c005",
+          "quote": "-When \u201ccreditValueDateForLoanConversion\u201d is set as \u201cemiConversionRequestDate\u201d, Source accounting for transaction conversion to EMI is done with value date =emiConversionRequestDate"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_08#c002",
+          "doc_id": "doc_08",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_08#c004",
+          "doc_id": "doc_08",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_08#c005",
+          "doc_id": "doc_08",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_08#c001",
+          "doc_id": "doc_08",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_08#c000",
+          "doc_id": "doc_08",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q26",
+      "question": "Give an example eligibility threshold mentioned for converting a transaction to EMI.",
+      "gold_answer": "Transactions above Rs.5000 can be converted to EMI (example).",
+      "pred_answer": "Converting a purchase transaction to Equated Monthly Installments(EMI) is a common service offered by Banks & Financial Institutions.It allows the customer to pay for the high value transaction over a period of time instead of making a lump sum payment.These debit transactions may have occurred on different types of Accounts. Minimum transaction amount required for converting to Loan",
+      "citations": [
+        {
+          "chunk_id": "doc_08#c001",
+          "quote": "Converting a purchase transaction to Equated Monthly Installments(EMI) is a common service offered by Banks & Financial Institutions.It allows the customer to pay for the high value transaction over a period of time instead of making a lump"
+        },
+        {
+          "chunk_id": "doc_08#c017",
+          "quote": "Minimum transaction amount required for converting to Loan"
+        },
+        {
+          "chunk_id": "doc_08#c002",
+          "quote": "\u2022 Initiating Transaction Conversion to EMI: Customers may opt for transaction conversion to EMI either at the time of purchase or post purchase."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_08#c001",
+          "doc_id": "doc_08",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_08#c017",
+          "doc_id": "doc_08",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_08#c002",
+          "doc_id": "doc_08",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_08#c004",
+          "doc_id": "doc_08",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_08#c016",
+          "doc_id": "doc_08",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q27",
+      "question": "In the Tachyon case study template, which Zeta module is listed alongside Networks (Visa, MasterCard) as a partner/network example?",
+      "gold_answer": "Aries.",
+      "pred_answer": "Tachyon Credit - <Please fill the Tachyon overview Diagram & integrations> You already have the right instinct \u2014 warm outreach through your IITM and IIM-A networks beats cold applications by a",
+      "citations": [
+        {
+          "chunk_id": "doc_09#c000",
+          "quote": "Tachyon Credit - <Please fill the Tachyon overview Diagram & integrations>"
+        },
+        {
+          "chunk_id": "doc_02#c070",
+          "quote": "You already have the right instinct \u2014 warm outreach through your IITM and IIM-A networks beats cold applications by a"
+        },
+        {
+          "chunk_id": "doc_02#c064",
+          "quote": "Two shipped projects One written case study One decision artefact"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_09#c000",
+          "doc_id": "doc_09",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c070",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c064",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c046",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_01#c001",
+          "doc_id": "doc_01",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q28",
+      "question": "What are the five Tachyon Product Lines listed in the PLE Goals document?",
+      "gold_answer": "Kernel, CLM, Credit, TaPS, and DDA.",
+      "pred_answer": "Tachyon Product Lines o Replace old unused flows (eg, there are newer version",
+      "citations": [
+        {
+          "chunk_id": "doc_10#c000",
+          "quote": "Tachyon Product Lines"
+        },
+        {
+          "chunk_id": "doc_10#c002",
+          "quote": "o Replace old unused flows (eg, there are newer version"
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "quote": "\u2022 Define and improve the product line operation cost (i.e."
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_10#c000",
+          "doc_id": "doc_10",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_10#c002",
+          "doc_id": "doc_10",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "doc_id": "doc_10",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_09#c000",
+          "doc_id": "doc_09",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_07#c000",
+          "doc_id": "doc_07",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q29",
+      "question": "Name three programs in Ramki\u2019s PLE consideration set from the PLE Goals doc.",
+      "gold_answer": "Any three of: Odyssey, Quinto, Skybridge, ACE, Agent fluency.",
+      "pred_answer": "Engagements or Programs for PLE (Consideration Set) ................................ Engagements or Programs for PLE (Consideration Set)",
+      "citations": [
+        {
+          "chunk_id": "doc_10#c000",
+          "quote": "Engagements or Programs for PLE (Consideration Set) ................................"
+        },
+        {
+          "chunk_id": "doc_10#c001",
+          "quote": "Engagements or Programs for PLE (Consideration Set)"
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "quote": "o Bring data engineering to respective PLE"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_10#c000",
+          "doc_id": "doc_10",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_10#c001",
+          "doc_id": "doc_10",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_10#c003",
+          "doc_id": "doc_10",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_10#c002",
+          "doc_id": "doc_10",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_02#c013",
+          "doc_id": "doc_02",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    },
+    {
+      "id": "q30",
+      "question": "What is the Q3 2027 revenue target for Tachyon SaaS in EMEA according to these documents?",
+      "gold_answer": "Not present in the corpus \u2014 system should say it does not know.",
+      "pred_answer": "- Preparing for PM interviews at **top AI labs, FAANG, and product-based companies** \u2014 broad target set, not narrowed to 2-3 names. Very deep \u2014 you design and own the eval set Deep \u2014 you build the eval harness for this specific",
+      "citations": [
+        {
+          "chunk_id": "doc_03#c000",
+          "quote": "- Preparing for PM interviews at **top AI labs, FAANG, and product-based companies** \u2014 broad target set, not narrowed to 2-3 names."
+        },
+        {
+          "chunk_id": "doc_02#c006",
+          "quote": "Very deep \u2014 you design and own the eval set Deep \u2014 you build the eval harness for this specific"
+        },
+        {
+          "chunk_id": "doc_02#c016",
+          "quote": "That's why evaluation has become the differentiating skill for both of your"
+        }
+      ],
+      "retrieved": [
+        {
+          "chunk_id": "doc_03#c000",
+          "doc_id": "doc_03",
+          "rank": 1
+        },
+        {
+          "chunk_id": "doc_02#c006",
+          "doc_id": "doc_02",
+          "rank": 2
+        },
+        {
+          "chunk_id": "doc_02#c016",
+          "doc_id": "doc_02",
+          "rank": 3
+        },
+        {
+          "chunk_id": "doc_02#c028",
+          "doc_id": "doc_02",
+          "rank": 4
+        },
+        {
+          "chunk_id": "doc_04#c000",
+          "doc_id": "doc_04",
+          "rank": 5
+        }
+      ],
+      "answer_correct": 0.0,
+      "citation_ok": 1.0
+    }
+  ]
+}

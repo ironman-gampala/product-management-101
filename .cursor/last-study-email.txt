@@ -1,0 +1,5 @@
+Question: Instagram tested a new Reels ranking that increased Reels opens by 8% but decreased total time spent in Feed. Would you ship it?
+
+Type: Analytics & Execution — A/B
+
+I’d treat this as an A/B ship decision, not a Reels pep talk. Opens up 8% with Feed time down about 4% into week 3 means we stole attention, not created session value — especially with completion flat. I would not ship. Primary should never have been Reels opens. I’d keep control, reject both “ship because Reels strategy” and “kill all ranking work,” and run a follow-up optimizing qualified watch with a hard Feed-time guardrail.

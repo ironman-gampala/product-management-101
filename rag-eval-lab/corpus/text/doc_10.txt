@@ -1,0 +1,247 @@
+1. Ramki’s ask ................................ ................................ ................................ .......... 1 
+Engagements or Programs for PLE (Consideration Set) ................................ ................. 2 
+1.1. Odyssey 2.0 ................................ ................................ ................................ ....... 2 
+1.2. Cluster Deployment Descriptor (CDD 2.0) Adoption ................................ ............. 2 
+1.3. Quinto................................ ................................ ................................ ............... 2 
+1.4. OMS Modernization ................................ ................................ ............................ 3 
+1.5. Elenchos Dependencies ................................ ................................ ..................... 3 
+2. PLE Themes ................................ ................................ ................................ .......... 4 
+2.1. Reduce Cost of Onboarding ................................ ................................ ................ 4 
+2.1.1. All Product Lines ................................ ................................ ......................... 4 
+2.1.2. Credit ................................ ................................ ................................ ......... 4 
+2.1.3. CLM ................................ ................................ ................................ ........... 4 
+2.1.4. Kernel ................................ ................................ ................................ ........ 4 
+2.1.5. TaPS ................................ ................................ ................................ .......... 4 
+2.1.6. DDA ................................ ................................ ................................ ........... 5 
+2.2. Reduce Cost of Adoption ................................ ................................ .................... 5 
+2.2.1. All Product Lines ................................ ................................ ......................... 5 
+2.2.2. Credit ................................ ................................ ................................ ......... 5 
+2.2.3. CLM ................................ ................................ ................................ ........... 5 
+2.2.4. Kernel ................................ ................................ ................................ ........ 5 
+2.2.5. TaPS ................................ ................................ ................................ .......... 5 
+2.2.6. DDA ................................ ................................ ................................ ........... 5 
+2.3. Reduce Cost of Operations ................................ ................................ ................. 5 
+2.3.2. Credit ................................ ................................ ................................ ......... 7 
+2.3.3. CLM ................................ ................................ ................................ ........... 7 
+2.3.4. Kernel ................................ ................................ ................................ ........ 7 
+2.3.5. TaPS ................................ ................................ ................................ .......... 7 
+2.3.6. DDA ................................ ................................ ................................ ........... 7 
+ 
+ 
+ 
+ 
+Tachyon Product Lines 
+1. Kernel 
+2. CLM 
+3. Credit 
+4. TaPS (ACS, PG, FRM, ITP, Disputes) 
+5. DDA 
+ 
+ 
+ 
+1. Ramki’s ask 
+Engagements or Programs for PLE (Consideration Set) 
+• Odyssey 
+• Quinto (Lowest cost per Account in the world) 
+• Skybridge 
+• ACE (Brown field) 
+• Agent fluency 
+ 
+1.1. Odyssey 2.0 
+• Cluster Spec v3 
+• Subscription Management Operators 
+• Tenant Developer Experience 
+• Bundle Factory - Custom Bundles 
+• Product Documentation 
+• Hub Adoption 
+• Externalize Artfiacts from manifests 
+• Support for Tenant Artifacts (Tenant as a publisher - Payzapp, Optum 
+examples) 
+• DDL, DML Operators 
+• Delta for Tenant Secrets 
+• Egress controls in Tenant Subscription Scope 
+• Vanity Domains in Tenant Subscription Scope 
+• Product Operations Center Adoption 
+• Pantheon Story 
+ 
+1.2. Cluster Deployment Descriptor (CDD 2.0) Adoption 
+• Product Monitoring Dashboards 
+• Indicators Threshold fine-tuning 
+• Deployment Runbooks 
+• Tenant Impact Validation 
+ 
+1.3. Quinto 
+• GraalVM and micro-vm readiness 
+• Tenant Isolated Databases 
+• Fix Logging, Metrics; Make traces usable 
+• Rebaseline deployments 
+• Remove unnecessary data 
+ 
+ 
+1.4. OMS Modernization 
+• Spartan Sidecar as an Envoy Extension (Reliable retries; Buffer and 
+forward) 
+• GraalVM friendliness 
+• Cross region support 
+• Canary Deployment (Fine-grained Traffic shaping controls) 
+• Usable for any HTTP Traffic (Traffic management part) 
+ 
+1.5. Elenchos Dependencies 
+• Subscription Management 2.0 
+o Deployment Operations Center 
+▪ Each Product Deployment as a Workbench 
+o Signals 
+▪ Subscription Specification and Subscription Change 
+Specification (Contract finalization) (Signals) 
+▪ New Resource Requirements 
+o Subscription Configuration Wizard & Agent 
+o Export & Import Subscription Configuration 
+o Subscription Import Agent (review imported config for 
+compatibility; suggest parameters that need to be changed to 
+make the config relevant for the accepting 
+deployment/subscription) 
+o Review and Refine Subscription Git folder structure (does it 
+have Subscription Specification document - signed by 
+Elenchos) 
+o Subscription Lifecycle Notifications 
+o Implement Operators as Observable Workflows; Abandon 
+Kubernetes style Operators; 
+▪ Tenant Resources Operators 
+▪ New Subscription Operator 
+▪ Subscription Change Operator 
+▪ Adopt Olympus Hub for Subscription Provisioning 
+Workflow and Subscription upgrade workflows 
+• Deployment-centric Operations 
+o Subscription association to a Deployment 
+o Deployment Aging and Maintenance SLIs 
+o Deployment Schleps, Reports, and Notifications 
+ 
+2. PLE Themes 
+2.1. Reduce Cost of Onboarding 
+2.1.1. All Product Lines 
+• Tenant Life cycle subscription management (onboarding of 
+tenant and ongoing deployment updates for existing tenants) 
+o Cluster spec and Operator adoption(across all 
+services) 
+o Configuration train for release promotion 
+o Replace old unused flows (eg, there are newer version 
+of services like Dia, Perseus that we need to use) 
+• Build – Run handover (evaluation criteria – no dev involvement 
+in setup and deployment) 
+• Release process 
+2.1.2. Credit 
+• 
+2.1.3. CLM 
+• 
+2.1.4. Kernel 
+• CoA Segment creation 
+ 
+2.1.5. TaPS 
+• 
+2.1.6. DDA 
+• 
+ 
+2.2. Reduce Cost of Adoption 
+ 
+2.2.1. All Product Lines 
+• Comprehensive API Documentation 
+• Cookbooks 
+ 
+2.2.2. Credit 
+• 
+2.2.3. CLM 
+• 
+2.2.4. Kernel 
+• Dev Toolkit (Transaction Trace Viewer, T-policy simulator etc) 
+• Self-serve journey for defining new fees 
+• OOTB Provisioned Transactions/Voucher codes 
+ 
+2.2.5. TaPS 
+• 
+2.2.6. DDA 
+ 
+ 
+2.3. Reduce Cost of Operations 
+2.3.1. All Product Lines 
+• AI in SDLC 
+• Full stack engineering 
+• FE, BE, QA, InfoDev, Data (last one after platform and process 
+maturity) 
+o Bring data engineering to respective PLE 
+• Odyssey Completion 
+• Local testing 
+• CCE 
+• Log Optimization 
+• Externalise Workbenches – Segregation including Build Run 
+handover 
+ 
+• Quality 
+o Regression Suites, Sanity Suite, Cluster Tests, 
+Showroom stability – 7days zero s1/s2, 15 days zero s3 
+ 
+• Pre-Sales – always ready – state 
+o Charter plan to take up all US presales (new GTM 
+initiatives) 
+▪ Will beef up the team as appropriate. 
+ 
+• Zero product and developer involvement in zone, tenant, 
+product setups and deployments 
+ 
+• Define and improve the product line operation cost (i.e. per 
+transaction cost / per account cost) 
+ 
+• Harness the earlier investment 
+o Completion of Pantheon 
+o Athens - go live 
+1.1....1. Prepaid 
+ 
+• Measure and Enhance developer productivity 
+o Number of PRs (with PR size / Complexity) 
+ 
+• Customer Support 
+o AI / Agentic support 
+o Symphony : incidents and support tickets 
+ 
+• Run Org 
+o AI / Agentic run operations 
+ 
+• Audit 
+ 
+ 
+2.3.2. Credit 
+• Angelos forms for config screens 
+2.3.3. CLM 
+• Angelos forms for config screens 
+ 
+2.3.4. Kernel 
+• Observability and Education to observability (Deepsight) 
+• Backrub current (go live) and next set of activities (ledger, 
+journal libraries, posting attributes storage optimization, 
+system LTD summarization etc) 
+• Ledger mutations traceability via meta-postings 
+ 
+2.3.5. TaPS 
+• Observability and Education to observability (Deepsight) 
+• 
+2.3.6. DDA 
+• Consistency across the zone 
+ 
+ 
+ 
+ 
+ 
+Concerns/Challenges 
+• Team count and composition balance with SMEs, 
+• Tech/Process Efficiency, 
+• CP fallback on PLE continues 
+ 
+ 
+Capacity that we have for each SaaS – CS and SRE as well 
+Regular activity: 
+- PR reviews count from CP 
+- Count and time taken for Solution reviews from CP 
+- Pre-sales efforts – planned efforts to be applied (no constraints as on today) 
+ 
+Constraints and help required from Ramki 
+- Input on capacity planning – budget to be planned specific for PLE (no 
+constraints as of today)

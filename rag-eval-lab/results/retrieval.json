@@ -1,0 +1,5848 @@
+{
+  "by_size": {
+    "256": {
+      "modes": {
+        "bm25": {
+          "recall@5": 0.9310344827586207,
+          "mrr": 0.7540229885057471,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_02#c010",
+                "doc_01#c001",
+                "doc_01#c002",
+                "doc_01#c000",
+                "doc_01#c043"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c002",
+                "doc_01#c089",
+                "doc_02#c045",
+                "doc_01#c003"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c011",
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_02#c090",
+                "doc_03#c004"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_02#c128",
+                "doc_01#c004",
+                "doc_02#c030"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c007",
+                "doc_02#c034",
+                "doc_02#c033",
+                "doc_02#c133"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c009",
+                "doc_01#c002",
+                "doc_02#c000",
+                "doc_02#c146",
+                "doc_02#c004"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c112",
+                "doc_01#c089",
+                "doc_02#c009",
+                "doc_02#c030",
+                "doc_02#c001"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c001",
+                "doc_01#c000",
+                "doc_02#c007",
+                "doc_01#c001",
+                "doc_02#c091"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c002",
+                "doc_03#c012",
+                "doc_08#c029",
+                "doc_01#c089"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_01#c053",
+                "doc_03#c000",
+                "doc_02#c057",
+                "doc_02#c040",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c012",
+                "doc_03#c003",
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_01#c003"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c012",
+                "doc_03#c003",
+                "doc_01#c003",
+                "doc_03#c001",
+                "doc_01#c031"
+              ],
+              "gold": [
+                "doc_03#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c017",
+                "doc_08#c004",
+                "doc_09#c000",
+                "doc_02#c031"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c073",
+                "doc_02#c079",
+                "doc_02#c108",
+                "doc_02#c089"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c017",
+                "doc_05#c003",
+                "doc_02#c027",
+                "doc_01#c007"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c007",
+                "doc_04#c008",
+                "doc_04#c017"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c003",
+                "doc_02#c089",
+                "doc_08#c004",
+                "doc_04#c000",
+                "doc_04#c017"
+              ],
+              "gold": [
+                "doc_04#c002",
+                "doc_04#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c004",
+                "doc_05#c007",
+                "doc_06#c005",
+                "doc_06#c000",
+                "doc_01#c089"
+              ],
+              "gold": [
+                "doc_05#c007"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_05#c018",
+                "doc_06#c005",
+                "doc_06#c007",
+                "doc_06#c004"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c005",
+                "doc_05#c007",
+                "doc_05#c011",
+                "doc_05#c018"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c002",
+                "doc_01#c036",
+                "doc_01#c033",
+                "doc_01#c035"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c003",
+                "doc_06#c001",
+                "doc_01#c035",
+                "doc_06#c000",
+                "doc_01#c043"
+              ],
+              "gold": [
+                "doc_06#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c008",
+                "doc_01#c035",
+                "doc_06#c009",
+                "doc_06#c000",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_06#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_02#c040",
+                "doc_01#c026",
+                "doc_01#c047",
+                "doc_02#c100"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_02#c098",
+                "doc_01#c042",
+                "doc_07#c003",
+                "doc_02#c112"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c037",
+                "doc_08#c002",
+                "doc_08#c005"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c004",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c011",
+                "doc_08#c014",
+                "doc_08#c019",
+                "doc_08#c020",
+                "doc_08#c021",
+                "doc_08#c036",
+                "doc_08#c043",
+                "doc_08#c056",
+                "doc_08#c057",
+                "doc_08#c058",
+                "doc_08#c060",
+                "doc_08#c062"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c005",
+                "doc_08#c010",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c004",
+                "doc_08#c005"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c035",
+                "doc_08#c002",
+                "doc_08#c008",
+                "doc_08#c032",
+                "doc_08#c004"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_08#c004",
+                "doc_02#c135",
+                "doc_01#c059",
+                "doc_02#c129"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_02#c029",
+                "doc_10#c005",
+                "doc_08#c004",
+                "doc_02#c150",
+                "doc_02#c108"
+              ],
+              "gold": [
+                "doc_10#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c008",
+                "doc_10#c007",
+                "doc_01#c042"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_08#c004",
+                "doc_01#c002",
+                "doc_02#c033",
+                "doc_02#c002"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "dense": {
+          "recall@5": 0.9310344827586207,
+          "mrr": 0.7959770114942528,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c089",
+                "doc_02#c000",
+                "doc_01#c002",
+                "doc_02#c148"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c089",
+                "doc_02#c000",
+                "doc_01#c002",
+                "doc_02#c148"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_01#c089",
+                "doc_01#c011",
+                "doc_01#c072"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c089",
+                "doc_01#c065",
+                "doc_01#c069"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c141",
+                "doc_02#c000",
+                "doc_02#c007",
+                "doc_10#c008",
+                "doc_02#c004"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_01#c002",
+                "doc_02#c000",
+                "doc_02#c009",
+                "doc_02#c004",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c001",
+                "doc_02#c000",
+                "doc_01#c089",
+                "doc_01#c004",
+                "doc_02#c004"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_01#c002",
+                "doc_02#c001",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c002",
+                "doc_01#c089",
+                "doc_03#c001",
+                "doc_01#c070"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c001",
+                "doc_02#c086",
+                "doc_01#c089",
+                "doc_03#c012"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_03#c002",
+                "doc_03#c003",
+                "doc_03#c012"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c003",
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_03#c002",
+                "doc_03#c012"
+              ],
+              "gold": [
+                "doc_03#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c017",
+                "doc_04#c002",
+                "doc_09#c000",
+                "doc_08#c004"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c017",
+                "doc_04#c002",
+                "doc_10#c007",
+                "doc_02#c073"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c009",
+                "doc_04#c008",
+                "doc_05#c009",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c007",
+                "doc_04#c008",
+                "doc_04#c017"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c002",
+                "doc_04#c017",
+                "doc_04#c012"
+              ],
+              "gold": [
+                "doc_04#c002",
+                "doc_04#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_06#c000",
+                "doc_06#c004",
+                "doc_06#c001",
+                "doc_05#c000"
+              ],
+              "gold": [
+                "doc_05#c007"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_05#c018",
+                "doc_04#c008",
+                "doc_05#c000",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c005",
+                "doc_05#c007",
+                "doc_05#c011",
+                "doc_05#c018"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c089",
+                "doc_01#c002",
+                "doc_01#c035",
+                "doc_01#c036"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_01#c089",
+                "doc_01#c035",
+                "doc_01#c036"
+              ],
+              "gold": [
+                "doc_06#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_04#c008",
+                "doc_06#c001",
+                "doc_05#c008",
+                "doc_06#c009"
+              ],
+              "gold": [
+                "doc_06#c008"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_07#c003",
+                "doc_01#c031",
+                "doc_01#c030",
+                "doc_07#c001"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_07#c003",
+                "doc_01#c042",
+                "doc_01#c031",
+                "doc_06#c002"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c010",
+                "doc_08#c008",
+                "doc_04#c000",
+                "doc_08#c011"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c004",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c011",
+                "doc_08#c014",
+                "doc_08#c019",
+                "doc_08#c020",
+                "doc_08#c021",
+                "doc_08#c036",
+                "doc_08#c043",
+                "doc_08#c056",
+                "doc_08#c057",
+                "doc_08#c058",
+                "doc_08#c060",
+                "doc_08#c062"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c010",
+                "doc_08#c005",
+                "doc_08#c009"
+              ],
+              "gold": [
+                "doc_08#c004",
+                "doc_08#c005"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c035",
+                "doc_08#c004",
+                "doc_08#c002",
+                "doc_08#c008",
+                "doc_08#c032"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_04#c000",
+                "doc_04#c010",
+                "doc_04#c017",
+                "doc_04#c002"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c001",
+                "doc_10#c000",
+                "doc_10#c005",
+                "doc_04#c000",
+                "doc_04#c002"
+              ],
+              "gold": [
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c008",
+                "doc_05#c015",
+                "doc_10#c005"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c012",
+                "doc_04#c002",
+                "doc_04#c017",
+                "doc_03#c007"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid": {
+          "recall@5": 1.0,
+          "mrr": 0.8316091954022987,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c002",
+                "doc_01#c089",
+                "doc_01#c001",
+                "doc_02#c010"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c089",
+                "doc_01#c002",
+                "doc_02#c114",
+                "doc_01#c003"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c011",
+                "doc_01#c000",
+                "doc_02#c039",
+                "doc_01#c089"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_01#c089",
+                "doc_01#c004",
+                "doc_02#c128"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c007",
+                "doc_02#c141",
+                "doc_02#c135",
+                "doc_02#c133"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_01#c002",
+                "doc_02#c009",
+                "doc_02#c000",
+                "doc_02#c004",
+                "doc_02#c146"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_01#c089",
+                "doc_02#c001",
+                "doc_02#c009",
+                "doc_02#c112",
+                "doc_02#c030"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_01#c001",
+                "doc_02#c007",
+                "doc_01#c002"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c002",
+                "doc_01#c089",
+                "doc_03#c012",
+                "doc_03#c001"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c001",
+                "doc_01#c053",
+                "doc_02#c040",
+                "doc_02#c154"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c012",
+                "doc_03#c003",
+                "doc_03#c000",
+                "doc_01#c003"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c003",
+                "doc_03#c012",
+                "doc_03#c001",
+                "doc_01#c003",
+                "doc_03#c000"
+              ],
+              "gold": [
+                "doc_03#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c017",
+                "doc_08#c004",
+                "doc_09#c000",
+                "doc_05#c001"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c073",
+                "doc_02#c036",
+                "doc_02#c123",
+                "doc_02#c089"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_05#c003",
+                "doc_09#c000",
+                "doc_05#c007",
+                "doc_06#c006"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c007",
+                "doc_04#c008",
+                "doc_04#c017"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c003",
+                "doc_04#c000",
+                "doc_02#c089",
+                "doc_04#c017",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_04#c002",
+                "doc_04#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_06#c004",
+                "doc_06#c000",
+                "doc_06#c005",
+                "doc_05#c000"
+              ],
+              "gold": [
+                "doc_05#c007"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_05#c018",
+                "doc_05#c000",
+                "doc_06#c000",
+                "doc_05#c001"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c005",
+                "doc_05#c007",
+                "doc_05#c011",
+                "doc_05#c018"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c002",
+                "doc_01#c036",
+                "doc_01#c035",
+                "doc_01#c089"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_06#c003",
+                "doc_01#c035",
+                "doc_06#c004"
+              ],
+              "gold": [
+                "doc_06#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_04#c008",
+                "doc_06#c009",
+                "doc_06#c001",
+                "doc_06#c008"
+              ],
+              "gold": [
+                "doc_06#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_02#c040",
+                "doc_01#c026",
+                "doc_01#c042",
+                "doc_02#c100"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_07#c003",
+                "doc_01#c042",
+                "doc_01#c031",
+                "doc_02#c098"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c010",
+                "doc_08#c002",
+                "doc_08#c011"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c004",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c011",
+                "doc_08#c014",
+                "doc_08#c019",
+                "doc_08#c020",
+                "doc_08#c021",
+                "doc_08#c036",
+                "doc_08#c043",
+                "doc_08#c056",
+                "doc_08#c057",
+                "doc_08#c058",
+                "doc_08#c060",
+                "doc_08#c062"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c005",
+                "doc_08#c010",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c004",
+                "doc_08#c005"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c035",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c008",
+                "doc_08#c032"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_01#c059",
+                "doc_02#c145",
+                "doc_02#c129",
+                "doc_02#c133"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c005",
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_09#c000",
+                "doc_10#c004"
+              ],
+              "gold": [
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c008",
+                "doc_10#c007",
+                "doc_10#c005"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c057",
+                "doc_08#c004",
+                "doc_04#c000",
+                "doc_04#c012"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid_rerank": {
+          "recall@5": 0.8620689655172413,
+          "mrr": 0.7310344827586208,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_02#c010",
+                "doc_01#c002",
+                "doc_01#c043",
+                "doc_01#c087"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c002",
+                "doc_02#c045",
+                "doc_01#c089",
+                "doc_02#c114"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c011",
+                "doc_02#c090",
+                "doc_03#c004",
+                "doc_02#c039"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_01#c004",
+                "doc_02#c128",
+                "doc_02#c030"
+              ],
+              "gold": [
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c133",
+                "doc_02#c112",
+                "doc_02#c033",
+                "doc_02#c040"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c009",
+                "doc_01#c002",
+                "doc_02#c000",
+                "doc_02#c004",
+                "doc_02#c146"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c112",
+                "doc_02#c009",
+                "doc_02#c040",
+                "doc_02#c111",
+                "doc_02#c134"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_01#c001",
+                "doc_01#c002",
+                "doc_02#c004"
+              ],
+              "gold": [
+                "doc_02#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c002",
+                "doc_02#c050",
+                "doc_03#c012",
+                "doc_03#c001"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_02#c057",
+                "doc_03#c000",
+                "doc_03#c001",
+                "doc_01#c053",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c012",
+                "doc_03#c003",
+                "doc_03#c000",
+                "doc_01#c031"
+              ],
+              "gold": [
+                "doc_03#c001",
+                "doc_03#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c003",
+                "doc_03#c001",
+                "doc_01#c031",
+                "doc_03#c012",
+                "doc_01#c003"
+              ],
+              "gold": [
+                "doc_03#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_02#c031",
+                "doc_08#c004",
+                "doc_03#c000",
+                "doc_02#c018",
+                "doc_04#c000"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_02#c073",
+                "doc_02#c108",
+                "doc_02#c123",
+                "doc_02#c089",
+                "doc_02#c079"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_05#c003",
+                "doc_01#c007",
+                "doc_09#c000",
+                "doc_05#c007"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c007",
+                "doc_04#c008",
+                "doc_04#c017"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_02#c089",
+                "doc_08#c004",
+                "doc_08#c011",
+                "doc_08#c019",
+                "doc_01#c048"
+              ],
+              "gold": [
+                "doc_04#c002",
+                "doc_04#c003"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_06#c004",
+                "doc_01#c033",
+                "doc_06#c000",
+                "doc_06#c005"
+              ],
+              "gold": [
+                "doc_05#c007"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c007",
+                "doc_05#c018",
+                "doc_05#c001",
+                "doc_06#c007",
+                "doc_01#c035"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c005",
+                "doc_05#c007",
+                "doc_05#c011",
+                "doc_05#c018"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c002",
+                "doc_01#c033",
+                "doc_06#c000",
+                "doc_01#c036",
+                "doc_01#c073"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c001",
+                "doc_06#c003",
+                "doc_01#c035",
+                "doc_01#c043",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_06#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c008",
+                "doc_06#c009",
+                "doc_06#c001",
+                "doc_01#c035",
+                "doc_06#c003"
+              ],
+              "gold": [
+                "doc_06#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c026",
+                "doc_01#c047",
+                "doc_02#c052",
+                "doc_01#c027"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c042",
+                "doc_02#c098",
+                "doc_02#c112",
+                "doc_02#c122"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c037",
+                "doc_08#c008",
+                "doc_08#c005",
+                "doc_08#c003"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c004",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c011",
+                "doc_08#c014",
+                "doc_08#c019",
+                "doc_08#c020",
+                "doc_08#c021",
+                "doc_08#c036",
+                "doc_08#c043",
+                "doc_08#c056",
+                "doc_08#c057",
+                "doc_08#c058",
+                "doc_08#c060",
+                "doc_08#c062"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c008",
+                "doc_08#c003",
+                "doc_08#c010"
+              ],
+              "gold": [
+                "doc_08#c004",
+                "doc_08#c005"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c035",
+                "doc_08#c002",
+                "doc_08#c032",
+                "doc_02#c055",
+                "doc_01#c043"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_02#c129",
+                "doc_08#c004",
+                "doc_02#c133",
+                "doc_02#c135"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_02#c029",
+                "doc_10#c004",
+                "doc_02#c150",
+                "doc_02#c108",
+                "doc_02#c141"
+              ],
+              "gold": [
+                "doc_10#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c002",
+                "doc_02#c038",
+                "doc_02#c082",
+                "doc_02#c104",
+                "doc_02#c131"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c057",
+                "doc_01#c002",
+                "doc_02#c033",
+                "doc_02#c002"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        }
+      },
+      "gold_chunk_counts": {
+        "q01": 1,
+        "q02": 2,
+        "q03": 1,
+        "q04": 1,
+        "q05": 1,
+        "q06": 1,
+        "q07": 1,
+        "q08": 1,
+        "q09": 1,
+        "q10": 2,
+        "q11": 2,
+        "q12": 1,
+        "q13": 1,
+        "q14": 1,
+        "q15": 4,
+        "q16": 2,
+        "q17": 1,
+        "q18": 5,
+        "q19": 1,
+        "q20": 1,
+        "q21": 1,
+        "q22": 2,
+        "q23": 1,
+        "q24": 16,
+        "q25": 2,
+        "q26": 1,
+        "q27": 1,
+        "q28": 1,
+        "q29": 3,
+        "q30": 0
+      }
+    },
+    "512": {
+      "modes": {
+        "bm25": {
+          "recall@5": 1.0,
+          "mrr": 0.9252873563218391,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c005",
+                "doc_01#c001",
+                "doc_02#c000",
+                "doc_01#c021"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c044",
+                "doc_01#c036",
+                "doc_02#c057"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c044",
+                "doc_02#c045",
+                "doc_02#c031",
+                "doc_01#c037"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_02#c064",
+                "doc_01#c002",
+                "doc_02#c002"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c015",
+                "doc_02#c067",
+                "doc_02#c003",
+                "doc_02#c002"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c004",
+                "doc_01#c001",
+                "doc_02#c002",
+                "doc_02#c063"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c056",
+                "doc_02#c006",
+                "doc_01#c044",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c045",
+                "doc_01#c000",
+                "doc_02#c003",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c006",
+                "doc_08#c005",
+                "doc_03#c001",
+                "doc_08#c011"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c026",
+                "doc_02#c020",
+                "doc_02#c077",
+                "doc_02#c028"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c006",
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_02#c053"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c006",
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_01#c015"
+              ],
+              "gold": [
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_09#c000",
+                "doc_04#c003",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c040",
+                "doc_02#c036",
+                "doc_02#c018",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_05#c001",
+                "doc_05#c000",
+                "doc_01#c031"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c004",
+                "doc_04#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c001",
+                "doc_02#c044",
+                "doc_08#c002",
+                "doc_08#c006",
+                "doc_08#c005"
+              ],
+              "gold": [
+                "doc_04#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c002",
+                "doc_06#c000",
+                "doc_05#c003",
+                "doc_01#c017",
+                "doc_05#c000"
+              ],
+              "gold": [
+                "doc_05#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c003",
+                "doc_05#c009",
+                "doc_06#c002",
+                "doc_01#c017"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c002",
+                "doc_05#c003",
+                "doc_05#c005",
+                "doc_05#c009"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c001",
+                "doc_01#c017",
+                "doc_01#c002",
+                "doc_01#c044"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c001",
+                "doc_01#c017",
+                "doc_06#c002",
+                "doc_02#c026"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c004",
+                "doc_01#c017",
+                "doc_06#c000",
+                "doc_05#c004",
+                "doc_05#c003"
+              ],
+              "gold": [
+                "doc_06#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_02#c020",
+                "doc_01#c036",
+                "doc_01#c023",
+                "doc_01#c021"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c021",
+                "doc_02#c049",
+                "doc_01#c036",
+                "doc_02#c056"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c018",
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c004"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c007",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c018",
+                "doc_08#c021",
+                "doc_08#c028",
+                "doc_08#c029",
+                "doc_08#c030",
+                "doc_08#c031"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c011",
+                "doc_08#c001",
+                "doc_08#c005"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c017",
+                "doc_08#c001",
+                "doc_08#c004",
+                "doc_08#c016",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_01#c001",
+                "doc_02#c070",
+                "doc_02#c064",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_02#c014",
+                "doc_10#c003",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_10#c003",
+                "doc_10#c002",
+                "doc_01#c021"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_08#c002",
+                "doc_01#c001",
+                "doc_02#c070",
+                "doc_02#c042"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "dense": {
+          "recall@5": 1.0,
+          "mrr": 0.925287356321839,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c044",
+                "doc_01#c001",
+                "doc_02#c005",
+                "doc_02#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c044",
+                "doc_01#c001",
+                "doc_02#c000",
+                "doc_02#c005"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_03#c000",
+                "doc_01#c044",
+                "doc_01#c037",
+                "doc_10#c001"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c032",
+                "doc_01#c034",
+                "doc_01#c044",
+                "doc_01#c033"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c070",
+                "doc_02#c000",
+                "doc_02#c078",
+                "doc_02#c004",
+                "doc_02#c002"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c001",
+                "doc_02#c004",
+                "doc_02#c002",
+                "doc_02#c003"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c002",
+                "doc_02#c002",
+                "doc_01#c001",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c000",
+                "doc_01#c001",
+                "doc_02#c002",
+                "doc_02#c003"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c001",
+                "doc_02#c059",
+                "doc_01#c044",
+                "doc_03#c006"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c043",
+                "doc_03#c006",
+                "doc_01#c044",
+                "doc_03#c001"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_03#c006",
+                "doc_01#c001",
+                "doc_01#c044"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c000",
+                "doc_03#c006",
+                "doc_01#c001",
+                "doc_08#c020"
+              ],
+              "gold": [
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_09#c000",
+                "doc_04#c008",
+                "doc_04#c001",
+                "doc_04#c003"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_04#c006",
+                "doc_04#c001",
+                "doc_10#c003"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c004",
+                "doc_04#c000",
+                "doc_05#c004",
+                "doc_05#c001",
+                "doc_05#c003"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c004",
+                "doc_04#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c001",
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_09#c000",
+                "doc_02#c044"
+              ],
+              "gold": [
+                "doc_04#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_05#c003",
+                "doc_06#c002",
+                "doc_05#c000",
+                "doc_06#c003"
+              ],
+              "gold": [
+                "doc_05#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c003",
+                "doc_05#c000",
+                "doc_06#c000",
+                "doc_05#c009",
+                "doc_04#c004"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c002",
+                "doc_05#c003",
+                "doc_05#c005",
+                "doc_05#c009"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c001",
+                "doc_01#c000",
+                "doc_01#c044",
+                "doc_01#c036"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c001",
+                "doc_01#c018",
+                "doc_06#c002",
+                "doc_01#c017"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c003",
+                "doc_06#c004",
+                "doc_05#c003",
+                "doc_05#c004"
+              ],
+              "gold": [
+                "doc_06#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c015",
+                "doc_07#c001",
+                "doc_01#c021",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_07#c001",
+                "doc_01#c021",
+                "doc_01#c015",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c005",
+                "doc_08#c004",
+                "doc_08#c001",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c007",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c018",
+                "doc_08#c021",
+                "doc_08#c028",
+                "doc_08#c029",
+                "doc_08#c030",
+                "doc_08#c031"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c001",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c017",
+                "doc_08#c004",
+                "doc_08#c005"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_02#c046",
+                "doc_02#c070"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_04#c000",
+                "doc_04#c001",
+                "doc_10#c003"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c003",
+                "doc_10#c001",
+                "doc_10#c002",
+                "doc_05#c007"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c006",
+                "doc_04#c001",
+                "doc_04#c008",
+                "doc_09#c000"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid": {
+          "recall@5": 1.0,
+          "mrr": 0.9770114942528736,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c005",
+                "doc_01#c001",
+                "doc_01#c044",
+                "doc_02#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c044",
+                "doc_02#c000",
+                "doc_02#c057"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c044",
+                "doc_01#c037",
+                "doc_02#c031",
+                "doc_01#c005"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c044",
+                "doc_01#c036",
+                "doc_02#c064"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c067",
+                "doc_02#c003",
+                "doc_02#c002",
+                "doc_02#c070"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c004",
+                "doc_01#c001",
+                "doc_02#c002",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c015",
+                "doc_02#c056",
+                "doc_01#c044",
+                "doc_02#c004"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c000",
+                "doc_02#c003",
+                "doc_01#c001",
+                "doc_02#c002"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c001",
+                "doc_03#c006",
+                "doc_01#c044",
+                "doc_08#c005"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c026",
+                "doc_02#c077",
+                "doc_02#c020",
+                "doc_02#c043"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c006",
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_01#c036"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_03#c006",
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_09#c000",
+                "doc_04#c003",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c036",
+                "doc_10#c003",
+                "doc_02#c018",
+                "doc_02#c040"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_05#c001",
+                "doc_05#c000",
+                "doc_04#c004",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c004",
+                "doc_04#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c001",
+                "doc_02#c044",
+                "doc_04#c000",
+                "doc_04#c008",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_04#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c002",
+                "doc_05#c003",
+                "doc_05#c000",
+                "doc_06#c003"
+              ],
+              "gold": [
+                "doc_05#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c003",
+                "doc_05#c009",
+                "doc_06#c000",
+                "doc_06#c002"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c002",
+                "doc_05#c003",
+                "doc_05#c005",
+                "doc_05#c009"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c001",
+                "doc_01#c017",
+                "doc_01#c044",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c017",
+                "doc_06#c002",
+                "doc_06#c001",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c004",
+                "doc_06#c000",
+                "doc_05#c004",
+                "doc_05#c003",
+                "doc_06#c003"
+              ],
+              "gold": [
+                "doc_06#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c021",
+                "doc_01#c036",
+                "doc_02#c020",
+                "doc_01#c013"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c021",
+                "doc_07#c001",
+                "doc_01#c015",
+                "doc_02#c056"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c001",
+                "doc_08#c018",
+                "doc_08#c005",
+                "doc_08#c004"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c007",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c018",
+                "doc_08#c021",
+                "doc_08#c028",
+                "doc_08#c029",
+                "doc_08#c030",
+                "doc_08#c031"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c001",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c017",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c016"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_02#c070",
+                "doc_02#c064",
+                "doc_02#c046",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c002",
+                "doc_10#c003",
+                "doc_09#c000",
+                "doc_07#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_10#c003",
+                "doc_10#c002",
+                "doc_02#c013"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c006",
+                "doc_02#c016",
+                "doc_02#c028",
+                "doc_04#c000"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid_rerank": {
+          "recall@5": 0.8275862068965517,
+          "mrr": 0.7741379310344827,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c005",
+                "doc_01#c001",
+                "doc_01#c043",
+                "doc_01#c021"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c036",
+                "doc_02#c022",
+                "doc_02#c023"
+              ],
+              "gold": [
+                "doc_01#c000",
+                "doc_01#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c045",
+                "doc_01#c037",
+                "doc_02#c031",
+                "doc_01#c005"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_01#c044",
+                "doc_01#c036",
+                "doc_02#c064"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c067",
+                "doc_02#c003",
+                "doc_02#c028",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c004",
+                "doc_01#c001",
+                "doc_02#c002",
+                "doc_02#c073"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c056",
+                "doc_02#c011",
+                "doc_02#c004",
+                "doc_02#c006"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c000",
+                "doc_02#c045",
+                "doc_02#c003",
+                "doc_02#c043"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c028",
+                "doc_01#c001",
+                "doc_02#c034",
+                "doc_02#c001"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c028",
+                "doc_01#c001",
+                "doc_02#c027",
+                "doc_01#c026"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c053",
+                "doc_03#c001",
+                "doc_03#c006",
+                "doc_01#c036"
+              ],
+              "gold": [
+                "doc_03#c000",
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c001",
+                "doc_01#c015",
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_03#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_02#c015",
+                "doc_08#c002",
+                "doc_02#c044",
+                "doc_05#c000",
+                "doc_02#c023"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_02#c036",
+                "doc_02#c040",
+                "doc_01#c000",
+                "doc_02#c054",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_05#c001",
+                "doc_05#c000",
+                "doc_01#c003",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c004",
+                "doc_04#c008"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_02#c044",
+                "doc_08#c002",
+                "doc_08#c006",
+                "doc_08#c005",
+                "doc_01#c024"
+              ],
+              "gold": [
+                "doc_04#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_05#c009",
+                "doc_06#c002",
+                "doc_06#c000",
+                "doc_05#c003",
+                "doc_01#c017"
+              ],
+              "gold": [
+                "doc_05#c003"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c003",
+                "doc_05#c000",
+                "doc_05#c009",
+                "doc_06#c000",
+                "doc_06#c003"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c002",
+                "doc_05#c003",
+                "doc_05#c005",
+                "doc_05#c009"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c001",
+                "doc_01#c018",
+                "doc_01#c002",
+                "doc_01#c013",
+                "doc_01#c016"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c017",
+                "doc_06#c001",
+                "doc_02#c026",
+                "doc_01#c034"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c004",
+                "doc_01#c017",
+                "doc_01#c018",
+                "doc_02#c061",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_06#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_02#c020",
+                "doc_01#c013",
+                "doc_02#c050",
+                "doc_01#c023",
+                "doc_01#c005"
+              ],
+              "gold": [
+                "doc_07#c000",
+                "doc_07#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c021",
+                "doc_02#c056",
+                "doc_01#c025",
+                "doc_01#c023"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c001",
+                "doc_08#c018",
+                "doc_08#c004",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c007",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c018",
+                "doc_08#c021",
+                "doc_08#c028",
+                "doc_08#c029",
+                "doc_08#c030",
+                "doc_08#c031"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c004",
+                "doc_08#c001",
+                "doc_08#c005",
+                "doc_08#c011"
+              ],
+              "gold": [
+                "doc_08#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c017",
+                "doc_02#c027",
+                "doc_08#c016",
+                "doc_01#c029"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_02#c064",
+                "doc_01#c001",
+                "doc_08#c002",
+                "doc_02#c066"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_02#c014",
+                "doc_01#c018",
+                "doc_01#c000",
+                "doc_02#c028",
+                "doc_10#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c001",
+                "doc_10#c003",
+                "doc_02#c013",
+                "doc_02#c063",
+                "doc_02#c075"
+              ],
+              "gold": [
+                "doc_10#c000",
+                "doc_10#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c001",
+                "doc_02#c070",
+                "doc_02#c016",
+                "doc_02#c028"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        }
+      },
+      "gold_chunk_counts": {
+        "q01": 1,
+        "q02": 2,
+        "q03": 1,
+        "q04": 1,
+        "q05": 1,
+        "q06": 1,
+        "q07": 1,
+        "q08": 1,
+        "q09": 1,
+        "q10": 2,
+        "q11": 2,
+        "q12": 1,
+        "q13": 1,
+        "q14": 1,
+        "q15": 4,
+        "q16": 1,
+        "q17": 1,
+        "q18": 5,
+        "q19": 1,
+        "q20": 1,
+        "q21": 1,
+        "q22": 2,
+        "q23": 1,
+        "q24": 13,
+        "q25": 1,
+        "q26": 1,
+        "q27": 1,
+        "q28": 1,
+        "q29": 2,
+        "q30": 0
+      }
+    },
+    "1024": {
+      "modes": {
+        "bm25": {
+          "recall@5": 0.9655172413793104,
+          "mrr": 0.8201149425287355,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c002",
+                "doc_01#c012",
+                "doc_01#c010",
+                "doc_02#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_01#c018",
+                "doc_02#c028",
+                "doc_02#c022"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_01#c022",
+                "doc_02#c022",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_02#c032",
+                "doc_01#c001",
+                "doc_02#c001"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c001",
+                "doc_02#c000",
+                "doc_02#c033",
+                "doc_02#c002",
+                "doc_02#c035"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c002",
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_02#c032"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c002",
+                "doc_02#c003",
+                "doc_02#c000",
+                "doc_02#c028",
+                "doc_01#c022"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c001",
+                "doc_02#c022",
+                "doc_01#c000",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_08#c002",
+                "doc_03#c002",
+                "doc_03#c003",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_01#c013",
+                "doc_03#c000",
+                "doc_02#c038",
+                "doc_01#c004",
+                "doc_02#c010"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c018",
+                "doc_01#c000",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c000",
+                "doc_03#c003",
+                "doc_03#c002",
+                "doc_01#c007"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c004",
+                "doc_04#c000",
+                "doc_02#c022",
+                "doc_09#c000",
+                "doc_08#c001"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_02#c018",
+                "doc_02#c022",
+                "doc_02#c005",
+                "doc_02#c020",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_05#c000",
+                "doc_04#c004",
+                "doc_01#c015",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c001",
+                "doc_04#c002",
+                "doc_04#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c022",
+                "doc_08#c003",
+                "doc_08#c001",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_05#c000",
+                "doc_01#c008",
+                "doc_05#c001"
+              ],
+              "gold": [
+                "doc_05#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c004",
+                "doc_05#c001",
+                "doc_06#c001",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c002",
+                "doc_05#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c002",
+                "doc_01#c008",
+                "doc_06#c000",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c008",
+                "doc_06#c001",
+                "doc_01#c017",
+                "doc_02#c013"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c002",
+                "doc_01#c008",
+                "doc_02#c030",
+                "doc_05#c002",
+                "doc_05#c001"
+              ],
+              "gold": [
+                "doc_06#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c006",
+                "doc_01#c005",
+                "doc_01#c010",
+                "doc_02#c010"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c010",
+                "doc_01#c018",
+                "doc_02#c024",
+                "doc_02#c020"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c009",
+                "doc_08#c002",
+                "doc_08#c008"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c003",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c014",
+                "doc_08#c015"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c005",
+                "doc_08#c009"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c008",
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c007",
+                "doc_08#c004"
+              ],
+              "gold": [
+                "doc_08#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_01#c000",
+                "doc_02#c035",
+                "doc_02#c033",
+                "doc_05#c000"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_02#c007",
+                "doc_01#c009",
+                "doc_01#c008"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_02#c037",
+                "doc_01#c010",
+                "doc_02#c036"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c000",
+                "doc_02#c021",
+                "doc_02#c035",
+                "doc_02#c000"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "dense": {
+          "recall@5": 1.0,
+          "mrr": 0.8362068965517241,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_02#c002",
+                "doc_01#c018",
+                "doc_02#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_02#c000",
+                "doc_02#c002",
+                "doc_02#c001"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_01#c018",
+                "doc_03#c000",
+                "doc_02#c022"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c016",
+                "doc_01#c017",
+                "doc_01#c022",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c035",
+                "doc_02#c001",
+                "doc_02#c000",
+                "doc_02#c002",
+                "doc_02#c031"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c001",
+                "doc_01#c000",
+                "doc_02#c002",
+                "doc_02#c034"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c001",
+                "doc_01#c000",
+                "doc_01#c001",
+                "doc_02#c003"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c000",
+                "doc_02#c001",
+                "doc_02#c022",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c022",
+                "doc_03#c003",
+                "doc_02#c029",
+                "doc_02#c006"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c022",
+                "doc_02#c021",
+                "doc_05#c009"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c000",
+                "doc_03#c002",
+                "doc_01#c022"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_09#c000",
+                "doc_04#c004",
+                "doc_04#c001",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c004",
+                "doc_09#c000",
+                "doc_04#c003",
+                "doc_02#c015"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_04#c002",
+                "doc_05#c002",
+                "doc_05#c003"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c001",
+                "doc_04#c002",
+                "doc_04#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c004",
+                "doc_09#c000",
+                "doc_02#c015",
+                "doc_02#c022"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c001",
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c002"
+              ],
+              "gold": [
+                "doc_05#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_05#c002"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c002",
+                "doc_05#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_06#c000",
+                "doc_01#c022",
+                "doc_01#c017",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c000",
+                "doc_06#c001",
+                "doc_01#c022",
+                "doc_01#c009"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c001",
+                "doc_06#c002",
+                "doc_05#c002",
+                "doc_05#c001"
+              ],
+              "gold": [
+                "doc_06#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.3333333333333333
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c007",
+                "doc_06#c000",
+                "doc_01#c010",
+                "doc_01#c014"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c007",
+                "doc_01#c010",
+                "doc_06#c000",
+                "doc_01#c015"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c000",
+                "doc_08#c001",
+                "doc_08#c009",
+                "doc_08#c008"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c003",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c014",
+                "doc_08#c015"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c002",
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c008",
+                "doc_08#c009"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c008",
+                "doc_08#c001",
+                "doc_08#c009"
+              ],
+              "gold": [
+                "doc_08#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_04#c000",
+                "doc_04#c004",
+                "doc_04#c002",
+                "doc_02#c023"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c001",
+                "doc_10#c000",
+                "doc_04#c000",
+                "doc_06#c001",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_05#c003",
+                "doc_01#c010",
+                "doc_08#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c003",
+                "doc_04#c002",
+                "doc_04#c004",
+                "doc_09#c000"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid": {
+          "recall@5": 1.0,
+          "mrr": 0.9051724137931034,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c002",
+                "doc_02#c000",
+                "doc_01#c012",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c022",
+                "doc_01#c018",
+                "doc_02#c029",
+                "doc_02#c028"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_01#c022",
+                "doc_02#c022",
+                "doc_03#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_02#c032",
+                "doc_01#c017",
+                "doc_01#c001"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c001",
+                "doc_02#c000",
+                "doc_02#c035",
+                "doc_02#c002",
+                "doc_02#c033"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c002",
+                "doc_02#c001",
+                "doc_01#c000",
+                "doc_02#c034"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c003",
+                "doc_02#c002",
+                "doc_02#c028",
+                "doc_01#c022"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_02#c022",
+                "doc_01#c018"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c000",
+                "doc_02#c006",
+                "doc_08#c002"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c013",
+                "doc_02#c038",
+                "doc_02#c013",
+                "doc_02#c010"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_03#c003",
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_01#c016"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c000",
+                "doc_03#c003",
+                "doc_03#c002",
+                "doc_03#c001"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_04#c004",
+                "doc_09#c000",
+                "doc_08#c001",
+                "doc_02#c022"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_02#c022",
+                "doc_04#c000",
+                "doc_02#c018",
+                "doc_02#c009",
+                "doc_02#c005"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_04#c000",
+                "doc_05#c001",
+                "doc_09#c000",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c001",
+                "doc_04#c002",
+                "doc_04#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_04#c000",
+                "doc_02#c022",
+                "doc_08#c003",
+                "doc_04#c004",
+                "doc_09#c000"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_01#c008"
+              ],
+              "gold": [
+                "doc_05#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_06#c001",
+                "doc_05#c004",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c002",
+                "doc_05#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_06#c000",
+                "doc_01#c008",
+                "doc_01#c017",
+                "doc_02#c002"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_06#c001",
+                "doc_01#c008",
+                "doc_01#c000",
+                "doc_01#c017"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_06#c002",
+                "doc_05#c002",
+                "doc_05#c001",
+                "doc_06#c000",
+                "doc_01#c008"
+              ],
+              "gold": [
+                "doc_06#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c010",
+                "doc_01#c006",
+                "doc_01#c018",
+                "doc_02#c025"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c010",
+                "doc_01#c018",
+                "doc_01#c007",
+                "doc_01#c015"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c009",
+                "doc_08#c008"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c003",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c014",
+                "doc_08#c015"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c000",
+                "doc_08#c008",
+                "doc_08#c009"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c000",
+                "doc_08#c008",
+                "doc_08#c002",
+                "doc_08#c001",
+                "doc_08#c007"
+              ],
+              "gold": [
+                "doc_08#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_01#c000",
+                "doc_02#c035",
+                "doc_01#c018",
+                "doc_02#c033"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_01#c009",
+                "doc_09#c000",
+                "doc_02#c013"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_01#c010",
+                "doc_08#c000",
+                "doc_07#c000"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c003",
+                "doc_01#c000",
+                "doc_03#c001",
+                "doc_02#c014"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        },
+        "hybrid_rerank": {
+          "recall@5": 0.8275862068965517,
+          "mrr": 0.7396551724137931,
+          "n": 29,
+          "per_question": [
+            {
+              "id": "q01",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c002",
+                "doc_02#c000",
+                "doc_01#c012",
+                "doc_01#c017"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q02",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c018",
+                "doc_02#c029",
+                "doc_02#c028",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q03",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_02#c022",
+                "doc_01#c001",
+                "doc_01#c018",
+                "doc_03#c000"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q04",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c017",
+                "doc_01#c001",
+                "doc_02#c033",
+                "doc_02#c031"
+              ],
+              "gold": [
+                "doc_01#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q05",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c001",
+                "doc_02#c033",
+                "doc_02#c016",
+                "doc_02#c003"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q06",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c002",
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_02#c034"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q07",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_02#c003",
+                "doc_02#c002",
+                "doc_02#c028",
+                "doc_02#c035"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q08",
+              "retrieved": [
+                "doc_02#c000",
+                "doc_01#c000",
+                "doc_02#c001",
+                "doc_02#c022",
+                "doc_02#c021"
+              ],
+              "gold": [
+                "doc_02#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q09",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_02#c014",
+                "doc_02#c007",
+                "doc_02#c029",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q10",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c013",
+                "doc_02#c013",
+                "doc_01#c004",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q11",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c018",
+                "doc_01#c019",
+                "doc_02#c026",
+                "doc_03#c003"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q12",
+              "retrieved": [
+                "doc_03#c000",
+                "doc_01#c000",
+                "doc_01#c007",
+                "doc_01#c018",
+                "doc_01#c014"
+              ],
+              "gold": [
+                "doc_03#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q13",
+              "retrieved": [
+                "doc_02#c022",
+                "doc_02#c025",
+                "doc_01#c018",
+                "doc_02#c007",
+                "doc_08#c001"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q14",
+              "retrieved": [
+                "doc_02#c018",
+                "doc_02#c020",
+                "doc_02#c022",
+                "doc_02#c009",
+                "doc_02#c005"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q15",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_04#c000",
+                "doc_05#c001",
+                "doc_01#c001",
+                "doc_08#c001"
+              ],
+              "gold": [
+                "doc_04#c000",
+                "doc_04#c001",
+                "doc_04#c002",
+                "doc_04#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q16",
+              "retrieved": [
+                "doc_02#c022",
+                "doc_08#c003",
+                "doc_08#c002",
+                "doc_08#c001",
+                "doc_01#c012"
+              ],
+              "gold": [
+                "doc_04#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q17",
+              "retrieved": [
+                "doc_05#c004",
+                "doc_06#c001",
+                "doc_06#c000",
+                "doc_01#c008",
+                "doc_05#c000"
+              ],
+              "gold": [
+                "doc_05#c001"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q18",
+              "retrieved": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c004",
+                "doc_06#c000",
+                "doc_01#c000"
+              ],
+              "gold": [
+                "doc_05#c000",
+                "doc_05#c001",
+                "doc_05#c002",
+                "doc_05#c004"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q19",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_01#c008",
+                "doc_01#c001",
+                "doc_01#c009",
+                "doc_06#c000"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.2
+            },
+            {
+              "id": "q20",
+              "retrieved": [
+                "doc_06#c000",
+                "doc_01#c008",
+                "doc_01#c017",
+                "doc_01#c010",
+                "doc_06#c001"
+              ],
+              "gold": [
+                "doc_06#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q21",
+              "retrieved": [
+                "doc_01#c008",
+                "doc_02#c030",
+                "doc_01#c019",
+                "doc_06#c002",
+                "doc_01#c009"
+              ],
+              "gold": [
+                "doc_06#c002"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.25
+            },
+            {
+              "id": "q22",
+              "retrieved": [
+                "doc_01#c006",
+                "doc_01#c010",
+                "doc_02#c025",
+                "doc_01#c011",
+                "doc_01#c002"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 0.0,
+              "mrr": 0.0
+            },
+            {
+              "id": "q23",
+              "retrieved": [
+                "doc_07#c000",
+                "doc_01#c010",
+                "doc_01#c018",
+                "doc_02#c028",
+                "doc_01#c011"
+              ],
+              "gold": [
+                "doc_07#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q24",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c009",
+                "doc_08#c002",
+                "doc_08#c008"
+              ],
+              "gold": [
+                "doc_08#c000",
+                "doc_08#c001",
+                "doc_08#c002",
+                "doc_08#c003",
+                "doc_08#c004",
+                "doc_08#c005",
+                "doc_08#c009",
+                "doc_08#c010",
+                "doc_08#c014",
+                "doc_08#c015"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q25",
+              "retrieved": [
+                "doc_08#c001",
+                "doc_08#c000",
+                "doc_08#c002",
+                "doc_08#c005",
+                "doc_08#c008"
+              ],
+              "gold": [
+                "doc_08#c001"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q26",
+              "retrieved": [
+                "doc_08#c008",
+                "doc_08#c000",
+                "doc_02#c013",
+                "doc_08#c002",
+                "doc_08#c007"
+              ],
+              "gold": [
+                "doc_08#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 0.5
+            },
+            {
+              "id": "q27",
+              "retrieved": [
+                "doc_09#c000",
+                "doc_01#c000",
+                "doc_02#c033",
+                "doc_02#c035",
+                "doc_02#c032"
+              ],
+              "gold": [
+                "doc_09#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q28",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_10#c001",
+                "doc_01#c009",
+                "doc_02#c013",
+                "doc_02#c007"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q29",
+              "retrieved": [
+                "doc_10#c000",
+                "doc_02#c037",
+                "doc_10#c001",
+                "doc_02#c006",
+                "doc_02#c031"
+              ],
+              "gold": [
+                "doc_10#c000"
+              ],
+              "recall@5": 1.0,
+              "mrr": 1.0
+            },
+            {
+              "id": "q30",
+              "retrieved": [
+                "doc_01#c000",
+                "doc_03#c000",
+                "doc_02#c014",
+                "doc_02#c021",
+                "doc_02#c035"
+              ],
+              "gold": [],
+              "recall@5": null,
+              "mrr": null
+            }
+          ]
+        }
+      },
+      "gold_chunk_counts": {
+        "q01": 1,
+        "q02": 1,
+        "q03": 1,
+        "q04": 1,
+        "q05": 1,
+        "q06": 1,
+        "q07": 1,
+        "q08": 1,
+        "q09": 1,
+        "q10": 1,
+        "q11": 1,
+        "q12": 1,
+        "q13": 1,
+        "q14": 1,
+        "q15": 4,
+        "q16": 1,
+        "q17": 1,
+        "q18": 4,
+        "q19": 1,
+        "q20": 1,
+        "q21": 1,
+        "q22": 1,
+        "q23": 1,
+        "q24": 10,
+        "q25": 1,
+        "q26": 1,
+        "q27": 1,
+        "q28": 1,
+        "q29": 1,
+        "q30": 0
+      }
+    }
+  }
+}

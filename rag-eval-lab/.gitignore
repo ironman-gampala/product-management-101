@@ -1,0 +1,7 @@
+.venv/
+vendor/
+__pycache__/
+*.pyc
+data/index_*.npz
+data/tfidf_vocab_*.json
+.DS_Store

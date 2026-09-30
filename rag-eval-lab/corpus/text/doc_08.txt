@@ -1,0 +1,1829 @@
+Transaction Conversion to EMI
+
+Overview 4
+Transaction Conversion to EMI in Tachyon Credit 5
+Prerequisites 5
+Loan Conversion Policy 5
+API Details 5
+AION Request Flow 8
+Transaction Conversion to EMI(Loan) 8
+API Details 8
+Conversion Flow 8
+Repayment Schedule(EPI Schedule) 10
+Installment Billing 11
+Refund Processing 11
+Loan Reamortization 12
+Loan Cancellation 12
+API Details 12
+Preclosure Quote 12
+API Details 13
+Loan PreClosure 13
+API Details 13
+Inquiries on Loan Account 14
+API Details 14
+Simulate Repayment Schedule 14
+API Details 14
+API Contracts 14
+Centers 14
+SC 14
+OC 14
+Cronus 14
+Configuration / Specification 15
+Product 15
+API Details 15
+Sample Configuration 15
+Policies 16
+Account Number Generation(ANG) Policy 16
+API Details 16
+Sample Configuration 16
+Amortization Policy 16
+API Details 17
+Sample Configuration 17
+Repayment Policy 18
+API Details 19
+Sample Configuration 19
+Closure/Cancellation Policy 20
+API Details 20
+Sample Configuration 20
+Loan Conversion Policy 21
+API Details 21
+Sample Configuration 21
+Posting Categories 24
+Posting Categories of Loan Account 24
+Posting Categories in Source Account 25
+Voucher Codes 25
+Loan Account Voucher Codes 25
+Source Accounting Voucher Codes(Transaction Conversion to EMI Flow) 26
+PPTS 26
+Classification Model(s) 26
+EOD / Workers 26
+Events 26
+Conversion Loan Booking 26
+Topic 26
+Event Details 26
+Conversion Loan Installment Billing 29
+Topic 29
+Event Details 29
+Conversion Loan PreClosure 32
+Topic 32
+Event Details 32
+Conversion Loan Cancellation 34
+Topic 34
+Event Details 34
+Conversion Loan ReAmortization 35
+Topic 35
+Event Details 35
+Extracts 38
+References 38
+Glossary 38
+
+Doc Version
+Created/Updated By
+Date
+Reviewed By
+Date
+Draft
+
+v.1
+
+Overview
+Converting a purchase transaction to Equated Monthly Installments(EMI) is a common service offered by Banks & Financial Institutions.It allows the customer to pay for the high value transaction over a period of time instead of making a lump sum payment.These debit transactions may have occurred on different types of Accounts. These accounts could be Revolving Credit, CASA or Prepaid.
+
+Below are the high level features of such an EMI:
+
+ • Eligibility: 
+ • Not all transactions are eligible for conversion to EMI. Banks usually specify the type of transactions eligible for such conversion. There are restrictions based on the amount of transaction, merchant category codes etc. For example: transactions above Rs.5000 can be converted to EMI
+ • Certain set of customers may not be eligible for availing EMI option, say a delinquent customer, who does not pay his dues regularly may not be eligible for transaction conversion to EMI
+ • Tenure:Banks generally have fixed tenures associated with EMI such as 3 months, 6 months, 12 months, 24 months etc. Customer needs to chose among the available list of tenures 
+ • Processing Fee: Transaction conversion to EMI is generally associated with a processing fee, which can be a fixed amount or % of the transaction amount
+ • Interest Rate: Banks charge interest on the converted amount. Interest rate may vary based on the Customer Profile, Customer relationship with the bank, tenure chosen etc. Sometimes there can be interest free EMIs as part of promotion programs
+ • EMI Payments: Customers need to pay the EMI amount every month, till the loan tenure is completed. In case of EMI on credit card transactions, EMI is generally added as part of the credit card bill.In other cases, it can be recovered based on the repayment instruction given by the customer
+ • Early Repayment: Customers may choose to pay the loan amount before its maturity. Such payment can be in full or in part. Early repayments are based on the terms and conditions specified by the bank.Some banks may allow such early repayment, while others disallow. Also it can be associated with a fee for such early repayment. In case customers repay the entire outstanding amount, the loan can be pre closed. If partial payment is done, loan can be reamortized
+ • Loan Cancellation: In few exceptional scenarios, customers may choose to cancel the transaction conversion to EMI.Allowing such cancellation is again conditional, based on the terms set by the bank. For ex: Bank may set a cooling period, within which cancellation is allowed
+ • Initiating Transaction Conversion to EMI: Customers may opt for transaction conversion to EMI either at the time of purchase or post purchase. Post purchase he can convert either from mobile app, bank website or by calling the customer care
+Transaction Conversion to EMI in Tachyon Credit
+In Tachyon Credit, Transaction conversion to EMI is handled as a generic use case. A Debit transaction done to any of the accounts, say Credit Card, Debit card can be converted to EMI.The end to end orchestration of Transaction Conversion to EMI and the lifecycle use cases are handled in ‘AION’. Loan Accounts are opened in Emerald
+
+Below mentioned use cases are supported as part of Transaction Conversion to EMI:
+ • Set up and manage criteria for Conversion
+ • Convert debit transaction to a Loan
+ • Installment billing of the Loan to the underlying account
+ • Cancellation of Loan
+ • Reamortization of Loan
+ • Pre Closure of Loan
+ • Auto PreClosure based on Days Past Due at Source Account Level
+ • Provide various Inquiry APIs 
+ • Publish Business Events
+Prerequisites
+ • COA Set Up
+ • Emerald Product & Policy Set Up
+Loan Conversion Policy
+ • All the specific parameters applicable for Transaction Conversion to a Loan will be defined through loan conversion policy
+ • This Policy needs to be linked to the Source Account Product Level
+API Details
+Loan Conversion Policy
+Parameter Definition
+Slno
+Element
+Mandatory/
+Optional
+Description
+1
+Product ID
+Mandatory
+This is the unique identification code (ID) for the product to which the policy will be linked
+2
+Account Provider
+Mandatory
+The Source Account Provider is specified here. For Ex: Ruby
+3
+Installment Billing Days
+Mandatory
+Installment Billing to the source account will be done in Advance, based on the number of days Specified here. For Ex:Installment Billing Days=10. Installment Due Date=25th of every month. In such a scenario, Installment will get billed to the source account on 15th of every month.
+4
+Installment Date Rule->mode
+Optional
+Installment Date Rule gets Specified here. USer can specify 'BILLING_DATE/PAYMENT_DUE_DATE' etc. At present the logic is supported for "BILLING_DATE'
+5
+Installment Date Rule->addOnDays
+Optional
+Add on days if any, for the derivation of Installment Date,can be specified here. If the value for the field is '1', then Installment Date will be Billing Date+1 day
+6
+First Installment Date
+Optional
+The first installment date of the loan. Options are:Billing Date, Billing Date+'x' no of days,Payment Due Date, Specific date of every month, Loan Booking Date+ 'x' no of days
+7
+Delinquency Level for AutoClosure
+Optional
+Delinquency level of the source account post which the loan account to be automatically closed can be specified here.
+8
+Period For Loan Cancellation On Refund
+Optional
+Number of days till which refund on loan is to be treated as loan cancellation can be configured here. The underlying business case is that Bank may treat loan as canceled not apply interest for refunds received within the specified date as set i this parameter
+9
+Days Past Due For Auto PreClosure
+Optional
+Days Past Due at the source account level, post which the loan account to be automatically closed can be specified here.
+10
+Bundle Status Values For Auto PreClosure
+Optional
+Manual and Auto Bundle Status Values of the source account, to be considered for autoPreclosure of EMIS
+11
+Manual Bundle Status Values
+Optional
+Manual Bundle Status Values to be considered for autoPreclosure of EMIS
+12
+Auto Bundle Status Values
+Optional
+Auto Bundle Status Values to be considered for autoPreclosure of EMIS
+13
+Allowed Loan Types
+na
+This section would be used for defining the parameters specific to different loan types like Merchant EMI, Smart EMI etc.
+14
+Loan Type
+Mandatory
+Type of Loan is specified here. Loan Types can be ‘Smart EMI, Merchant EMI etc. Only Loan Types specified in the Loan Conversion Policy can be offered as Loan for transaction conversion.
+15
+Loan Name
+Optional
+Specific Loan Name given by bank for easy identification of the loan type.
+16
+Loan Product ID
+Mandatory
+Emerald Product ID under which Loan accounts will be opened. Loan Product ID should be valid and in enabled state.
+17
+Min Transaction Amount
+Optional
+Minimum transaction amount for Conversion to EMI. Any transaction lesser than ‘min transaction amount’ cannot be converted to loan.If this parameter is not specified, 'Min Transaction Amount' check will not be done during transaction conversion to loan.
+18
+Max no.of days for transaction conversion
+Optional
+Maximum days for conversion of transaction to a loan. For ex:Transactions more than 60 days cannot be converted into EMI. If this parameter is not specified, this check will not be done during transaction conversion to loan.
+19
+Disallowed Merchant Category Codes
+Optional
+Few types of transactions cannot be converted to a loan. For Ex:Gold and Jewelry linked transactions are not permitted for conversion .
+The Merchant Category Codes(MCC) related to such transactions can be specified here.If this parameter is not specified, this check will not be done during transaction conversion to loan.
+20
+Maximum Delinquency Level Allowed
+Optional
+Maximum Delinquency Level Allowed for a Specific loan. If the delinquency level of the base account is greater than allowed level, loans cannot be opened. If this parameter is not specified, this check will not be done during transaction conversion to loan.
+21
+Processing Fee Reversal on Loan Cancellation
+Mandatory
+If processing fee charged for transaction conversion to EMI, to be reversed on loan cancellation can be specified here.Default value can be 'False'
+22
+Auto Refund Processing
+Mandatory
+Automated processing of Refunds against source transaction id gets decided based on this parameter. If the value for this parameter is set as ‘true’,refund will get processed automatically by AION.
+23
+Credit Effective Date For Loan Conversion
+Optional
+Effective Date for credit of Loan Amount to the source account can be defined here. Possible values are: “emiConversionRequestDate” & “sourceTransactionValueDate”.
+-When “creditValueDateForLoanConversion” is set as “emiConversionRequestDate”, Source accounting for transaction conversion to EMI is done with value date =emiConversionRequestDate
+-When “creditValueDateForLoanConversion” is set as “sourceTransactionValueDate”, Source accounting for EMI conversion is done with value date=sourceTransactionValueDate
+If there is no value available for the field “creditValueDateForLoanConversion” then current behavior to continue i.e source processing will be done with value date as current business date
+
+AION Request Flow
+
+All the requests related to Transaction Conversion to EMI and it’s life cycle processing is routed via AION. Each request involves multiple steps and status at each step is tracked in AION
+
+Transaction Conversion to EMI(Loan)
+Transaction conversion may be triggered in the following ways
+
+ • An external entity, say Turbo, identifies the transactions to be converted and calls AION service for Transaction Conversion to Loan
+ • Customer/Support Center/Ops Center may select one or more transactions in the user interface and request for conversion 
+API Details
+Transaction Conversion to Loan
+Conversion Flow
+Below diagram depicts the flow of ‘Transaction Conversion to EMI’
+
+ • When there is a request for transaction conversion to loan, such a request gets logged in AION
+ • Validations: Below specified validations are done 
+ • Product & Policy Level Validations
+ • If the Loan Type chosen is allowed at policy level
+ • If the Product ID is as per configuration or not
+ • Minimum and Maximum Loan Amount Validation
+ • Minimum and Maximum Loan Tenure Validation
+ • Account Level Validations
+ • Life Cycle Status Validations
+ • Bundle Status Validation
+ • Transaction Level Validations
+ • Minimum Transaction Amount Validation
+ • If MCC is part of Disallowed MCC category
+ • If Transaction is already converted to Loan or not
+ • If Transaction date is within the Max number of days allowed for conversion or not
+ • If validations are successful, request is marked as ‘Accepted’, else gets rejected
+ • Further Emerald Processing is done
+ • Opening of Loan Account and Disbursement
+ • Generation of Repayment Schedule
+ • Source Processing is done once Emerald Processing is completed
+ • Credit of Loan Amount
+ • Debit of Processing Fee
+ • Annotation of the converted transaction with Loan Account Number
+ • Once Source Processing is completed, an event gets generated with Request and Loan Account Details.
+ • The request gets marked as ‘Completed’
+
+Accounting Entries – Loan booking
+
+Scenario – without subvention
+
+Sample values
+ • Transaction Amount = 10000
+ • Loan amount = 10000
+
+Account - Source
+Voucher code
+Ledger
+Dr/Cr
+Amount
+
+CONVERSION_LOAN_BOOKING
+Transit Ledger
+Dr
+10000
+
+CONVERSION_LOAN_BOOKING
+Account Holder Ledger
+Cr
+10000
+
+Account - Loan
+Voucher code
+Ledger
+Dr/Cr
+Amount
+LOAN_DISBURSEMENT
+Account Holder Ledger
+Dr
+10000
+LOAN_DISBURSEMENT
+Transit Ledger
+Cr
+10000
+
+Scenario – with subvention
+Sample values
+ • Transaction Amount = 10000
+ • Subvention amount = 1000
+ • Loan amount = 9000
+
+Account - Source
+Account
+Voucher code
+Ledger
+Dr/Cr
+Amount
+
+Source
+CONVERSION_LOAN_BOOKING
+Transit Ledger
+Dr
+9000
+
+Source
+CONVERSION_LOAN_BOOKING
+Account Holder Ledger
+Cr
+9000
+
+Source
+CONVERSION_LOAN_BOOKING
+Subvention Receivable
+Dr
+1000
+
+Source
+CONVERSION_LOAN_BOOKING
+Account Holder Ledger
+Cr
+1000
+
+Account - Loan
+Account
+Voucher code
+Ledger
+Dr/Cr
+Amount
+Loan
+LOAN_DISBURSEMENT
+Account Holder Ledger
+Dr
+9000
+Loan
+LOAN_DISBURSEMENT
+Transit Ledger
+Cr
+9000
+
+Repayment Schedule (EPI Schedule)
+ • As soon as the loan account gets opened and disbursed, a repayment schedule gets generated and attached to the loan account
+ • Repayment schedule has the below information:
+ 
+S.No
+Field Name
+Description
+1
+Number Of Installments
+Total Number of Installments applicable
+2
+Interest Rate
+Interest Rate applicable
+3
+EPI
+Fixed Installment Amount
+4
+Principal Amount
+Amount of principal included in loan installment
+5
+Interest Amount
+Amount of interest included in loan installment
+6
+BPI Interest Adjustment 
+Broken Period Interest Adjustment If any*
+7
+BPI Days
+Number of Days for Broken Period Interest Adjustment
+8
+Total Schedule Amount
+The final installment amount post BPI interest adjustment
+9
+Installment Number
+
+Installment Number
+10
+Installment Date
+Installment Due Date
+11
+Installment Status
+Status of the Installment: Not_Due, Due, Paid
+12
+EMI Auto Debit Date
+Installment Billing Date, Date on which source account gets debited for the Installment Amount
+
+Installment Billing
+ • AION bills source account on the ‘EMI Auto Debit Date’
+ • In case of Credit Card EMIs, on the billing date, EMI gets billed to the card
+ • Such billed amount gets credited to the loan account and EMI gets marked as Paid
+Accounting Entries – Instalment billing
+Installment amount – 1615.34
+Interest amount – 12.5
+GST on interest – 2.25
+Auto-debit date – 5 Dec
+Instalment due date – 6 Dec
+
+Billing
+Account – Source
+Voucher - CONVERSION_LOAN_INSTALLMENT_BILLING
+Book Date
+Ledger
+Posting Type
+Dr/Cr
+Ledger Amount
+Remarks
+05-Dec
+Account Holder Ledger
+Real
+Dr
+1615.34
+EMI Principal {Loan Account Name}{Loan Account Number}
+05-Dec
+Transit Ledger
+Real
+Cr
+1615.34
+EMI Principal {Loan Account Name}{Loan Account Number}
+05-Dec
+Account Holder Ledger
+Real
+Dr
+12.50
+EMI Interest {Loan Account Name}{Loan Account Number}
+05-Dec
+Transit Ledger
+Real
+Cr
+12.50
+EMI Interest {Loan Account Name}{Loan Account Number}
+05-Dec
+Account Holder Ledger
+Real
+Dr
+2.25
+IGST/SGST/CGST on EMI Interest {Loan Account Name}{Loan Account Number}
+05-Dec
+GST Payable Ledger
+Real
+Cr
+2.25
+IGST/SGST/CGST on EMI Interest {Loan Account Name}{Loan Account Number}
+
+Account – Loan
+Voucher - LOAN_INTEREST_LIQUIDATION
+Book Date
+Ledger
+Posting Type
+Debit/Credit
+Ledger Amount
+5-Dec-21
+Account Holder Ledger
+Real
+Dr
+12.50
+5-Dec-21
+Interest Income Ledger
+Real
+Cr
+12.50
+
+Account – Loan
+Voucher - LOAN_PRINCIPAL_LIQUIDATION
+Book Date
+Ledger
+Posting Type
+Debit/Credit
+Ledger Amount
+5-Dec-21
+Account Holder Ledger
+Meta
+Dr
+-
+
+Repayment
+Subsequently repayment is triggered on due date of instalment
+
+Account - Loan
+Book Date
+Ledger
+Posting Type
+Debit/Credit
+Ledger Amount
+6-Dec-21
+Transit Ledger
+Real
+Dr
+1,627.84
+6-Dec-21
+Account Holder Ledger
+Real
+Cr
+1,627.84
+
+Refund Processing
+ • There can be refunds against the transaction which got converted to a Loan. Refund amount gets credited to the source account
+ • When a refund is credited to 
+ • If ‘Auto Refund Processing’ is set as ‘Yes’, such refunds automatically get adjusted against loan dues 
+ • Below parameters impact Refund Processing:
+ • Reamortization Threshold:
+ • Repayment Policy→ Min Installments for Partial Pay Off
+ • Repayment Policy→ Min Amount For Partial Pay Off
+ • PreClosure Threshold:
+ • Closure Policy→ Auto PreClosure Threshold Percentage
+ • Cancellation Period:
+ • Loan Conversion Policy→ Period For Loan Cancellation On Refund
+ • If refund amount meets , PreClosure Threshold and if such refund is received within ‘Period for Loan Cancellation on Refund’, loan gets canceled
+ • If refund amount meets , PreClosure Threshold and if such refund is received beyond ‘Period for Loan Cancellation on Refund’, loan gets preclosed
+ • If Refund does not meet PreClosure Threshold but meets Reamortization Threshold, then loan gets reamortized
+ • If none of the above conditions satisfy, such refund amount is kept in Source account itself
+Loan Reamortization
+Whenever refund amount is meeting reamortization threshold and if other validations are successful, Loan Reamortization is done
+
+ • Parameters Impacting Loan Reamortization:
+ • Amortization Policy→ Auto Reamortization Allowed
+ • Amortization Policy→ ResidualAmountValidationAllowed
+ • Amortization Policy→ ReAmortizationMethod 
+ • Repayment Policy→ Partial PayOff Allowed
+ • Repayment Policy→ Min Installments for Partial Pay Off
+ • Repayment Policy→ Min Amount For Partial Pay Off
+ • Loan reamortization here would mean adjusting such refund amount against Principal Outstanding and then redrawing of the schedule based on revised principal amount, applicable interest rate, tenor etc
+ • Loan Balance which is maintained at Source account level also gets reduced to the extent of reamortization amount
+Loan Cancellation
+Loan Cancellation can be triggered based on Automatic Refund Processing or based on Customer Request
+ • Parameters Impacting Loan Cancellation:
+ • Closure Policy→Allow Loan Cancellation
+ • Closure Policy→Cooling Period for Loan Cancellation
+ • Loan Conversion Policy→ Period For Loan Cancellation On Refund
+ • When loan cancellation validations are successful, loan gets canceled
+ • As part of loan cancellation, Interest Income booked if any gets reversed
+ • Loan status gets marked with the Status as ‘Closed’ and Sub Status as ‘Canceled
+ • Once Emerald Processing is done, source processing is triggered
+ • As part of source processing, installment billed if any, gets reversed with value date as loan cancellation date
+ • The loan credit given as part of transaction conversion to EMI, gets reversed
+ • Value set for the field ‘Processing Fee Reversal on Loan Cancellation’ in Loan Conversion Policy decides if processing fee to be reversed on loan cancellation or not
+ • Loan Account Number Annotation is removed from the source transaction id
+ • Once source processing is done, AION emits an event with Loan Cancellation details, which can be used to send notifications to the end customer
+API Details
+Loan Cancellation
+
+Preclosure Quote
+
+ • PreClosure Quote helps get the information of total amount Payable on Loan PreClosure.
+ • PreClosure Quote consists of 
+ • Principal Outstanding Balance
+ • Catch Up Interest
+ • GST On CatchUp Interest
+ • PreClosure Fee if any
+ • GST on Processing Fee
+ • Customer Interfacing layer can call AION service for getting the pre closure quote
+ • If the validations are successful, Preclosure Quote is sent as a response
+API Details
+Get Pre Closure Quote
+Loan PreClosure
+The Borrower may decide to close the loan before the Maturity Date. In some cases even IFI may decide to close the loan account before the maturity. If the account gets closed before actual maturity, it would be termed as ‘Pre Closure’.
+ • Parameters Impacting Loan PreClosure:
+ • Closure Policy→Allow PreClosure
+ • Closure Policy→PreClosure Lock In
+ • Closure Policy→AutoPreclosure threshold Percentage
+ • When loan preclosure validations are successful, loan gets preclosed
+ • Preclosure amount is calculated. Preclosure amount consists of 
+ • Principal Outstanding Balance
+ • Catch Up Interest
+ • GST On CatchUp Interest
+ • PreClosure Fee if any
+ • GST on Processing Fee
+ • Loan status gets marked with the Status as ‘Closed’ and Sub Status as Preclosed’
+ • Once Emerald Processing is done, source processing is triggered
+ • As part of source processing, Preclosure Amount gets debited to the source account and loan balance gets updated
+ • Once source processing is done, AION emits an event with Loan Preclosure details, which can be used to send notifications to the end customer
+API Details
+Loan Preclosure
+
+Inquiries on Loan Account
+Below specified inquiry services are available to fetch loan details:
+ • List Loan Accounts based on parameter input
+ • List Loan Account Summary against a Source Account
+ • Inquire Loan Account Detail
+
+API Details
+Inquiries on Loan Account
+Simulate Repayment Schedule
+There is an option given to simulate repayment schedule. Based on user input of the mandatory parameters, a tentative repayment schedule gets generated. This service can be used to display, when a customer chooses to convert a transaction to a loan.
+API Details
+Simulate Amortization Schedule
+
+API Contracts
+Centers 
+SC
+ OC
+Cronus
+ 
+Configuration / Specification
+Product
+API Details
+Create a Loan Product
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+Product Name
+Name of product
+Merchant EMI
+Product Code
+Bank to provide 4 digit product code, the same will be part of the account number
+1001
+Product description
+Description of the product
+Credit Card Merchant EMI
+Product family code
+Product Family Code of product family the product is part of
+CC_EMI_001
+status
+Status of the product
+Enabled
+Start date
+The day when the product is enabled. Accounts can be created under this product
+2023-04-01
+End date
+The day when the product is disabled. No more accounts will be created under this product
+2099-12-31
+Currency
+Currency in which loan is to be provided
+INR
+Min loan amount
+Minimum amount that can be disbursed as loan (in paisa)
+50000
+Max loan amount
+Maximum amount that can be disbursed as loan
+100000000
+Min loan duration
+Tenure is defined in Days, Months and Years
+60 days
+Max loan duration
+Tenure is defined in Days, Months and Years
+60 months
+Default loan duration
+Tenure is defined in Days, Months and Years
+3 months
+
+Policies
+Account Number Generation(ANG) Policy
+Bank users can define the parameters applicable for generation of account numbers for the accounts opened under a specific product via Account Number Generation Policy. Users can specify the logic/rule for generating the account number as well as the bank specific fields which need to be added as part of the account number in this policy.
+API Details
+Create ANG Policy
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+Policy name
+Name of the policy created
+Merchant EMI ANG Policy
+Policy Code
+Unique Code given by the IFI for the policy
+0001_1669804415997
+Policy description
+Description of the policy
+Credit Card Merchant EMI Loan ANG Policy
+status
+Status of the policy
+Enabled
+id
+Policy id
+a5ebbafa-0b4f-4094-980b-40ec6ea51a00
+policySpecificationID
+policy Specification id
+a63e3cbd-abf8-4d6a-a3cd-5f655692a04d
+policyType
+Policy Type
+in.zeta.emerald.policy.AccountNumberGenerationPolicy
+version
+Version
+1.0
+validFrom
+Valid from Date
+01-04-2023
+validTo
+Valid To date
+31-12-2099
+generatorConfigURI
+Account Number Genertor Config URI
+generatorConfig://code/EmeraldConfig?version=1
+customGeneratorPlaceholders
+Placeholders for Account Number Generation
+
+productCode
+Emerald Loan Product code
+1001
+productClass
+Product class code
+12
+
+Amortization Policy
+
+Bank users can define the parameters applicable for amortization of the loan or generation of the repayment schedule via Amortization Policy. Further the parameters governing the reamortization of the loan accounts can also be defined using Amortization Policy.
+API Details
+Create Amortization Policy
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+Policy name
+Name of policy created
+Merchant EMI Amortization Policy
+Policy Code
+Unique Code given by the IFI for the policy
+1
+Policy description
+Description of the policy
+Credit Card Merchant EMI Loan Amortization Policy
+status
+Status of the policy
+Enabled
+Policy valid from
+Date from which policy will start
+2023-04-01
+Policy valid till
+Date on which policy will end
+2099-12-31
+createdAt
+Created date
+01-04-2023
+modifiedAt
+Modified date
+01-04-2023
+validFrom
+Valid From Date
+01-04-2023
+validTo
+Valid to date
+31-12-2099
+policyType
+in.zeta.policy.loanConversion.loanConversionPolicy",
+in.zeta.emerald.policy.AmortizationPolicy
+description
+Description of the policy
+Credit Card Merchant EMI Loan Amortization Policy
+id
+Policy id
+58b6fa11-4fbfbbvbbcbdcdud34-809a-075646776ba9"
+code
+Policy code
+Amortization_POLICY_{prod_id}
+state
+enabled/disabled
+Enabled
+version
+Version of the policy
+1.0
+tags
+Tags
+null
+flags
+Flags
+null
+Schedule calculation method (EPIMethod)
+Indicates method of calculating the EPI amount. Installment can be calculated on Reducing Balance of Principal or on a flat rate basis.
+
+Possible Values : Reducing Balance, FLAT(currently not enabled)
+Reducing Balance
+Payment Type
+Indicates if the installment amount is paid in advance at the beginning of the period or at the end of the period.
+
+Possible values: Advance(currently not enabled), Arrears
+Arrears
+Reamortization Type
+Reamortization of the loan could be triggred when prepayment is made. Reamortization can either recalculate the installment
+amount keeping the repayment schedule fixed or it can adjust the term keeping the original installment fixed. This attribute indicates which
+model should be applied.
+Possible Values: TERM(currently not enabled), INSTALLMENT
+Installment
+Repayment Schedule Type
+This indicates the type of scheduled generated. Equated Periodic Installement, Bullet(repayment only at maturity)
+or any random schedule of repayment
+Possible values : EPI, BULLET, RANDOM
+EPI
+Installment Frequency
+This indicates the duration of each period in an EPI calculation. Possible Values :
+Weekly(currently not enabled)
+Monthly
+Quarterly(currently not enabled)
+Semi Annual(currently not enabled)
+Annual(currently not enabled)
+Monthly
+Broken Period Applicable
+If interest needs to be calculated for broken period
+Yes
+Auto Reamortization allowed
+If auto reamortization (say based on refund) is allowed or not
+Yes
+residualAmountValidationAllowed
+if principal amount left amortization is greater than minimum loan amount
+FALSE
+reAmortizationMethod
+Possible values: WITH INTEREST CAPITALIZATION , WITHOUT INTEREST CAPITALIZATION
+Without Interest Capitalization
+roundingRule
+Possible values : NEAR, UP or DOWN
+Near
+
+Repayment Policy
+
+Bank users can define the parameters applicable for the repayment of the loan via Repayment Policy. The parameters governing the repayment allocation, partial payoff/part prepayment gets defined using Repayment Policy.
+API Details
+Create Repayment Policy
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+Policy name
+Name of policy created
+Loan Repayment Policy
+Policy Code
+Unique Code given by the IFI for the policy
+1
+id
+unique id of the policy
+678999
+policyspecification id
+Policy specification id
+gdhbcdjcd-y73y7ebhbhwd
+Policy type
+Type of policy
+Repayment Policy
+Policy description
+Description of the policy
+Repayment Policy
+Version
+Policy version
+1.0
+Status
+Status of the policy
+Enabled
+Policy valid from
+Date from which policy will start
+2023-04-01
+Policy valid till
+Date on which policy will end
+2099-12-31
+createdAt
+Created date
+01-04-2023
+modifiedAt
+Modified date
+01-04-2023
+validFrom
+Valid From Date
+01-04-2023
+validTo
+Valid to date
+31-12-2099
+policyType
+in.zeta.policy.loanConversion.loanConversionPolicy",
+in.zeta.emerald.policy.RepaymentPolicy
+description
+Description of the policy
+Credit Card Merchant EMI Loan Repayment Policy
+id
+Policy id
+58b6fa11-4fbfbbvbbcbdcdud34-809a-075646776ba9"
+code
+Policy code
+Repayment_POLICY_{prod_id}
+state
+enabled/disabled
+Enabled
+version
+Version of the policy
+1.0
+tags
+Tags
+null
+flags
+Flags
+null
+Partial payoff allowed
+If partial repayment by the user is allowed or not
+Yes
+Min Installments for Partial Pay Off
+Minimum number of installments amount required for initiating the reamortization/Pre closure
+0
+Settlement Priority
+Settlement priority is the list of values which indicates the sequence in which repayment should be processed. Values : PRINCIPAL, INTEREST, PENALTY, FEE, INSURANCE
+INTEREST,
+PRINCIPAL
+minAmountForPartialPayOff:
+Minimum Amount for triggering reamortization(in Paise)
+50000
+
+Closure/Cancellation Policy
+Bank users can define the parameters applicable for the closure or cancellation of the loan via Closure/Cancellation Policy. The parameters governing Auto preclosure of the loan, loan cancellation etc gets defined using Repayment Policy.
+API Details
+Create Account Closure Policy
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+Policy name
+Name of policy created
+Loan Closure Policy
+Policy Code
+Unique Code given by the IFI for the policy
+1
+Policy description
+Description of the policy
+Credit Card Merchant EMI Loan Closure Policy
+Status
+Status of the policy
+Enabled
+Policy valid from
+Date from which policy will start
+2023-04-01
+Policy valid till
+Date on which policy will end
+2099-12-31
+createdAt
+Created date
+01-04-2023
+modifiedAt
+Modified date
+01-04-2023
+validFrom
+Valid From Date
+01-04-2023
+validTo
+Valid to date
+31-12-2099
+policyType
+in.zeta.policy.loanConversion.loanConversionPolicy",
+in.zeta.emerald.policy.AccountClosurePolicy
+description
+Description of the policy
+Loan Account Closure Policy
+id
+Policy id
+58b6fa11-4f41-4d34-809a-075646776ba9"
+code
+Policy code
+CLOSURE_POLICY_{prod_id}
+state
+enabled/disabled
+Enabled
+version
+Version of the policy
+1.0
+tags
+Tags
+null
+flags
+Flags
+null
+Allow Cancellation
+If loan can be canceled
+TRUE
+Cooling period for full loan cancellation
+Period within which a loan can be canceled without prejudice. The value is specified in days. This is applicable only if cancellation is allowed
+90 days
+Allow pre closure
+If loan can be preclosed
+Yes
+Pre Closure Lockin
+A Loan may be allowed for preclosure only after it has run for a certain period. This is called the Lockin Period for Pre Closure.
+This value is specified in Months. This is calculated based on the Loan opening date.
+0
+Auto PreClosure Threshold Percentage
+When refund amount is equal to or greater than the Percentage specified here, loam shall get auto preclosed
+89.99%
+Catch Up Interest
+If interest needs to be calculated between statement date and cancellation/Pre closure date
+Yes
+
+Loan Conversion Policy
+Bank users can define the parameters applicable for the conversion of a debit transaction to EMI/loan via Loan Conversion Policy. The parameters governing the type of loans offered, account eligibility, transaction eligibility gets defined using Loan Conversion Policy. This Policy gets attached to Credit Card Product.
+API Details
+Create Loan Conversion Policy
+Sample Configuration
+
+Field Name
+Description
+Sample Value
+valid from
+The start day when the conversion policy is valid.
+45017
+valid to
+The end date of the conversion policy
+73050
+policy type
+type of the policy
+Loan Conversion Policy
+description
+Description of the policy
+Merchant EMI LOAN CONVERSION POLICY
+createdAt
+Created date
+44930
+modifiedAt
+Modified date
+44930
+validFrom
+Valid From Date
+44930
+validTo
+Valid to date
+31-12-2099
+policyType
+in.zeta.policy.loanConversion.loanConversionPolicy",
+in.zeta.policy.loanConversion.loanConversionPolicy",
+Name
+Policy name
+Loan Conversion Policy
+description
+Description of the policy
+Loan Conversion Policy
+id
+Policy id
+58b6fa11-4f41-4d34-809a-075646776ba9"
+code
+Policy code
+CONVERSION_POLICY_{prod_id}
+state
+enabled/disabled
+Enabled
+version
+Version of the policy
+1.0
+tags
+Tags
+null
+flags
+Flags
+null
+body
+
+accountProvider
+Source account provider
+Ruby
+installmentBillingDays
+Installment Billing to the source account will be done in Advance, based on the number of days Specified here.
+1
+installmentDateRule
+Rule for installment billing
+
+mode
+Installment Date Rule gets Specified here. USer can specify 'BILLING_DATE/PAYMENT_DUE_DATE' etc. At present the logic is supported for "BILLING_DATE'
+BILLING_DATE
+addOnDays
+Add on days if any, for the derivation of Installment Date,can be specified here. If the value for the field is '1', then Installment Date will be Billing Date+1 day
+1
+First Installment Date
+The first installment date of the loan. Options are:Billing Date, Billing Date+'x' no of days,Payment Due Date, Specific date of every month, Loan Booking Date+ 'x' no of days
+
+Period For Loan Cancellation On Refund
+This is the number of days till which refund on loan is to be treated as loan cancellation. The underlying business case is that Bank may treat refunds as canceled not apply interest for refunds received within the specified date in this parameter
+10
+Delinquency Level for AutoClosure
+Delinquency level of the source account post which the loan account to be automatically closed can be specified here.
+L4
+Days Past Due For Auto PreClosure
+the number of days pastdue for triggering auto preclosure
+145
+Bundle Status Values For Auto PreClosure
+Manual and Auto Bundle Status Values to be considered for autoPreclosure of EMIS
+-
+Manual Bundle Status Values
+Manual Bundle Status Values to be considered for autoPreclosure of EMIS
+C1,C2,C3,C4
+Auto Bundle Status Values
+Auto Bundle Status Values to be considered for autoPreclosure of EMIS
+Z1,Z2
+Allowed Loan Types
+This section would be used for defining the parameters specific to different loan types like Merchant EMI, Smart EMI etc.
+-
+loanType
+Type of Loan
+Merchant EMI
+loanName
+Loan Name
+Merchant EMI Loan
+loanProductID
+Loan Product id
+{Product_id}
+Transaction eligibility
+Transaction eligibility criteria gets defined here
+-
+Min Transaction Amount
+Minimum transaction amount required for converting to Loan
+50000
+Max Number Of Days For Transaction Conversion
+Maximum days for conversion of transaction to a loan. For ex:Transactions more than 60 days cannot be converted into EMI. If this parameter is not specified, this check will not be done during transaction conversion to loan.
+null
+DisAllowed Merchant Category Codes
+Few types of transactions cannot be converted to a loan. For Ex:Gold and Jewelry linked transactions are not permitted for conversion .
+The Merchant Category Codes(MCC) related to such transactions can be specified here.If this parameter is not specified, this check will not be done during transaction conversion to loan. -This will be handled for SmartEMI
+14092741
+Maximum Delinquency Level Allowed
+Maximum Delinquency Level Allowed for a Specific loan. If the delinquency level of the base account is greater than allowed level, loans cannot be opened. If this parameter is not specified, this check will not be done during transaction conversion to loan.
+L1
+Processing Fee Reversal On Loan Cancellation
+If processing fee charged for transaction conversion to EMI, to be reversed on loan cancellation can be specified here.Default value can be 'False'
+TRUE
+Auto Refund Processing
+Automated processing of Refunds against source transaction id gets decided based on this parameter. If the value for this parameter is set as ‘true’,refund will get processed automatically by AION.
+TRUE
+Credit Effective Date For Loan Conversion
+Effective Date for credit of Loan Amount to the source account can be defined here. Possible values are: “emiConversionRequestDate” & “sourceTransactionValueDate”.
+-When “creditValueDateForLoanConversion” is set as “emiConversionRequestDate”, Source accounting for transaction conversion to EMI is done with value date =emiConversionRequestDate
+-When “creditValueDateForLoanConversion” is set as “sourceTransactionValueDate”, Source accounting for EMI conversion is done with value date=sourceTransactionValueDate
+If there is no value available for the field “creditValueDateForLoanConversion” then current behavior to continue i.e source processing will be done with value date as current business date
+
+sourceTransactionValueDate
+
+Posting Categories
+Posting Categories of Loan Account
+
+Posting Category
+Description
+PRINCIPALOS
+The principal component of the loan will be captured under the Principal posting category
+NORMALINTEREST
+The Normal Interest which is liquidated but pending for repayment would be stored in this Posting Category
+NORMALINTERESTBASE
+This would be the Base for calculating Normal Interest
+ACCRUEDINTERESTNORMAL
+Accrued Normal Interest would be stored in this Posting Category
+PENALTYINTEREST
+The Penal Interest which is liquidated but pending for repayment would be stored in this Posting Category
+PENALTYINTERESTBASE
+This would be the Base for calculating Penal Interest
+ACCRUEDINTERESTPENALTY
+Accrued Penal Interest would be stored in this Posting Category
+PRINCIPAL
+Liquidated Principal Amount for which Repayment is pending would be captured in this category
+EXCESS PAYMENT
+Whenever Repayment is done, post appropriation of the repayment amount, any excess funds, would be captured as Excess Payment
+REPAYMENTS
+All the repayments would be captured in this Posting Category
+FEE
+Any fee liquidated towards the loan account is captured Posting Category
+INSURANCE
+Any Insurance amount liquidated is captured in this Posting Category
+
+Posting Categories in Source Account
+
+Posting Category
+Description
+LoanBalance
+Standalone Posting Category maintained at source account for tracking the ‘LoanBalance’
+EMIPrincipalUnBilled
+Posting Category to track Unbilled Principal Component of EMI
+EMIPrincipalBilled
+Posting Category to track Billed Principal Component of EMI
+EMIInterestUnBilled
+Posting Category to track Unbilled Interest Component of EMI
+EMIInterestBilled
+Posting Category to track Billed Interest Component of EMI
+
+Voucher Codes
+Loan Account Voucher Codes
+
+Voucher Code
+Description
+LOAN_DISBURSEMENT
+This Voucher code is used for Loan Disbursement. In case of Credit card loans, loan amount gets credited to Transit Ledger
+LOAN_INTEREST_LIQUIDATION
+This Voucher Code is used for liquidation interest. Normal interest is computed on 'Normal Interest Base' . Penal Interest is computed on 'Penal Interest Base'
+LOAN_PRINCIPAL_LIQUIDATION
+This voucher code is used for liquidating the Principal Component of EMI. Principal Liquidation is done on EMI due date. This is a Meta Posting
+LOAN_REPAYMENT
+This Voucher Code is used for any repayment to a loan account.
+LOAN_CANCELLATION
+This Voucher Code is used for Loan Cancellation. On loan cancellation, principal outstanding and interest liquidated if any gets reversed.
+LOAN_REAMORTIZATION
+This voucher code is used during reamortization of a loan.
+LOAN_PRECLOSURE
+This voucher code is used for PreClosure of loan.
+
+Source Accounting Voucher Codes(Transaction Conversion to EMI Flow)
+
+Voucher Code
+Description
+CONVERSION_LOAN_BOOKING
+This Voucher code is used for Loan Booking
+CONVERSION_LOAN_INSTALLMENT_BILLING
+This Voucher code is used for Billing of Loan Installments
+CONVERSION_LOAN_PRE_CLOSURE
+This Voucher code is used for PreClosure of Loan
+CONVERSION_LOAN_CANCELLATION
+This Voucher Code is used for Cancellation of Loan
+CONVERSION_LOAN_RE_AMORTIZATION
+This Voucher Code is used for Reamortization of Loan
+
+PPTS
+Classification Model(s)
+EOD / Workers
+Below process is handled as part of the EOD or BOD processing
+ • Installment Billing- EOPI Phase
+ • Principal Liquidation-BOPI Phase
+ • Interest Liquidation-BOPI Phase
+ • Repayment-BOPI Phase
+Events
+Conversion Loan Booking
+Topic
+_tenant_<tenantID>_loanConversionSuccessEvent
+Event Details
+
+{
+ "payload": {
+ "topic": "_tenant_140793_loanConversionSuccessEvent",
+ "name": "loanConversionSuccessEvent_CREATED",
+ "eventID": "ff84cd98-3bba-409b-9a5d-141d440d1425",
+ "source": {
+ "uri": "loanConversionSuccessEvent://140793/f7a34968-d0d1-4a84-b2f9-326904e78442?flowId=9e5492c4-98e0-40f9-b146-bd062e80d3df",
+ "tags": [
+ "tag://event-publisher/tachyon-atropos-client"
+ ],
+ "state": "CREATED"
+ },
+ "origin": {
+ "instance": "instance://default/external/35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+ "time": 1655711811011,
+ "flowID": "9e5492c4-98e0-40f9-b146-bd062e80d3df"
+ },
+ "data": {
+ "loanAccountID": "d47158d2-57ce-472a-9df8-8d9456386030",
+ "requestID": "f7a34968-d0d1-4a84-b2f9-326904e78442",
+ "loanAccountNumber": "3423342369636294",
+ "currency": "INR",
+ "loanAmount": {
+ "currency": "INR",
+ "amount": 10000
+ },
+ "subventionAmount": {
+ "currency": "INR",
+ "amount": 0
+ },
+ "processingFee": {
+ "currency": "INR",
+ "amount": 0
+ },
+ "loanBookingDate": "2022-06-20",
+ "loanValueDate": "2022-06-20",
+ "sourceAccountID": "3e87f6f3-9ad2-4b57-86cd-9295ef73c891",
+ "sourceTransactionIDs": [
+ "20220620073727637_8457_Asmita_clear_Aion_2"
+ ],
+ "interestRate": 12,
+ "installmentFrequency": "MONTHLY",
+ "loanMaturityDate": "2022-11-27",
+ "firstInstallmentDate": "2022-06-27",
+ "numberOfInstallments": 6,
+ "loanEpiSchedule": {
+ "epi": 1725,
+ "version": 1,
+ "epiSchedule": [
+ {
+ "uuid": "60a27036-3de1-4636-b674-9ac5e39109b4",
+ "bpiDays": -23,
+ "installmentNo": 1,
+ "interestAmount": 23,
+ "installmentDate": "2022-06-27",
+ "principalAmount": 1625,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1648,
+ "bpiInterestAdjustment": -77
+ },
+ {
+ "uuid": "dfcc0964-f39c-4ff9-9854-e1d91d33f5ee",
+ "bpiDays": 0,
+ "installmentNo": 2,
+ "interestAmount": 84,
+ "installmentDate": "2022-07-27",
+ "principalAmount": 1641,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1725,
+ "bpiInterestAdjustment": 0
+ },
+ {
+ "uuid": "261710d6-278b-4968-8fbe-98e686b434ed",
+ "bpiDays": 0,
+ "installmentNo": 3,
+ "interestAmount": 67,
+ "installmentDate": "2022-08-27",
+ "principalAmount": 1658,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1725,
+ "bpiInterestAdjustment": 0
+ },
+ {
+ "uuid": "90dd2a6b-d538-4e72-9636-54d5636ba81e",
+ "bpiDays": 0,
+ "installmentNo": 4,
+ "interestAmount": 51,
+ "installmentDate": "2022-09-27",
+ "principalAmount": 1674,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1725,
+ "bpiInterestAdjustment": 0
+ },
+ {
+ "uuid": "6e98f3c0-ad72-4555-8ed6-47b6a896cc13",
+ "bpiDays": 0,
+ "installmentNo": 5,
+ "interestAmount": 34,
+ "installmentDate": "2022-10-27",
+ "principalAmount": 1691,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1725,
+ "bpiInterestAdjustment": 0
+ },
+ {
+ "uuid": "7a6edde6-7ab7-42b2-91cd-f6a879c7c4fe",
+ "bpiDays": 0,
+ "installmentNo": 6,
+ "interestAmount": 17,
+ "installmentDate": "2022-11-27",
+ "principalAmount": 1711,
+ "installmentStatus": "NOT_DUE",
+ "totalScheduleAmount": 1728,
+ "bpiInterestAdjustment": 0
+ }
+ ]
+ }
+ },
+ "publisher": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+ "resource": "8"
+ }
+ },
+ "topic": "_tenant_140793_loanConversionSuccessEvent",
+ "pType": "olympus.pubsub.model.PubSubEvent",
+ "emitterType": "EVENT",
+ "publisher": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+ },
+ "publishTime": 1655711811011,
+ "oid": "0000f947-0000-00aa-0000-000000000937",
+ "flowId": "9e5492c4-98e0-40f9-b146-bd062e80d3df",
+ "from": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+ }
+}
+
+Conversion Loan Installment Billing
+Topic
+_tenant__<tenantID>_LEDGER
+Event Details
+
+"payload": {
+ "topic": "_tenant_13_LEDGER",
+ "name": "LEDGER_POSTING_CREATED",
+ "eventID": "5df5d57c-78d4-467f-8900-db637bfa75ae",
+ "source": {
+ "uri": "LEDGER://13/3024738214161200234/878081?publishingApp=ledger",
+ "tags": [
+ "tag://accountClosureStatus/LEVEL_0",
+ "tag://accountLifecycleStatus/LEVEL_5",
+ "tag://administrativeStatus/LEVEL_0",
+ "tag://balanceStatus/LEVEL_3",
+ "tag://billingCycleId/1470963531783438416",
+ "tag://delinquencyStatus/LEVEL_5",
+ "tag://dormancyStatus/LEVEL_0"
+ ],
+ "state": "ENABLED"
+ },
+ "origin": {
+ "instance": "instance://default/ledger/99486",
+ "time": 1661418167190,
+ "flowID": "8f1f3c4d-6337-4c9d-9c87-053b40d5af9e"
+ },
+ "data": {
+ "ifiID": "13",
+ "coaID": "2015465763741456594",
+ "coaNode": {
+ "id": "5557756632062324890"
+ },
+ "accountHolderID": "8cf41722-4fb4-4d44-a63b-b2151755f3b1",
+ "ledgerID": "3024738214161200234",
+ "ledgerType": "ACCOUNT_HOLDER",
+ "accountingType": "ASSET",
+ "recordType": "DEBIT",
+ "postingID": 878081,
+ "transactionID": "20220825090246806_16457_installmentBillingWorker_job-6c4ba90f-da59-417f-93e8-eb9da66059ae_2642408898677159884_2020-05-31_1.0",
+ "voucherCode": "CONVERSION_LOAN_INSTALLMENT_BILLING",
+ "previousTransactionID": "20220823100552033_13154_loanPreclosure_sourceProcessing_requestId_pci_1235323_preDClase_oppo5143545654645.8",
+ "currency": "INR",
+ "amount": "769",
+ "previousBalance": "5980836",
+ "newBalance": "5981605",
+ "remarks": "EMI Principal Zomato 1231107446809024",
+ "adminUserID": "0",
+ "isForced": true,
+ "ledgerAttributes": {
+ "account.pd-id": "5810508317330466890",
+ "dontPostOverlimitFee": "true",
+ "dontAssignNewProduct": "true",
+ "account.pf-id": "5557756632062324890",
+ "aura.coa-id": "2015465763741456594",
+ "issuance.location": "UP",
+ "dontPostInsufficientFundsFee": "true",
+ "dontAllowNewLoansLinkedToTheAccount": "true",
+ "dontPostInterest": "true",
+ "aura.parent-node-id": "5557756632062324890",
+ "preCloseAllLoans": "true",
+ "account.provider": "ruby",
+ "dontDoLimitEnhancement": "true",
+ "dontPostDebitsOnLinkedAccounts": "true",
+ "ruby.annual-fee.treatment": "REGULAR",
+ "blockUserInitiatedDebits": "false",
+ "dontReissueOrReplaceCard": "true",
+ "dontAssessInterest": "true",
+ "account.openDate": "2020-01-01",
+ "creditLimit": "50000000",
+ "currency": "INR",
+ "dontPostMembershipFee": "true",
+ "dontPostLateFee": "true",
+ "dontIssueAddOnCards": "true"
+ },
+ "postingAttributes": {
+ "principalOutstanding": "8731",
+ "journal.voucherCode": "CONVERSION_LOAN_INSTALLMENT_BILLING",
+ "journal.self": "false",
+ "rateOfInterest": "55.5",
+ "sourceTransactionID": "20220801122038384_3073_test_Jul_400010340311431.0",
+ "loanBookedDate": "2020-05-08",
+ "loanAmount": "9500",
+ "isForced": "true",
+ "remainingInstallments": "9",
+ "loanAccountNumber": "1231107446809024",
+ "numberOfInstallments": "10",
+ "loanAccountName": "Zomato",
+ "loanAccountID": "a657e2cc-0cc5-4060-aaa8-90ae3bb9058a",
+ "lastInstallmentBilled": "false",
+ "loanStatus": "CLOSED",
+ "loanMaturityDate": "2021-02-28",
+ "ruby.isBaseTransaction": "true",
+ "isP2PTransfer": "false"
+ },
+ "originalTransactionPostingsEventData": [],
+ "authorization": {
+ "type": "app-generated-record",
+ "towards": "EMI Principal Zomato 1231107446809024",
+ "authID": "installmentBillingWorker_job-6c4ba90f-da59-417f-93e8-eb9da66059ae_2642408898677159884_2020-05-31_1_LOAN_AH_0",
+ "isForced": true,
+ "value": {
+ "currency": "INR",
+ "amount": 769
+ },
+ "validUntil": 1661418286267,
+ "postingCategories": [
+ {
+ "categoryCode": "EMIPrincipalUnbilled",
+ "value": 769,
+ "recordType": "DEBIT"
+ },
+ {
+ "categoryCode": "EMIUnbilled",
+ "value": 769,
+ "recordType": "DEBIT"
+ },
+ {
+ "categoryCode": "loanBalance",
+ "value": 769,
+ "recordType": "CREDIT"
+ }
+ ],
+ "ledgerID": 3024738214161200234,
+ "headers": {
+ "signature": "AAGT2SYwRQIgJ9w4YmJgSP+gFWcjnw6hWzldfh1Yn3EpVERrIfMXF4ECIQDY6JidwwHRk4JQUxBEvbFKqyD21wDzmKkirWBjXKrWjA==",
+ "signatoryJID": "99292@journal.services.olympus"
+ }
+ },
+ "postingCategoryAttributions": {
+ "EMIPrincipalUnbilled": {
+ "categoryCode": "EMIPrincipalUnbilled",
+ "value": "769",
+ "recordType": "DEBIT"
+ },
+ "EMIUnbilled": {
+ "categoryCode": "EMIUnbilled",
+ "value": "769",
+ "recordType": "DEBIT"
+ },
+ "loanBalance": {
+ "categoryCode": "loanBalance",
+ "value": "769",
+ "recordType": "CREDIT"
+ }
+ },
+ "redeemedCoupons": [],
+ "additionalData": [],
+ "vectorURIs": [
+ "vector://account-no/0010019284261755",
+ "vector://account-id/d836e949-1090-4082-be4d-c4699f1fb8d0"
+ ],
+ "createdAt": "1661418166843",
+ "transactionTime": "Thu Aug 25 09:02:46 UTC 2022",
+ "bookTime": "Sat May 30 18:30:00 UTC 2020",
+ "valueTime": "Sat May 30 18:30:00 UTC 2020"
+ },
+ "publisher": {
+ "appDomain": "services.olympus",
+ "serviceName": "ledger",
+ "nodeId": "99486"
+ }
+ }
+
+Conversion Loan PreClosure
+Topic
+_tenant_140793_accountPreclosureSuccessfulEvent
+Event Details
+
+{
+ "payload": {
+ "topic": "_tenant_140793_accountPreclosureSuccessfulEvent",
+ "name": "accountPreclosureSuccessfulEvent_CREATED",
+ "eventID": "a03a1060-1292-4ddc-b999-01002fa50ed6",
+ "source": {
+ "uri": "accountPreclosureSuccessfulEvent://140793/refund_test_00012?flowId=14f1ca7f-88a1-4988-bf51-26bec998a30f",
+ "tags": [
+ "tag://event-publisher/tachyon-atropos-client"
+ ],
+ "state": "CREATED"
+ },
+ "origin": {
+ "instance": "instance://default/external/35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+ "time": 1656512201195,
+ "flowID": "14f1ca7f-88a1-4988-bf51-26bec998a30f"
+ },
+ "data": {
+ "loanAccountID": "551db8f4-9a4d-45c0-ad30-d4e5252f8617",
+ "requestID": "refund_test_00012",
+ "loanAccountNumber": "1231100875628858",
+ "requestType": "loanPreclosure",
+ "accountProvider": "ruby",
+ "requestStatus": "Completed",
+ "requestCreatedAt": 1656511645,
+ "requestUpdatedAt": 1656511649,
+ "sourceAccountID": "ed66bbe7-6b3b-4374-9377-4a4c0f5a941c",
+ "sourceTransactionID": "20220629061743532_8956_Aion_test_plac1e_2hold_Jun_518177156_Arch_28.0",
+ "loanAccountType": "merchantEMI",
+ "principal": 7000,
+ "interest": 155,
+ "currency": "INR",
+ "reasonCode": "PRECLOSED_REFUND",
+ "attributes": {
+ "refundAmount": 6800,
+ "refundProcessAction": "PRE_CLOSURE"
+ }
+ },
+ "publisher": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+ "resource": "8"
+ }
+ },
+ "topic": "_tenant_140793_accountPreclosureSuccessfulEvent",
+ "pType": "olympus.pubsub.model.PubSubEvent",
+ "emitterType": "EVENT",
+ "publisher": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+ },
+ "publishTime": 1656512201195,
+ "oid": "0000fa2b-0000-05d5-0000-0000000001d7",
+ "flowId": "14f1ca7f-88a1-4988-bf51-26bec998a30f",
+ "from": {
+ "appDomain": "services.olympus",
+ "serviceName": "external",
+ "nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+ }
+}
+
+Conversion Loan Cancellation
+Topic
+_tenant_<tenantID>_aionLoanCancellationSuccessful
+Event Details
+
+{
+"payload": {
+"topic": "_tenant_140793_aionLoanCancellationSuccessful",
+"name": "aionLoanCancellationSuccessful_CREATED",
+"eventID": "291eba5f-026a-46f8-ace9-253343775ca1",
+"source": {
+"uri": "aionLoanCancellationSuccessful://140793/request-1234567824321?flowId=320068e2-d7c7-47b2-9feb-2fe20aee444d",
+"tags": [
+"tag://event-publisher/tachyon-atropos-client"
+],
+"state": "CREATED"
+},
+"origin": {
+"instance": "instance://default/external/35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+"time": 1657621012374,
+"flowID": "05f0f299-bbdb-4e87-adfa-1681afabd7a0"
+},
+"data": {
+"tenantID": 140793,
+"requestID": "request-1234567824321",
+"requestCreatedAt": 1657621004,
+"requestUpdatedAt": 1657621012,
+"requestType": "loanCancellation",
+"accountProvider": "ruby",
+"sourceAccountID": "c730ca37-1d69-4483-957f-f36699a975da",
+"sourceTransactionID": [
+"20220706135443891_1000_test_Jul_at_5000101024.0"
+],
+"loanAccountType": "merchantEMI",
+"loanAccountName": "July_loan_booking",
+"loanAccountID": "27074560-66aa-4a7d-84a8-18100f1a2f44",
+"loanAccountNumber": "July_loan_booking",
+"loanLedgerID": 6444297960073347000,
+"currency": "INR",
+"loanCancellationAmount": {
+"currency": "INR",
+"principalAmount": 12000,
+"interestAmount": 0
+},
+"loanStatus": "CANCELLED"
+},
+"publisher": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in",
+"resource": "8"
+}
+},
+"topic": "_tenant_140793_aionLoanCancellationSuccessful",
+"pType": "olympus.pubsub.model.PubSubEvent",
+"emitterType": "EVENT",
+"publisher": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+},
+"publishTime": 1657621012374,
+"oid": "0000fab7-0000-1053-0000-0000000001a1",
+"flowId": "05f0f299-bbdb-4e87-adfa-1681afabd7a0",
+"from": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "35hWwq0EJyHpQpR8A50C-g==-rbl-admin.in"
+}
+}
+
+Conversion Loan ReAmortization
+Topic
+_tenant_13_loanReamortizationSuccessEvent
+Event Details
+
+{
+"payload": {
+"topic": "_tenant_13_loanReamortizationSuccessEvent",
+"name": "loanReamortizationSuccessEvent_CREATED",
+"eventID": "5df21f1a-9fd4-4a5f-aacb-98b9a7ae0cdf",
+"source": {
+"uri": "loanReamortizationSuccessEvent://13/20220809143406111_925_refund_arch_Test_021231213415331_loan_refund?flowId=963d5da6-ae1c-4fb3-923f-347a763e048a",
+"tags": [
+"tag://event-publisher/tachyon-atropos-client"
+],
+"state": "CREATED"
+},
+"origin": {
+"instance": "instance://default/external/R4lugLKa0_lyUTlvVaPBrQ==-13-admin.India",
+"time": 1660055671060,
+"flowID": "963d5da6-ae1c-4fb3-923f-347a763e048a"
+},
+"data": {
+"loanAccountID": "21e1c60c-ab90-4976-b76c-518020d62622",
+"requestID": "20220809143406111_925_refund_arch_Test_021231213415331_loan_refund",
+"requestType": "REFUND",
+"loanType": "merchantEMI",
+"loanAccountNumber": "1231104570679745",
+"accountHolderID": "496a6d99-db5a-411d-90d0-f7ec5b5a1197",
+"loanAccountName": "May20_aion_loan_ank",
+"currency": "INR",
+"loanAmount": {
+"currency": "INR",
+"amount": 11590000
+},
+"loanBookingDate": "2020-05-12",
+"loanValueDate": "2020-05-12",
+"sourceAccountID": "815ae692-1bf6-4311-bd7d-3aa5786bac5e",
+"sourceTransactionIDs": [
+"[20220809141715274_913_request-0128]"
+],
+"interestRate": 16,
+"installmentFrequency": "MONTHLY",
+"loanMaturityDate": "2020-10-14",
+"firstInstallmentDate": "2020-05-14",
+"numberOfInstallments": 6,
+"principalOutstanding": 9267194,
+"loanStatus": "ACTIVE",
+"attributes": {
+"refundProcessAction": "RE_AMORTIZATION",
+"refundAmount": 2322806
+},
+"loanEpiSchedule": {
+"epi": 1617406,
+"version": 2,
+"epiSchedule": [
+{
+"uuid": "3841f0f7-3976-4959-8f82-34e92b61c581",
+"bpiDays": 0,
+"installmentNo": 1,
+"interestAmount": -12356,
+"installmentDate": "2020-05-14",
+"principalAmount": 1493843,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1481487,
+"bpiInterestAdjustment": 0
+},
+{
+"uuid": "8ba063d3-60ac-4e11-a174-01ade9f493ae",
+"bpiDays": 0,
+"installmentNo": 2,
+"interestAmount": 103645,
+"installmentDate": "2020-06-14",
+"principalAmount": 1513761,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1617406,
+"bpiInterestAdjustment": 0
+},
+{
+"uuid": "a7538221-e347-49ca-8e0a-dd0cc6d78789",
+"bpiDays": 0,
+"installmentNo": 3,
+"interestAmount": 83461,
+"installmentDate": "2020-07-14",
+"principalAmount": 1533945,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1617406,
+"bpiInterestAdjustment": 0
+},
+{
+"uuid": "bc41aa26-df8f-4141-a9dc-12d43568a953",
+"bpiDays": 0,
+"installmentNo": 4,
+"interestAmount": 63009,
+"installmentDate": "2020-08-14",
+"principalAmount": 1554397,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1617406,
+"bpiInterestAdjustment": 0
+},
+{
+"uuid": "fa9b1de8-8cf0-4998-888e-2f2ec7856c7d",
+"bpiDays": 0,
+"installmentNo": 5,
+"interestAmount": 42283,
+"installmentDate": "2020-09-14",
+"principalAmount": 1575123,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1617406,
+"bpiInterestAdjustment": 0
+},
+{
+"uuid": "f179f75c-5fdd-4ab8-bceb-943b1c2a1fc2",
+"bpiDays": 0,
+"installmentNo": 6,
+"interestAmount": 21282,
+"installmentDate": "2020-10-14",
+"principalAmount": 1596125,
+"installmentStatus": "NOT_DUE",
+"totalScheduleAmount": 1617407,
+"bpiInterestAdjustment": 0
+}
+]
+}
+},
+"publisher": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "R4lugLKa0_lyUTlvVaPBrQ==-13-admin.India",
+"resource": "26"
+}
+},
+"topic": "_tenant_13_loanReamortizationSuccessEvent",
+"pType": "olympus.pubsub.model.PubSubEvent",
+"emitterType": "EVENT",
+"publisher": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "R4lugLKa0_lyUTlvVaPBrQ==-13-admin.India"
+},
+"publishTime": 1660055671060,
+"oid": "0000696c-0000-03e1-0000-000000008dd4",
+"flowId": "963d5da6-ae1c-4fb3-923f-347a763e048a",
+"from": {
+"appDomain": "services.olympus",
+"serviceName": "external",
+"nodeId": "R4lugLKa0_lyUTlvVaPBrQ==-13-admin.India"
+}
+}
+
+Extracts
+References
+ • Emerald Accounting Summary
+ • Transaction Conversion to EMI_Accounting
+Glossary

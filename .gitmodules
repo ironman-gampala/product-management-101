@@ -1,0 +1,3 @@
+[submodule "cloud-daily-mail"]
+	path = cloud-daily-mail
+	url = https://github.com/ironman-gampala/pm-daily-mail.git

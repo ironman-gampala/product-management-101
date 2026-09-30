@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multi-Agent Learning Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p class="brand">Multi-Agent Learning Lab</p>
+        <p class="lede">
+          Watch an LLM become an agent (skill + tools), then several agents
+          collaborate through an orchestrator.
+        </p>
+      </header>
+
+      <section class="layers" aria-label="Concepts">
+        <div>
+          <strong>1. LLM</strong>
+          <span>completes messages</span>
+        </div>
+        <div>
+          <strong>2. Agent</strong>
+          <span>skill + tools + loop</span>
+        </div>
+        <div>
+          <strong>3. Multi-agent</strong>
+          <span>orchestrator + shared transcript</span>
+        </div>
+      </section>
+
+      <form id="run-form" class="panel">
+        <label>
+          Mode
+          <select id="mode" name="mode">
+            <option value="research">Research (pipeline)</option>
+            <option value="product-planning">Product planning (pipeline)</option>
+            <option value="code-helpers">Code helpers (pipeline)</option>
+            <option value="open-ended">Open-ended (debate)</option>
+          </select>
+        </label>
+
+        <label>
+          Goal
+          <textarea
+            id="goal"
+            name="goal"
+            rows="4"
+            placeholder="e.g. Compare RAG vs fine-tuning for a support chatbot"
+            required
+          ></textarea>
+        </label>
+
+        <div id="roles-wrap" class="roles hidden">
+          <label>
+            Role 1
+            <input id="role1" type="text" placeholder="Optimist" />
+          </label>
+          <label>
+            Role 2
+            <input id="role2" type="text" placeholder="Skeptic" />
+          </label>
+          <label>
+            Role 3 (optional)
+            <input id="role3" type="text" placeholder="Operator" />
+          </label>
+        </div>
+
+        <button type="submit" id="run-btn">Run agents</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+
+      <section class="panel">
+        <h2>Event timeline</h2>
+        <p class="hint">
+          Tool calls are the agent acting. Messages are what gets shared with
+          the next agent.
+        </p>
+        <div id="timeline" class="timeline"></div>
+      </section>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

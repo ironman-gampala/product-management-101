@@ -1,0 +1,91 @@
+Building TF-IDF index for size=256...
+Building TF-IDF index for size=512...
+Building TF-IDF index for size=1024...
+retrieve size=256 mode=bm25:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=256 mode=bm25: 100%|██████████| 30/30 [00:00<00:00, 729.31it/s]
+size=256 mode=bm25: Recall@5=0.931 MRR=0.754
+retrieve size=256 mode=dense:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=256 mode=dense: 100%|██████████| 30/30 [00:00<00:00, 813.23it/s]
+size=256 mode=dense: Recall@5=0.931 MRR=0.796
+retrieve size=256 mode=hybrid:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=256 mode=hybrid: 100%|██████████| 30/30 [00:00<00:00, 833.52it/s]
+size=256 mode=hybrid: Recall@5=1.000 MRR=0.832
+retrieve size=256 mode=hybrid_rerank:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=256 mode=hybrid_rerank: 100%|██████████| 30/30 [00:00<00:00, 660.58it/s]
+size=256 mode=hybrid_rerank: Recall@5=0.862 MRR=0.731
+retrieve size=512 mode=bm25:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=512 mode=bm25: 100%|██████████| 30/30 [00:00<00:00, 1179.33it/s]
+size=512 mode=bm25: Recall@5=1.000 MRR=0.925
+retrieve size=512 mode=dense:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=512 mode=dense: 100%|██████████| 30/30 [00:00<00:00, 1251.25it/s]
+size=512 mode=dense: Recall@5=1.000 MRR=0.925
+retrieve size=512 mode=hybrid:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=512 mode=hybrid: 100%|██████████| 30/30 [00:00<00:00, 1334.22it/s]
+size=512 mode=hybrid: Recall@5=1.000 MRR=0.977
+retrieve size=512 mode=hybrid_rerank:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=512 mode=hybrid_rerank: 100%|██████████| 30/30 [00:00<00:00, 766.21it/s]
+size=512 mode=hybrid_rerank: Recall@5=0.828 MRR=0.774
+retrieve size=1024 mode=bm25:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=1024 mode=bm25: 100%|██████████| 30/30 [00:00<00:00, 1753.35it/s]
+size=1024 mode=bm25: Recall@5=0.966 MRR=0.820
+retrieve size=1024 mode=dense:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=1024 mode=dense: 100%|██████████| 30/30 [00:00<00:00, 2159.82it/s]
+size=1024 mode=dense: Recall@5=1.000 MRR=0.836
+retrieve size=1024 mode=hybrid:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=1024 mode=hybrid: 100%|██████████| 30/30 [00:00<00:00, 2013.72it/s]
+size=1024 mode=hybrid: Recall@5=1.000 MRR=0.905
+retrieve size=1024 mode=hybrid_rerank:   0%|          | 0/30 [00:00<?, ?it/s]retrieve size=1024 mode=hybrid_rerank: 100%|██████████| 30/30 [00:00<00:00, 598.94it/s]
+size=1024 mode=hybrid_rerank: Recall@5=0.828 MRR=0.740
+Best: size=512 mode=hybrid
+answers size=512 mode=hybrid:   0%|          | 0/30 [00:00<?, ?it/s]answers size=512 mode=hybrid: 100%|██████████| 30/30 [00:00<00:00, 954.26it/s]
+{
+  "best_chunk_size": 512,
+  "best_mode": "hybrid",
+  "retrieval": {
+    "256": {
+      "bm25": {
+        "recall@5": 0.9310344827586207,
+        "mrr": 0.7540229885057471
+      },
+      "dense": {
+        "recall@5": 0.9310344827586207,
+        "mrr": 0.7959770114942528
+      },
+      "hybrid": {
+        "recall@5": 1.0,
+        "mrr": 0.8316091954022987
+      },
+      "hybrid_rerank": {
+        "recall@5": 0.8620689655172413,
+        "mrr": 0.7310344827586208
+      }
+    },
+    "512": {
+      "bm25": {
+        "recall@5": 1.0,
+        "mrr": 0.9252873563218391
+      },
+      "dense": {
+        "recall@5": 1.0,
+        "mrr": 0.925287356321839
+      },
+      "hybrid": {
+        "recall@5": 1.0,
+        "mrr": 0.9770114942528736
+      },
+      "hybrid_rerank": {
+        "recall@5": 0.8275862068965517,
+        "mrr": 0.7741379310344827
+      }
+    },
+    "1024": {
+      "bm25": {
+        "recall@5": 0.9655172413793104,
+        "mrr": 0.8201149425287355
+      },
+      "dense": {
+        "recall@5": 1.0,
+        "mrr": 0.8362068965517241
+      },
+      "hybrid": {
+        "recall@5": 1.0,
+        "mrr": 0.9051724137931034
+      },
+      "hybrid_rerank": {
+        "recall@5": 0.8275862068965517,
+        "mrr": 0.7396551724137931
+      }
+    }
+  },
+  "answer_accuracy": 0.16666666666666666,
+  "citation_accuracy": 1.0
+}

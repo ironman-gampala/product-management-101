@@ -1,0 +1,55 @@
+Confidential and Proprietary | Zeta Services Inc.
+Case Study – 
+Create Tachyon overview slides for credit 
+issuer prospect customer
+Tachyon 
+Module
+Tachyon Credit - <Please fill the Tachyon overview Diagram & integrations>
+Experience
+Layer
+Datamart
+IntegrationsZeta Web apps Zeta Mobile apps Backoffice Centers
+Revolving Credit 
+Account Processing
+Card Management 
+System
+Customer lifecycle 
+management
+Fraud Risk 
+Management
+Rewards
+Wallet
+Loans
+Disputes
+Demand Deposit 
+Account
+Pontus Report center Data explorer
+Networks
+Collections
+Banking Systems
+Notifications
+Rewards
+Confidential and Proprietary | Zeta Services Inc.
+Typical Issuer Ecosystem with Zeta - <list the modules in each column as applicable)
+Zeta Modules/Systems Zeta Partner Modules/Systems Issuer Modules/Systems
+Aries Networks( Visa, MasterCard) KYC compliant system
+Aether Partner apps Fraud risk decisioning
+Disputes Credit Bureau Banking apps
+Finance Center KYC Partners Rewards
+Product Center Collections
+Athena CRM Partners(Freshdesk)
+Ruby
+Support Center
+Operations Center
+Aura
+Emerald
+Fraud risk management
+Tenant Architecture - <Please create Tachyon Credit entity architecture diagram 
+from tenant to card/form factor>
+
+The Account Holder - <Create AH entity architecture diagram depicting hierarchy/ 
+relationships across primary/authorized user/form factors/ entities>
+
+The Product Hierarchy - <Create Product hierarchy & structure diagram>
+
+Bundle Definition - <Create bundle definition entity diagram>

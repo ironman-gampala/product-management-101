@@ -1,0 +1,7 @@
+{
+  "size": 1024,
+  "n_chunks": 105,
+  "emb_model": "tfidf-local",
+  "index_path": "/Users/kaushik.ga/Desktop/Product Management 101/rag-eval-lab/data/index_1024.npz",
+  "dim": 33904
+}

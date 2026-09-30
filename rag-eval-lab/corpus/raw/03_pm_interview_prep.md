@@ -1,0 +1,184 @@
+# PM Interview Prep — Full Context
+
+This is a consolidated context file covering the PM interview prep system: who this is for, how staying-current works, the folder/knowledge-base plan, and the fully-built Pricing category. Drop this into Cursor as a reference/rules file.
+
+---
+
+## 1. Candidate Context
+
+- Preparing for PM interviews at **top AI labs, FAANG, and product-based companies** — broad target set, not narrowed to 2-3 names.
+- Minimum target set: **OpenAI, Anthropic, Google, Meta, Apple, Microsoft, Amazon, Nvidia** — plus their competitors and adjacent AI/product-native companies.
+- Interviews are currently getting underway (as of Aug 2026).
+- Day job: Product Manager at a banking SaaS company, working on a card-configuration platform and an AI-assisted configuration copilot — background in regulated-industry product work, AI product design, and research methodology.
+- Works at a high craft level: methodology-explicit, distinguishes infrastructure vs. user-facing features, wants behavioral-grade rigor (what happened, not what would happen) applied to interview prep the same way it'd be applied to real user research.
+
+---
+
+## 2. Why Staying Current Matters (interview framing)
+
+Strategy and product-sense questions test whether a candidate has been paying attention to the interviewer's world. Two flavors show up:
+- **In-domain**: "How would you improve Siri with AI?" (Apple asking about Apple's own space)
+- **Out-of-domain**: "How would you design Google Maps?" (Meta asking about a totally different company's product)
+
+The pace of AI/tech change means a few months of inattention shows up immediately in interview answers. Interviewers are evaluating whether a candidate tracks the market and won't get blindsided by competitive moves on the job. This can surface **early** — e.g., a Google L5 candidate got a competitive strategy question as early as the hiring-manager call.
+
+---
+
+## 3. The Three-Layer System for Staying Current
+
+| Layer | Solves for | What it is |
+|---|---|---|
+| **1. Passive intake** | Awareness | Set-and-forget information flow: social feeds + a daily automated briefing |
+| **2. Active synthesis** | Depth | 10 minutes, 3x/week, reverse-engineering one real company move using a strategy framework |
+| **3. Hands-on fluency** | Credibility | Actually using one AI/tech product surfaced in the briefing, even for 5 minutes |
+
+Candidates who only do Layer 1 "know what happened." Interviewers can tell within minutes which layer someone is operating from.
+
+### Layer 1 — Passive Intake (built, automated)
+- Social: search "AI trends"/"tech news" on LinkedIn/X, follow 5-10 tech-strategy accounts, let the algorithm adapt (~2 weeks).
+- **Daily briefing**: A Claude Project ("Interview Prep: Trends") with a scheduled Cowork task that runs each morning and emails a briefing with:
+  - **Section 1**: News from target companies in the last 24h (launches, exec changes, earnings, partnerships, regulatory actions).
+  - **Section 2**: FAANG/major AI company strategic moves — one sentence on what happened, one on why it matters.
+  - **Section 3**: AI policy/legal — one sentence on what changed, one on what it means.
+  - **Ends with two tasks**: (1) pick one item to analyze via "why would [company] do [this] right now?", (2) name one product to try for 5 minutes.
+- Status: briefing system built and tested via Gmail delivery. Automation requires a Cowork scheduled task (Claude can't self-schedule) — setup instructions were provided separately.
+
+### Layer 2 — Active Synthesis (manual, 3x/week discipline)
+Take the briefing's flagged move and work the strategic logic:
+1. What was the company's position before this move? What pressure/opportunity created the opening?
+2. Why now? What changed in market, tech, or regulation?
+3. Who benefits, who's threatened? Name specific companies/segments.
+4. What are they trying to validate? What does success look like in 12 months?
+5. What would you have done differently?
+
+**Worked example — "Why would ChatGPT create a family product?"**
+- *Position before*: ChatGPT skews toward power users/students/professionals; household penetration is high but unstructured; parents are anxious about uncontrolled access.
+- *Why now*: Apple Screen Time proved parents will pay for structured controls; Google (Gemini for Kids) and Amazon (Alexa parental controls) already staked ground; OpenAI risks losing the household as a unit of account.
+- *Who benefits/threatened*: Families benefit; Google/Amazon threatened on the household layer; Khan Academy could get squeezed if OpenAI moves into homework-help directly.
+- *What they're validating*: Whether households pay for a family tier vs. sharing one adult account, and whether safety-first positioning unlocks a currently-avoidant segment.
+- *What I'd do differently*: Lead with educational positioning (homework help, reading comprehension) instead of safety positioning — safety framing invites regulatory scrutiny before trust is established.
+
+Prompt to run in Claude: *"Walk me through the strategic logic behind this move using a product strategy framework. Then push back on my analysis when I share it."*
+
+### Layer 3 — Hands-on Fluency
+Try the product the briefing surfaces. Note: what it does well, where it's rough/incomplete, what you'd change first as the PM. This is what AI-native interviewers listen for in product-strategy/improvement questions — genuine reaction, not tutorial-level familiarity.
+
+### Senior Bar
+Background awareness (reading, following accounts) is necessary but not sufficient. Senior+ candidates keep a running written record of takes on products they've studied — strategy, why it might succeed/fail, what they'd do differently — *before* the interview, not improvised live. Interviewers can feel the difference between real-time opinion formation and pre-formed conviction.
+
+---
+
+## 4. Product Mgmt 101 — Knowledge Base Plan
+
+A structured library of "how to answer X-type question" guides, one markdown file per question category, being built incrementally.
+
+### Folder structure
+```
+Product Mgmt 101/
+├── README.md
+├── 01_Product_Sense/            — design/improve/build questions
+├── 02_Product_Strategy/         — competitive & market entry questions
+├── 03_Execution_Metrics/        — goal-setting, north star, A/B tests
+├── 04_Pricing/                  — pricing model + price-setting (BUILT — full content below)
+├── 05_Technical/                — system design judgment for PMs
+├── 06_Behavioral/                — STAR-based leadership questions
+├── 07_Estimation_Guesstimates/  — market sizing, Fermi problems
+└── 08_Diagnose_Root_Cause/      — "metric X dropped 20%, why?" questions
+```
+
+### Standard shape for every category file
+1. Why this question type gets asked (what it signals to the interviewer)
+2. Framework — numbered steps to work through live
+3. Worked example(s) using a real, current product
+4. Senior-bar signals — what separates good from great
+5. Cheat sheet — one-page pre-interview quick reference
+
+### Build status
+- [x] **Pricing** — built (full content in Section 5 below)
+- [ ] Product Sense
+- [ ] Product Strategy
+- [ ] Execution & Metrics
+- [ ] Technical
+- [ ] Behavioral
+- [ ] Estimation & Guesstimates
+- [ ] Diagnose / Root Cause
+
+---
+
+## 5. Category: Pricing (fully built)
+
+### Why This Question Type Gets Asked
+Tests whether a candidate understands how a product creates value for users *and* how that value converts into revenue. It's not about landing on "the right number" — it's about the reasoning path used to defend one.
+
+**Sample questions actually asked:**
+- "How would you price Amazon Prime?" — Google
+- "How would you price YouTube Premium?" — Google
+- "You're a PM at Spotify. How would you approach increasing the price of the service?" — Flipkart
+
+**Why it matters now:** AI products break the old SaaS assumption of near-zero marginal cost. Every inference call has real compute cost — the most engaged users can also be the least profitable. Interviewers at OpenAI, Anthropic, Perplexity specifically probe understanding of the cost side, not just willingness to pay.
+
+### Framework — 3 Steps
+
+**Step 1: Define the Landscape**
+Clarifying questions first:
+- What value does the product provide, to whom?
+- Is this a brand-new product or a change to existing pricing? (Different problems — a change must account for existing user expectations.)
+- Is the company optimizing for growth, profit, or market share right now?
+
+Landscape factors to evaluate:
+- **Competition** — pricing is positioning; underpricing can signal weakness, not value.
+- **Internationalization** — willingness to pay varies 3-5x across regions.
+- **Consumer sensitivity** — how price-conscious are users, what alternatives exist?
+- **Public perception** — could this create backlash or hurt trust?
+
+Synthesize before moving on: *"I think this product exists because X, so pricing should prioritize Y, and the key constraint is Z."*
+
+**Step 2: Choose a Pricing Model**
+Two sequential decisions:
+1. **Monetization approach** — everyone pays / free with indirect monetization / part free, part paid.
+2. **Pricing structure** — within that approach: flat subscription, usage-based, feature-gated, hybrid.
+
+> Tip: For consumer AI products, gate usage around *task completion*, not raw volume — users need to reach a finished output before hitting a wall, or they churn frustrated.
+
+**Step 3: Determine the Price**
+Triangulate three anchors:
+- **Value anchor (ceiling)** — what's the outcome worth vs. alternatives (hiring someone, a competitor)?
+- **Cost floor** — minimum to not lose money at scale (inference cost/user for AI products).
+- **Competitive calibration** — what does the market expect? Don't let it decide alone.
+
+Stress-test: cannibalization risk, market signaling, long-term pricing arc (launch price vs. steady state).
+
+### Worked Example 1: Claude Design (new product launch)
+- **Landscape**: Targets non-designers wanting to build UI without hiring one. Anthropic is in adoption mode, not margin mode — but visual compute is expensive, so price can't be zero.
+- **Model**: Part free, part paid (ad-supported ruled out — kills creative context; fully free unsustainable given compute cost). Usage-gated by *sessions/screens*, not tokens.
+- **Price**: Value anchor ~$300-500 (a contractor day) → willingness to pay $30-75/mo. Cost floor requires real gating beyond a light free trial. Competitive comps (v0 ~$20/mo, Canva Pro ~$15/mo) are loose but set expectations. **Recommendation: $50/mo Professional tier**, framed in sessions, with a contextual upgrade prompt near the limit.
+- **Stress-test**: Biggest risk is a free tier so generous users never hit the wall — that friction point is also the highest-intent conversion moment.
+
+### Worked Example 2: Spotify price increase (existing product change)
+- **Assumptions**: Global increase on Individual/Family tiers, driven by margin pressure from licensing costs, not new-market entry.
+- **Landscape**: Spotify already has share — this is a margin play. Low switching costs make churn risk real. Existing users are anchored, unlike new users evaluating fresh.
+- **Model**: The "structure" decision here is really *how to roll out the change* — grandfather existing users, apply new pricing to new subscribers first, pair the increase with a visible value-add (e.g., audiobooks) so it reads as expansion, not extraction.
+- **Price**: $1-2/mo increase, staying within the $10-13 competitive band (Apple Music, YouTube Music) to avoid inviting comparison shopping.
+- **Stress-test**: Watch for downgrades to ad-supported free tier, and Family→Individual splitting if the tier gap narrows. Both measurable within 60-90 days.
+
+### Senior-Bar Signals
+- Explicitly triangulate all three anchors (cost, competitive, value) — don't just pick one.
+- Say what the price *signals* to the market, not just what it earns.
+- Flag cannibalization risk before being asked.
+- For price *changes* (not launches): treat rollout sequencing as a first-class decision, not an afterthought.
+
+### Cheat Sheet
+1. **Landscape** → product value, launch vs. change, company goal, competition/intl/sensitivity/perception → synthesize goal + constraint.
+2. **Model** → monetization approach, then structure within it.
+3. **Price** → triangulate value/cost/competition → commit → stress-test cannibalization, signaling, long-term arc.
+4. **AI watchout**: marginal cost isn't zero; gate on completion, not volume.
+
+---
+
+## 6. Working Principles for This Prep System
+
+- **Baseline-first editing**: When revising any doc in this system, treat the existing file as the base and apply targeted patches — never silently rebuild from scratch.
+- **Behavioral over hypothetical**: Interview answers (and prep questions) should be graded on what's actually been done/observed, not hypothetical willingness.
+- **Assumption traceability**: Every framework step should trace to a specific, statable assumption — avoid generic reasoning that could apply to any product.
+- **Synthesis-first**: Each category's cheat sheet is the artifact meant to be reviewed cold, right before an interview — it should stand alone without needing the full worked examples re-read.
+- **No content scraping from paid/proprietary sources** (e.g., Exponent): frameworks here are either original synthesis or built from public material — never bulk-reproduced from a paywalled source.
