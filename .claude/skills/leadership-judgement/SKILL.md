@@ -10,8 +10,8 @@ description: >-
   without authority, "tell me about yourself", "walk me through your resume", "why this company",
   "most impactful project", hiring manager round, story bank, Amazon leadership principles, or
   pastes a story to score — even if they don't name the skill. Siblings: product-sense-judgement,
-  product-strategy-judgement, rca-judgement, metrics-judgement, estimation-judgement, technical-ai-
-  judgement.
+  product-strategy-judgement, rca-judgement, metrics-judgement, estimation-judgement,
+  technical-ai-judgement.
 ---
 
 # Leadership Judgement

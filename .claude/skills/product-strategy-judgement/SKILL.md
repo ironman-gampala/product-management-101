@@ -4,14 +4,14 @@ description: >-
   Senior PM (L5) product strategy interview coach — runs timed 30–35 minute mocks where Claude plays
   the interviewer, writes spoken Interviewer/Candidate model answers, tears down real company moves,
   and scores answers against the senior bar. Use whenever the user says /product-strategy-judgement,
-  wants to practise a strategy question, or asks "what should X build", "go to market" / "launch
-  X", "how would you grow X" / "2x X", "how would you price X", "monetise X", "should X enter
-  market Y", "respond to competitor Y", "biggest threat to X", "you're the CPO of X", wants a model
-  answer for one, or says their strategy answers end in "it depends" — even without naming the
-  skill. Use the siblings instead for: product-sense-judgement
-  (design / improve a product), rca-judgement (metric moved), metrics-judgement (success metrics,
-  north star, A/B tests), estimation-judgement (market sizing), leadership-judgement (behavioural,
-  tell me about yourself), technical-ai-judgement (AI fluency, system design).
+  wants to practise a strategy question, or asks "what should X build", "go to market" / "launch X",
+  "how would you grow X" / "2x X", "how would you price X", "monetise X", "should X enter market Y",
+  "respond to competitor Y", "biggest threat to X", "you're the CPO of X", wants a model answer for
+  one, or says their strategy answers end in "it depends" — even without naming the skill. Use the
+  siblings instead for: product-sense-judgement (design / improve a product), rca-judgement (metric
+  moved), metrics-judgement (success metrics, north star, A/B tests), estimation-judgement (market
+  sizing), leadership-judgement (behavioural, tell me about yourself), technical-ai-judgement (AI
+  fluency, system design).
 ---
 
 # Product Strategy Judgement

@@ -10,8 +10,8 @@ description: >-
   round, AI fluency, AI PM interview, explain RAG, evaluate an LLM feature, evals, hallucination,
   system design, architecture, latency vs cost, build vs buy or which model — even without naming
   the skill. Use product-sense-judgement for "design an AI product" when the focus is users and
-  problem. Siblings: product-strategy-judgement, rca-judgement, metrics-judgement, estimation-
-  judgement, leadership-judgement.
+  problem. Siblings: product-strategy-judgement, rca-judgement, metrics-judgement,
+  estimation-judgement, leadership-judgement.
 ---
 
 # Technical & AI Judgement

@@ -4,13 +4,13 @@ description: >-
   Senior PM (L5) product sense interview coach for "design a product" and "improve a product"
   questions. Runs a realistic timed 30-minute mock where Claude plays the interviewer, writes model
   answers as spoken Interviewer/Candidate transcripts, builds idea banks ("10 features for
-  Spotify"), and scores answers against the senior bar. Use whenever the user says /product-sense-
-  judgement, wants to practise a product sense question, asks "how would you improve X" or "design X
-  for Y", asks for a proper transcript or model answer for a product question, or mentions freezing
-  or running out of ideas in a product interview — even if they don't name the skill. Siblings:
-  product-strategy-judgement (what should X build, GTM, growth, pricing), rca-judgement (a metric
-  moved), metrics-judgement (north star, A/B tests), estimation-judgement, leadership-judgement
-  (behavioural), technical-ai-judgement (AI, system design).
+  Spotify"), and scores answers against the senior bar. Use whenever the user says
+  /product-sense-judgement, wants to practise a product sense question, asks "how would you improve
+  X" or "design X for Y", asks for a proper transcript or model answer for a product question, or
+  mentions freezing or running out of ideas in a product interview — even if they don't name the
+  skill. Siblings: product-strategy-judgement (what should X build, GTM, growth, pricing),
+  rca-judgement (a metric moved), metrics-judgement (north star, A/B tests), estimation-judgement,
+  leadership-judgement (behavioural), technical-ai-judgement (AI, system design).
 ---
 
 # Product Sense Judgement

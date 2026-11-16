@@ -8,8 +8,8 @@ description: >-
   /rca-judgement, "metric dropped", "why did X go down", "DAU fell 10%", "conversion dropped",
   "usage up but revenue down", "orders up but profit down", root cause, RCA, diagnose, or
   "investigate a drop" — even if they don't name the skill. For choosing success metrics or making
-  an A/B ship call, use metrics-judgement. Siblings: product-sense-judgement, product-strategy-
-  judgement, estimation-judgement, leadership-judgement, technical-ai-judgement.
+  an A/B ship call, use metrics-judgement. Siblings: product-sense-judgement,
+  product-strategy-judgement, estimation-judgement, leadership-judgement, technical-ai-judgement.
 ---
 
 # RCA Judgement
