@@ -64,6 +64,10 @@ Questions that ask you to make a real product better — start with users and th
 
 - *"What features would you build to grow LinkedIn Premium subscriptions?"* — Product Sense — improve an existing product with a monetization north star (not pricing / packaging); Sr PM
 
+### Invented — 2026-10-29
+
+- *"How would you redesign Netflix’s kids profile by solving content filtering, age-appropriate UX, and parental control across ages 2–12?"* — Product Sense — improve / redesign; dual user (parent + child)
+
 ---
 
 ## Novel Tech Framing
@@ -141,3 +145,17 @@ Questions deliberately underspecified to see how you scope, frame, and commit wi
 | **Amazon** | Reviews abuse tracking system |
 | **Capital One** | Instant Push Notifications redesign |
 | **YouTube** | Educational product; new feature; yearly recap; 10x music users |
+
+### Invented — 2026-11-01 (Anthropic take-home shape)
+- *"We want to grow the adoption of Claude Code among Fortune 2000 companies. Propose a feature that would increase the virality of the product within an organization. Choose a direction that is a compelling market (size, PMF, competitive landscape) and achievable by 5 engineers in 3 months."* — Product Sense / grow + viral loop
+
+### Invented — 2026-11-03
+- What should Airbnb build now? (Product Sense — design)
+
+### Invented — 2026-11-14
+- *"How would you improve a quick commerce price-compare app (compares prices across Blinkit, Zepto, Instamart, Flipkart Minutes)?"* — Product Sense / improve
+- *"Design the onboarding experience for a new IT admin at a 200-person company that just bought Rippling."* — Product Sense / design (B2B)
+- *"Improve how Rippling handles an employee leaving the company."* — Product Sense / improve (B2B)
+- *"Design a feature that helps recruiters trust Eightfold AI's candidate match scores."* — Product Sense / AI + trust
+- *"Design an internal job marketplace that helps employees find their next role inside the company."* — Product Sense / design (Eightfold AI style)
+- *"Improve the experience for an IT admin rolling out MFA to 5,000 employees."* — Product Sense / improve (Okta, B2B)

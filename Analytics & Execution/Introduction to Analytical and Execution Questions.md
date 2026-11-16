@@ -86,3 +86,6 @@ The lessons in this module break down:
 
 ### Invented — 2026-09-04
 - *"Instagram tested a new Reels ranking that increased Reels opens by 8% but decreased total time spent in Feed. Would you ship it?"*
+
+### Invented — 2026-11-01
+- *"You're seeing engagement with notifications going up weekly for the last six weeks. All users, all geographies, all mobile apps. But time on site is stable or declining. What do you do?"* Curveball: specifically comment notifications — users click the wall comment, leave another, and leave the app immediately. [RCA / conflicting metrics + decision]
