@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: deep-dive-mock-turn
+expected_outcome: |
+  Stays in the hiring-manager role and drills one thread with a single realistic follow-up, then gives a short coach note: credits the clear user problem and the 6% number, flags the missing key decision and rejected alternative, the unclear personal ownership ("we built", "worked with design and engineering"), and a result with no baseline, definition or guardrail; offers one first-person model line without inventing facts, flags the weak "yeah so that's the project" ending, and tells the candidate what to answer next without ending the round or writing a full scorecard.

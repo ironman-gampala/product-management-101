@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: mock-principles-options-coach-note
+expected_outcome: |
+  Stays in the interviewer role for the next turn, then gives a short coach note: flags that the principles rule nothing out and rewrites one so it kills a named option, separates and numbers the six options run together in the answer, asks for a shortlist of three or fewer cut against the principles, calls the "combination" ending a hedge rather than a decision, notes that Zoom already ships AI meeting summaries (AI Companion) and team chat, reads Teams as a distribution / bundle threat rather than a feature gap, and hands back the next instruction with a time check, without writing the recommendation stage for them.

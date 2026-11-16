@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: review-okta-mfa-answer
+expected_outcome: |
+  An honest scorecard: step-by-step scores, a clear Senior PM verdict (not a pass), flags that the answer designed for employees instead of the IT admin the question named, a weak north star and a guardrail that just mirrors it, only one solution that Okta Verify already offers, and an MVP with no prerequisite or cuts; ends with a rewritten model turn for the weakest step.

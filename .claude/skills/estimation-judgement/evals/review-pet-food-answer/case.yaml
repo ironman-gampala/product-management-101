@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: review-pet-food-answer
+expected_outcome: |
+  An honest scorecard: step-by-step scores, a clear verdict that this would not pass a PM2 estimation round, flags that 30 million pets has no anchor, that the answer hides the assumption every pet eats ₹1,500 a month of bought food, that the arithmetic is off by 10x (₹54,000 crore, not ₹5,400 crore), that there is no sanity check, that ₹5,412 crore is false precision and that the close has no real so-what; ends with a spoken model turn using an ASCII tree and drills tied to the mistakes.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: mock-tours-every-bucket
+expected_outcome: |
+  Stays in the interviewer role without revealing the hidden root cause (it pushes the candidate to prioritise or answers only narrowly with concrete data), then gives a short coach note: flags that the candidate toured every bucket with one question each instead of triaging on the shape of the drop, that the metric and its denominator were never defined (and a traffic drop was confused with a rate drop), that measurement artifact is missing from the list, and that asking "which of these happened?" hands the investigation back to the interviewer; offers one model line and a time check with the next instruction, without writing the rest of the answer.

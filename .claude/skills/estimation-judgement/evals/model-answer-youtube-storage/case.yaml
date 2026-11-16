@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: model-answer-youtube-storage
+expected_outcome: |
+  A realistic spoken Interviewer/Candidate transcript: batched scoping questions that fix the unit and what counts, an anchor and approach chosen with reasons, the break-down as an ASCII tree on the board, rounded step-by-step math with units, an interviewer challenge that the candidate answers by recomputing, a second-method sanity check, the most sensitive assumption with a range, and a 30-second summary that ends on a so-what tied to a cost or product decision.

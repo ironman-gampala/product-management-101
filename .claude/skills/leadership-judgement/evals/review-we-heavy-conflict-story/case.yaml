@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: review-we-heavy-conflict-story
+expected_outcome: |
+  An honest scorecard across the STAR+ dimensions with a clear "not yet Senior PM" verdict (and a separate verdict for a lower level); flags that the story says "we" instead of what the candidate personally did, has no numbers, no named stakeholder or real tension, no key decision with a rejected alternative, and a platitude for a reflection; then rewrites it as a spoken first-person model version that uses bracketed placeholders instead of inventing facts, lists the questions needed to fill them, and gives drills tied to the mistakes.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: model-answer-google-grocery
+expected_outcome: |
+  A realistic spoken Interviewer/Candidate transcript for a market-entry question that pins the horizon and success metric up front, anchors on how Google actually makes money rather than its mission, names a specific why-now trigger, sets principles that each rule out a named option, brainstorms widely then cuts to a shortlist of three or fewer, lands one clear recommendation, raises and defeats the strongest counter-argument before being asked, names the signal that would change the decision, survives an interviewer probe that steelmans a rejected option, and ends with a 60-second spoken summary.

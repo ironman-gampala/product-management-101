@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: model-answer-orders-up-profit-down
+expected_outcome: |
+  A realistic spoken Interviewer/Candidate transcript in which the candidate defines the metric before hypothesising, writes a gross-profit identity on the board, names the tension between orders and profit, maps internal and external causes briefly, triages on the shape of the drop, investigates one most likely area while running a fast parallel falsify check, adjusts to a curveball data point the interviewer drops, sizes the root cause, and closes with a decision that has an owner and a numeric reversal condition, followed by a 60-second summary.

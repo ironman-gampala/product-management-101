@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: explain-simply-rag-jargon
+expected_outcome: |
+  Scores the explanation separately on clarity, accuracy, analogy and product "so what"; lists the unexplained jargon; corrects the claims that RAG is fine-tuning at inference time and that it eliminates hallucinations; supplies a plain analogy and a sales-relevant "so what"; and gives a short spoken rewrite in plain first-person sentences with no unexplained jargon, plus the follow-up question the VP would likely ask next.

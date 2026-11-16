@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: metric-check-spotify-dj
+expected_outcome: |
+  A short metric check, not a mock or a full scorecard: a table that runs the north star tests and flags that the north star mixes a count and a rate, counts the feature's use (the method) instead of the listener's outcome, and would not survive the solution changing; flags that guardrail 1 is the north star flipped and guardrail 2 is a supporting metric that rises with the north star; then gives one rewritten, precisely defined outcome north star, two real guardrails that could get worse while it rises, one second-order effect, and a first-person line to say out loud.

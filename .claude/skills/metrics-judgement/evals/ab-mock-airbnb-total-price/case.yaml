@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: ab-mock-airbnb-total-price
+expected_outcome: |
+  Stays in the interviewer role for the next turn without revealing a test result, then gives a short coach note that flags session-level randomisation (the same guest would see two different prices), the 3-day duration (weekly cycles and novelty), the click-through primary metric that doesn't match the bookings hypothesis, a guardrail that isn't a real guardrail, and an all-users 50/50 population with no ramp or exclusions; offers one model line and hands back the next instruction (the ship rule) with a time check, without writing the later stages.

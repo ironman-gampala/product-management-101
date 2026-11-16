@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: model-answer-elderly-medicines
+expected_outcome: |
+  A realistic spoken Interviewer/Candidate transcript covering clarify, strategy with a one-sentence outcome north star, users with a pick and a reject, pain points with a problem statement, three distinct solutions before one is detailed, a six-step flow, an MVP with prerequisite and what waits, real guardrails, interviewer probes, and a 60-second summary.

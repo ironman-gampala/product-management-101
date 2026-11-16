@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: model-answer-support-reply-drafts
+expected_outcome: |
+  A realistic spoken Interviewer/Candidate transcript for an AI product design and evaluation question: the candidate defines the quality bar with numbers before building, builds a golden set of real tickets, mixes evaluation methods, explains how hallucinated policies are prevented and measured, keeps a human agent approving drafts, names online metrics with a cost or latency guardrail, puts a number on cost per ticket, faces at least two hard interviewer probes, and ends with a 60-second summary.
