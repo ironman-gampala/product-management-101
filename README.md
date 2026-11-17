@@ -88,7 +88,7 @@ mock log after each scorecard. Start from [`My Profile.template.md`](My%20Profil
 | Folder / file | What's inside |
 |---|---|
 | [`Intro/`](Intro) | How PMs are evaluated, leveling (L3–L7), question types, glossary, the overall framework |
-| [`Product Sense/`](Product%20Sense) | How to answer, rubric, deep dives (users, pain points, ideas, clarifying questions), sample questions, [Idea Bank](Product%20Sense/Idea%20Bank.md) |
+| [`Product Sense/`](Product%20Sense) | How to answer, rubric, deep dives (users, pain points, ideas, clarifying questions), sample questions, [Idea Bank](Product%20Sense/Idea%20Bank.md), [Mock Interview Log](Product%20Sense/Mock%20Interview%20Log.md) |
 | [`Product Strategy/`](Product%20Strategy) | Strategy, go-to-market, growth, pricing, rubric, sample questions |
 | [`Analytics & Execution/`](Analytics%20%26%20Execution) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, rubric |
 | [`Leadership & Drive/`](Leadership%20%26%20Drive) | Finding and practising stories, signalling level, introductions, "why our company", rubric |
