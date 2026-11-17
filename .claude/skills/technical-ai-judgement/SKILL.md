@@ -46,16 +46,22 @@ product-sense-judgement. If it asks how the AI works, ships and is measured, kee
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory. If it exists, read
-background, target roles and weak spots before starting, and watch those weak spots in coach notes.
+Look for the `My Profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `My Profile/Profile.md` (background, target roles) and
+`My Profile/Daily Practice/Index.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` (score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file) and update `Index.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
+
 **Background changes the bar:** with an engineering or ML background, expect depth under pressure
 (real metrics, real decisions) and watch for drifting into implementation and losing the user;
 without one, the bar is plain explanation, the right lever, an evaluation plan and owned
-trade-offs — not trivia. After a scorecard, append one mock-log row (date, question, type, score,
-key notes).
+trade-offs — not trivia.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it
-from `My Profile.template.md` (repo root) with the weak spots you just saw.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by
+copying the `My Profile.template/` folder (repo root) to `My Profile/` with the weak spots you just saw.
 
 ## The routes
 

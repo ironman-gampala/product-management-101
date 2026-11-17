@@ -35,13 +35,18 @@ practised as a conversation.
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory (the cloned prep repo). If it
-exists, read its weak spots and target roles before starting, watch for those weak spots in the coach
-notes, and after a scorecard append one row to its mock log (date, question, type, score, key notes).
+Look for the `My Profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `My Profile/Profile.md` (background, target roles) and
+`My Profile/Daily Practice/Index.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` (score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file) and update `Index.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 This keeps practice cumulative instead of starting cold each day.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it from
-`My Profile.template.md` (repo root) and fill in the weak spots you just observed.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
+`My Profile.template/` folder (repo root) to `My Profile/` and fill in the weak spots you just observed.
 
 ## The route (25–30 minutes)
 

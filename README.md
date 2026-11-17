@@ -13,7 +13,7 @@ Claude playing the interviewer, coaching you between turns, and scoring you agai
 ```bash
 git clone --recurse-submodules <this-repo-url> "Product Management 101"
 cd "Product Management 101"
-cp "My Profile.template.md" "My Profile.md"   # optional, but makes coaching personal
+cp -R "My Profile.template" "My Profile"     # optional, but makes coaching personal
 claude                                         # open Claude Code in the repo
 ```
 
@@ -76,10 +76,12 @@ skill lists the specific judgement rules where candidates at the L4/L5 line usua
 
 ### Your profile and progress
 
-If `My Profile.md` exists at the repo root, every skill reads your background, target roles and weak
-spots before a session, watches for those weak spots in its coach notes, and adds a row to your
-mock log after each scorecard. Start from [`My Profile.template.md`](My%20Profile.template.md).
-`My Profile.md` is personal — keep it out of public forks.
+If a `My Profile/` folder exists at the repo root, every skill reads your background and target roles
+(`Profile.md`) and where you stand (`Daily Practice/Index.md`) before a session, and watches for your
+weak spots in its coach notes. After each scorecard it adds a day file to `Daily Practice/` and updates
+the index: your score from day to day, the weak-spot tracker and what to watch in the next mock.
+Start from [`My Profile.template/`](My%20Profile.template). `My Profile/` is personal — keep it out of
+public forks.
 
 ---
 
@@ -88,14 +90,14 @@ mock log after each scorecard. Start from [`My Profile.template.md`](My%20Profil
 | Folder / file | What's inside |
 |---|---|
 | [`Intro/`](Intro) | How PMs are evaluated, leveling (L3–L7), question types, glossary, the overall framework |
-| [`Product Sense/`](Product%20Sense) | How to answer, rubric, deep dives (users, pain points, ideas, clarifying questions), sample questions, [Idea Bank](Product%20Sense/Idea%20Bank.md), [Mock Interview Log](Product%20Sense/Mock%20Interview%20Log.md) |
+| [`Product Sense/`](Product%20Sense) | How to answer, rubric, deep dives (users, pain points, ideas, clarifying questions), sample questions, [Idea Bank](Product%20Sense/Idea%20Bank.md) |
 | [`Product Strategy/`](Product%20Strategy) | Strategy, go-to-market, growth, pricing, rubric, sample questions |
 | [`Analytics & Execution/`](Analytics%20%26%20Execution) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, rubric |
 | [`Leadership & Drive/`](Leadership%20%26%20Drive) | Finding and practising stories, signalling level, introductions, "why our company", rubric |
 | [`Technical & AI Questions/`](Technical%20%26%20AI%20Questions) | AI technical fluency, system design for PMs, rubric |
 | [`Take-Home Assignments/`](Take-Home%20Assignments) | How to approach take-homes, going above and beyond, AI prompt toolkit, rubric |
 | [`.claude/skills/`](.claude/skills) | The interview-practice skills described above |
-| [`My Profile.template.md`](My%20Profile.template.md) | Template for your personal profile, weak spots and mock log |
+| [`My Profile.template/`](My%20Profile.template) | Template for your profile and daily practice log (copy it to `My Profile/`) |
 | [`install-skills.sh`](install-skills.sh) | Installs the skills into `~/.claude/skills` |
 | [`rag-eval-lab/`](rag-eval-lab) | Hands-on lab: chunking, hybrid search, reranking and evaluating a RAG system |
 | [`multi-agent-demo/`](multi-agent-demo) | Hands-on lab: LLM → agent → multi-agent orchestration, with a visible timeline |

@@ -32,7 +32,7 @@ same structure. **60–90 seconds** (about 150–220 spoken words); never over t
 strongest stories in one line each so the interviewer asks about them.
 
 **Tailor from the profile.** Pull level, current role, domain strengths and positioning line from
-`My Profile.md`, and the two biggest flagship stories from `My Stories.md`. Line 5 changes for each
+`My Profile/Profile.md`, and the two biggest flagship stories from `My Stories.md`. Line 5 changes for each
 target company in the profile; lines 1–4 mostly stay the same.
 
 **Career changers:** one sentence on the move ("I spent four years as an engineer, then moved into
@@ -117,7 +117,7 @@ Never criticise your current employer. Never share a down-levelled competing off
 
 ## 5. Running Intro mode
 
-1. Read `My Profile.md` (level, role, strengths, target companies) and `My Stories.md` (two biggest
+1. Read `My Profile/Profile.md` (level, role, strengths, target companies) and `My Stories.md` (two biggest
    flagship stories). If missing, ask, one short question at a time: current role and scope, biggest
    result with a number, previous role and its best result, target company and role.
 2. Draft the pitch using only their facts. Mark anything missing as `[placeholder]`.
