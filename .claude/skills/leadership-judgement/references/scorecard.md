@@ -91,6 +91,6 @@ Three short daily drills, each tied to a specific mistake from today. Defaults:
 
 ## 6. Log it
 
-If `My Profile/` exists, log the session in `My Profile/Daily Practice/`: a new day file plus updates to
-`Daily Practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row:
+If `my-profile/` exists, log the session in `my-profile/daily-practice/`: a new day file plus updates to
+`daily-practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row:
 date | question | type (Behavioural / Deep dive / Intro) | score | key notes. If a story was improved, offer to update it in `My Stories.md`.

@@ -8,8 +8,8 @@ The repo works in three parts:
 ```
    1. READ                    2. PRACTISE                    3. TRACK
    ───────────                ───────────────                ─────────────────
-   The study folders          Claude skills play the         My Profile/ — who you are,
-   teach each question        interviewer, coach you         and Daily Practice/ — one
+   The study folders          Claude skills play the         my-profile/ — who you are,
+   teach each question        interviewer, coach you         and daily-practice/ — one
    type: how to answer,       between turns and score        file per day: question,
    rubrics, sample            you against the L4 / L5        score, what went well,
    questions.                 bar.                           what to improve, where
@@ -24,16 +24,16 @@ The repo works in three parts:
 ```bash
 git clone --recurse-submodules <this-repo-url> "Product Management 101"
 cd "Product Management 101"
-cp -R "My Profile.template" "My Profile"     # your profile and daily practice log
+cp -R my-profile-template my-profile         # your profile and daily practice log
 claude                                         # open Claude Code in the repo
 ```
 
 Then:
-1. Fill in `My Profile/Profile.md` (experience, target roles). Five minutes is enough.
+1. Fill in `my-profile/profile.md` (experience, target roles). Five minutes is enough.
 2. Read the [Intro](#1-read--the-study-material) folder, then the folder for the question type you want to practise.
 3. Ask Claude for a mock, for example *"Let's do a mock: how would you improve Spotify?"*
-4. After the scorecard, your day is logged in `My Profile/Daily Practice/`. Open
-   `Daily Practice.md` to see where you stand.
+4. After the scorecard, your day is logged in `my-profile/daily-practice/`. Open
+   `daily-practice.md` to see where you stand.
 
 ---
 
@@ -58,12 +58,15 @@ Product Management 101/
 ├── install-skills.sh             install the skills for use in any project
 │
 │   3. TRACK — your progress (changes every day)
-├── My Profile.template/          copy this to My Profile/ to start
-│   ├── Profile.md                  about you, experience, target roles, plan
-│   └── Daily Practice/
-│       ├── Daily Practice.md       where you stand each day + a table of every day's file
-│       └── Day template.md         copy for each new practice day
-├── My Profile/                   your copy (personal — keep it out of public forks)
+├── my-profile-template/          copy this to my-profile/ to start
+│   ├── profile.md                  about you, experience, target roles, plan
+│   └── daily-practice/
+│       ├── daily-practice.md       where you stand each day + a table of every day's file
+│       └── day-template.md         copy for each new practice day
+├── my-profile/                   your copy, same layout (personal — keep it out of public forks)
+│   └── daily-practice/
+│       ├── daily-practice.md
+│       └── day-01-2026-11-14-google-maps-parking.md, day-02-…, day-03-…
 │
 │   Extras
 ├── rag-eval-lab/                 hands-on lab: chunking, hybrid search, reranking, RAG evaluation
@@ -147,14 +150,14 @@ can also zip a single skill folder (for example `.claude/skills/rca-judgement`) 
 This is the part **you change every day**. Start by copying the template:
 
 ```bash
-cp -R "My Profile.template" "My Profile"
+cp -R my-profile-template my-profile
 ```
 
 | File | What it holds | How often it changes |
 |---|---|---|
-| `My Profile/Profile.md` | About you, experience, target roles, likely question types, strengths, plan | When your targets or plan change |
-| `My Profile/Daily Practice/Daily Practice.md` | **Where you stand each day**, a table linking every day's file, what keeps working, the weak-spot tracker, and what to watch in the next mock | Every practice day |
-| `My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` | One practice day: the question, score, **what went well, what to improve, where you stand today**, step scores, a model turn for your weakest step, drills | One new file per day |
+| `my-profile/profile.md` | About you, experience, target roles, likely question types, strengths, plan | When your targets or plan change |
+| `my-profile/daily-practice/daily-practice.md` | **Where you stand each day**, a table linking every day's file, what keeps working, the weak-spot tracker, and what to watch in the next mock | Every practice day |
+| `my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` | One practice day: the question, score, **what went well, what to improve, where you stand today**, step scores, a model turn for your weakest step, drills | One new file per day |
 
 **The daily loop:**
 
@@ -163,17 +166,17 @@ cp -R "My Profile.template" "My Profile"
         ↓
   mock with a skill  →  scorecard
         ↓
-  new Day file  +  Daily Practice.md updated (score, where you stand, weak spots)
+  new Day file  +  daily-practice.md updated (score, where you stand, weak spots)
         ↓
   before the next mock, read "Next mock: watch for"
 ```
 
-If `My Profile/` exists, every skill reads your profile and `Daily Practice.md` before a session and
+If `my-profile/` exists, every skill reads your profile and `daily-practice.md` before a session and
 watches for your weak spots in its coach notes. After each scorecard it adds the day file and updates
-`Daily Practice.md` for you. You can also fill a day in by hand with
-[`Day template.md`](My%20Profile.template/Daily%20Practice/Day%20template.md).
+`daily-practice.md` for you. You can also fill a day in by hand with
+[`day-template.md`](my-profile-template/daily-practice/day-template.md).
 
-> `My Profile/` is personal. Keep it out of public forks.
+> `my-profile/` is personal. Keep it out of public forks.
 
 ---
 
@@ -207,6 +210,8 @@ These are real, billed model runs. They compare each case with and without the s
 
 ## Contributing
 
+- File and folder names for the practice log use lowercase with hyphens and no spaces
+  (`my-profile/daily-practice/day-04-2026-11-18-improve-zoom.md`).
 - Add questions to the sample banks in each folder. The skills append the questions they invent under
   `### Invented — YYYY-MM-DD`.
 - Improve a skill by editing its `SKILL.md` or `references/`, then add or update an eval case.

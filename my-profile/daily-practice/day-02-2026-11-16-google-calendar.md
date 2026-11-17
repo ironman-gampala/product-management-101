@@ -1,6 +1,6 @@
 # Day 2 — Google Calendar
 
-[← Day 1 — Google Maps Parking](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md) · [Daily Practice](Daily%20Practice.md) · Next: [Day 3 — Slack →](Day%203%20-%202026-11-17%20-%20Slack.md)
+[← Day 1 — Google Maps Parking](day-01-2026-11-14-google-maps-parking.md) · [Daily Practice](daily-practice.md) · Next: [Day 3 — Slack →](day-03-2026-11-17-slack.md)
 
 | | |
 |---|---|

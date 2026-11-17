@@ -4,7 +4,7 @@ One file per practice day, plus this page: where I stand from day to day and the
 coming back. Read **[Where I stand](#where-i-stand-day-to-day)** and **[Next mock: watch for](#next-mock-watch-for)**
 before every mock.
 
-[← Back to my profile](../Profile.md)
+[← Back to my profile](../profile.md)
 
 ---
 
@@ -12,9 +12,9 @@ before every mock.
 
 | Day | Date | Question | Type | Score | What went well | What to improve | File |
 |---|---|---|---|---|---|---|---|
-| 1 | 2026-11-14 | How would you improve Google Maps for parking (India)? | Product Sense: improve | **~5/10** | "No circling near the destination" signal; good launch scoping | Name 3 one-liners before detailing; keep booking out of v1 | [Day 1](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md) |
-| 2 | 2026-11-16 | How would you improve Google Calendar (work users)? | Product Sense: improve (B2B angle) | **~5.5/10** | 3 numbered ideas; "4 free hours scattered in 30-min gaps" | Stop asking for time; land each step | [Day 2](Day%202%20-%202026-11-16%20-%20Google%20Calendar.md) |
-| 3 | 2026-11-17 | How would you improve Slack (enterprise)? | Product Sense: improve (B2B) | **~6/10** | Best clarify; most complete solution flow | Outcome north star; finish the close | [Day 3](Day%203%20-%202026-11-17%20-%20Slack.md) |
+| 1 | 2026-11-14 | How would you improve Google Maps for parking (India)? | Product Sense: improve | **~5/10** | "No circling near the destination" signal; good launch scoping | Name 3 one-liners before detailing; keep booking out of v1 | [Day 1](day-01-2026-11-14-google-maps-parking.md) |
+| 2 | 2026-11-16 | How would you improve Google Calendar (work users)? | Product Sense: improve (B2B angle) | **~5.5/10** | 3 numbered ideas; "4 free hours scattered in 30-min gaps" | Stop asking for time; land each step | [Day 2](day-02-2026-11-16-google-calendar.md) |
+| 3 | 2026-11-17 | How would you improve Slack (enterprise)? | Product Sense: improve (B2B) | **~6/10** | Best clarify; most complete solution flow | Outcome north star; finish the close | [Day 3](day-03-2026-11-17-slack.md) |
 
 **Other practice (model answers and idea banks, not scored):**
 
@@ -128,7 +128,7 @@ ideas are there; the habits aren't automatic yet.
    4. NEXT             → after that, [what comes next]."
 ```
 
-**Practice:** say it for [Day 1 — Google Maps parking](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md).
+**Practice:** say it for [Day 1 — Google Maps parking](day-01-2026-11-14-google-maps-parking.md).
 - User: the leisure visitor going somewhere unfamiliar
 - Problem: circling, because they can't see where parking is or whether it's free
 - Solution: find parking with availability labels; v1 = the 50 hardest areas in each of the top 5 cities
@@ -142,7 +142,7 @@ ideas are there; the habits aren't automatic yet.
 
 ## Adding a new day
 
-After each mock, add `Day N - YYYY-MM-DD - <Question>.md` in this folder (copy
-[`Day template.md`](../../My%20Profile.template/Daily%20Practice/Day%20template.md) or the latest day), then
+After each mock, add `day-NN-YYYY-MM-DD-<question-slug>.md` in this folder (copy
+[`day-template.md`](../../my-profile-template/daily-practice/day-template.md) or the latest day), then
 update this page: a row in **Days**, a column in **Where I stand** and the **weak-spot tracker**, and
 refresh **Next mock: watch for**. The interview skills in `.claude/skills/` do this for you after a scorecard.

@@ -1,6 +1,6 @@
 # Day 1 — Google Maps Parking
 
-[← Daily Practice](Daily%20Practice.md) · Next: [Day 2 — Google Calendar →](Day%202%20-%202026-11-16%20-%20Google%20Calendar.md)
+[← Daily Practice](daily-practice.md) · Next: [Day 2 — Google Calendar →](day-02-2026-11-16-google-calendar.md)
 
 | | |
 |---|---|
@@ -115,4 +115,4 @@ blocks everything else. Every freeze started that way.
 
 ## Follow-up: summary drill (pending)
 
-Say the 4-part summary for this question in 20–30 seconds. See [Daily Practice → Summary drill](Daily%20Practice.md#summary-drill--pending).
+Say the 4-part summary for this question in 20–30 seconds. See [Daily Practice → Summary drill](daily-practice.md#summary-drill--pending).

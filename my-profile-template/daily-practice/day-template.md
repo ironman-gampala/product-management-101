@@ -1,9 +1,9 @@
 # Day N — <Question short name>
 
-> Copy this file to `Day N - YYYY-MM-DD - <Question>.md`, fill it in, then add a row to
-> [Daily Practice](Daily%20Practice.md).
+> Copy this file to `day-NN-YYYY-MM-DD-<question-slug>.md`, fill it in, then add a row to
+> [Daily Practice](daily-practice.md).
 
-[← Day N-1](Daily%20Practice.md) · [Daily Practice](Daily%20Practice.md)
+[← Day N-1](daily-practice.md) · [Daily Practice](daily-practice.md)
 
 | | |
 |---|---|

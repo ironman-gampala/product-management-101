@@ -43,18 +43,19 @@ If it's unclear, start the mock — practising out loud is what transfers to the
 
 ## Learner profile
 
-Look for the `My Profile/` folder at the root of the current working directory (the cloned prep
-repo). Before starting, read `My Profile/Profile.md` (background, target roles) and
-`My Profile/Daily Practice/Daily Practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
 watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
-`My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` (score, how it went, weak spots, step
-scores, model turn, drills; copy the shape of the latest day file, or `Day template.md` from
-`My Profile.template/Daily Practice/`) and update `Daily Practice.md` (a row in Days,
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
 a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
 still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 
 If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
-`My Profile.template/` folder (repo root) to `My Profile/` and fill in the weak spots you just observed.
+`my-profile-template/` folder (repo root) to `my-profile/` and fill in the weak spots you just observed.
 
 ## The routes (20–25 minutes)
 

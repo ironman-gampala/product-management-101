@@ -4,7 +4,7 @@ Your practice log. **Update it every day you practise.** One file per day, plus 
 from day to day and the feedback that keeps coming back.
 
 **After each practice:**
-1. Copy [`Day template.md`](Day%20template.md) to `Day N - YYYY-MM-DD - <Question>.md` and fill it in:
+1. Copy [`day-template.md`](day-template.md) to `day-NN-YYYY-MM-DD-<question-slug>.md` and fill it in:
    the question, score, what went well, what to improve, and where you stand today.
 2. Add a row to **Days** below, linking the new file.
 3. Add a column to **Where I stand** and to the **weak-spot tracker**.
@@ -12,7 +12,7 @@ from day to day and the feedback that keeps coming back.
 
 The interview skills in `.claude/skills/` do all four for you after a scorecard.
 
-[← Back to my profile](../Profile.md)
+[← Back to my profile](../profile.md)
 
 ---
 
@@ -20,7 +20,7 @@ The interview skills in `.claude/skills/` do all four for you after a scorecard.
 
 | Day | Date | Question | Type | Score | What went well | What to improve | File |
 |---|---|---|---|---|---|---|---|
-| 1 | YYYY-MM-DD | | | /10 | | | [Day 1](Day%20template.md) |
+| 1 | YYYY-MM-DD | | | /10 | | | [Day 1](day-template.md) |
 
 ---
 
