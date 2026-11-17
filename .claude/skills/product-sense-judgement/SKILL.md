@@ -104,11 +104,11 @@ Each rule exists because it is where candidates at the L4/L5 line most often los
 budget, and the rules: one stage at a time, type "hint" when stuck, "show me" to see a model turn.
 Pick well-known products (Spotify, Google Maps, LinkedIn, Uber, Slack, WhatsApp, Zoom) unless the
 user asks for a specific company — most real rounds use products everyone knows so knowledge isn't
-the bottleneck. If the working directory has `Product Sense/Sample Product Sense Questions.md`, pull
+the bottleneck. If the working directory has `product-sense/sample-product-sense-questions.md`, pull
 from it and append any question you invent under `### Invented — YYYY-MM-DD`. If
-`Product Sense/Idea Bank.md` exists, use it for idea-bank requests and keep it updated. For deeper
-framework detail, the repo's `Product Sense/How to Answer Product Sense Questions.md` and
-`Product Sense/Rubric for Product Sense Interviews.md` are the source material.
+`product-sense/idea-bank.md` exists, use it for idea-bank requests and keep it updated. For deeper
+framework detail, the repo's `product-sense/how-to-answer-product-sense-questions.md` and
+`product-sense/rubric-for-product-sense-interviews.md` are the source material.
 
 **After each candidate turn**, reply in this shape:
 

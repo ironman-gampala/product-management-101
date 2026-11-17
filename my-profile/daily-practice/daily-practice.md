@@ -20,10 +20,10 @@ before every mock.
 
 | Question | What we did | Link |
 |---|---|---|
-| How would you improve a quick commerce compare platform (Blinkit, Zepto, Instamart)? | Model answer transcript: shoppers and brands, 7–8 solutions | [Idea Bank: quick commerce compare](../../Product%20Sense/Idea%20Bank.md#3-quick-commerce-price-compare-app) |
-| Build the notifications product for the compare app | Model answer transcript | [Idea Bank: notifications](../../Product%20Sense/Idea%20Bank.md#4-quick-commerce-notifications-product) |
+| How would you improve a quick commerce compare platform (Blinkit, Zepto, Instamart)? | Model answer transcript: shoppers and brands, 7–8 solutions | [Idea Bank: quick commerce compare](../../product-sense/idea-bank.md#3-quick-commerce-price-compare-app) |
+| Build the notifications product for the compare app | Model answer transcript | [Idea Bank: notifications](../../product-sense/idea-bank.md#4-quick-commerce-notifications-product) |
 | How would you improve Spotify? | 10-feature idea bank | — |
-| 10 ideas each for Calendar, Maps parking, quick commerce, notifications | Idea bank | [Idea Bank.md](../../Product%20Sense/Idea%20Bank.md) |
+| 10 ideas each for Calendar, Maps parking, quick commerce, notifications | Idea bank | [idea-bank.md](../../product-sense/idea-bank.md) |
 
 ---
 

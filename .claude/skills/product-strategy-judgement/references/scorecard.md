@@ -34,7 +34,7 @@ Give each step a score, one "what landed" and one "what to fix".
 
 ## 3. Rubric read — the five dimensions
 
-The repo's rubric (`Product Strategy/Rubric for Product Strategy Interviews.md`) scores five equal
+The repo's rubric (`product-strategy/rubric-for-product-strategy-interviews.md`) scores five equal
 dimensions on Strong No Hire / No Hire / Hire / Strong Hire. Give each one a rating and one line of
 evidence:
 

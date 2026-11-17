@@ -4,7 +4,7 @@ Common behavioural questions grouped by family. In a mock, start with the family
 story bank covers worst, and lead with a high-scope question (conflict or most impactful project) —
 that's what real rounds do. Ask the main question, then 2–3 of the probes.
 
-If the working directory has a `Leadership & Drive/` folder, its files are the source material for
+If the working directory has a `leadership-and-drive/` folder, its files are the source material for
 these questions and for what interviewers score.
 
 ## Core questions (30)

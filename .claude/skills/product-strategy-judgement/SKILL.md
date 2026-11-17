@@ -119,9 +119,9 @@ the time budget, and the rules: one stage at a time, type "hint" when stuck, "sh
 model turn. Prefer well-known companies (Google, Meta, Amazon, Apple, Netflix, Spotify, Uber,
 Airbnb, Zoom, Duolingo, OpenAI) unless the user names one — knowledge of the business should be
 available, not the bottleneck. If the working directory has
-`Product Strategy/Sample Product Strategy Questions.md`, pull from it, and append any question you
+`product-strategy/sample-product-strategy-questions.md`, pull from it, and append any question you
 invent under its matching section as `### Invented — YYYY-MM-DD`. The repo's other
-`Product Strategy/` files are the source material for deeper framework detail.
+`product-strategy/` files are the source material for deeper framework detail.
 
 **After each candidate turn**, reply in this shape:
 

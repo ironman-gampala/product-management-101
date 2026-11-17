@@ -119,10 +119,10 @@ gave, and derive anything not on the card from the truth.
 **Open** with the type line, the prompt in the interviewer's voice, the time budget, and the rules:
 one stage at a time, ask for any data you want, "hint" when stuck, "show me" for a model turn. Use
 well-known products unless the user names a company. If the working directory has
-`Analytics & Execution/Introduction to Analytical and Execution Questions.md`, pull prompts from it
+`analytics-and-execution/introduction-to-analytical-and-execution-questions.md`, pull prompts from it
 and append any you invent under `### Invented — YYYY-MM-DD`. The source material is in the same
-folder: `How to Answer Root Cause Questions.md`, `Making and Defending Decisions.md`, and
-`Rubric for Analytical and Execution Interviews.md`.
+folder: `how-to-answer-root-cause-questions.md`, `making-and-defending-decisions.md`, and
+`rubric-for-analytical-and-execution-interviews.md`.
 
 **Answering data questions** is how real RCA rounds work, so do it like an analyst, not a helper:
 - Give only what was asked, with concrete numbers. Volunteer nothing.

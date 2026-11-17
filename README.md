@@ -45,13 +45,13 @@ Product Management 101/
 ├── README.md                     ← you are here
 │
 │   1. READ — study material (stays the same)
-├── Intro/                        how PMs are evaluated, levels, question types, glossary
-├── Product Sense/                design / improve a product, idea bank
-├── Product Strategy/             strategy, go-to-market, growth, pricing
-├── Analytics & Execution/        root cause, metrics, A/B tests, estimation, decisions
-├── Leadership & Drive/           stories, signalling level, intro, "why our company"
-├── Technical & AI Questions/      AI fluency, system design for PMs
-├── Take-Home Assignments/        take-homes and presentations
+├── intro/                        how PMs are evaluated, levels, question types, glossary
+├── product-sense/                design / improve a product, idea bank
+├── product-strategy/             strategy, go-to-market, growth, pricing
+├── analytics-and-execution/      root cause, metrics, A/B tests, estimation, decisions
+├── leadership-and-drive/         stories, signalling level, intro, "why our company"
+├── technical-and-ai-questions/   AI fluency, system design for PMs
+├── take-home-assignments/        take-homes and presentations
 │
 │   2. PRACTISE — Claude skills
 ├── .claude/skills/               7 interview coach skills (mocks, model answers, scoring)
@@ -83,13 +83,13 @@ read the *Introduction*, then *How to Answer*, then the *Rubric*, then practise 
 
 | Folder | Read first | Then | Practise with |
 |---|---|---|---|
-| [`Intro/`](Intro) | [PM Interview Framework](Intro/PM%20Interview%20Framework.md), [Types of PM Interview Questions](Intro/Types%20of%20PM%20Interview%20Questions.md) | [Understanding Leveling](Intro/Understanding%20Leveling.md), [How AI Labs and FAANG Evaluate PMs](Intro/How%20Frontier%20AI%20Labs%20and%20FAANG%20Evaluate%20PMs.md), [Glossary](Intro/Interview%20Glossary.md) | — |
-| [`Product Sense/`](Product%20Sense) | [Introduction](Product%20Sense/Introduction%20to%20Product%20Sense%20Questions.md), [How to Answer](Product%20Sense/How%20to%20Answer%20Product%20Sense%20Questions.md) | Deep dives (users, pain points, ideas, clarifying questions), [Rubric](Product%20Sense/Rubric%20for%20Product%20Sense%20Interviews.md), favourite product, case studies | [Sample Questions](Product%20Sense/Sample%20Product%20Sense%20Questions.md), [Idea Bank](Product%20Sense/Idea%20Bank.md) |
-| [`Product Strategy/`](Product%20Strategy) | [Introduction](Product%20Strategy/Introduction%20to%20Product%20Strategy.md), [How to Answer](Product%20Strategy/How%20to%20Answer%20Product%20Strategy%20Questions.md) | Go-to-market, growth, pricing, [Rubric](Product%20Strategy/Rubric%20for%20Product%20Strategy%20Interviews.md), staying up to date | [Sample Questions](Product%20Strategy/Sample%20Product%20Strategy%20Questions.md) |
-| [`Analytics & Execution/`](Analytics%20%26%20Execution) | [Introduction](Analytics%20%26%20Execution/Introduction%20to%20Analytical%20and%20Execution%20Questions.md) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, [Rubric](Analytics%20%26%20Execution/Rubric%20for%20Analytical%20and%20Execution%20Interviews.md) | Examples inside each how-to |
-| [`Leadership & Drive/`](Leadership%20%26%20Drive) | [Introduction](Leadership%20%26%20Drive/Introduction%20to%20Leadership%20and%20Drive%20Questions.md), [How to Find Your Stories](Leadership%20%26%20Drive/How%20to%20Find%20Your%20Stories.md) | Practising stories, signalling level, introducing yourself, "why our company", [Rubric](Leadership%20%26%20Drive/Rubric%20for%20Leadership%20and%20Drive%20Interviews.md) | Your own story bank |
-| [`Technical & AI Questions/`](Technical%20%26%20AI%20Questions) | [Introduction](Technical%20%26%20AI%20Questions/Introduction%20to%20Technical%20Questions.md) | [AI Technical Fluency](Technical%20%26%20AI%20Questions/AI%20Technical%20Fluency.md), [System Design for PMs](Technical%20%26%20AI%20Questions/System%20Design%20for%20PMs.md), [Rubric](Technical%20%26%20AI%20Questions/Rubric%20for%20Technical%20and%20AI%20Interviews.md) | — |
-| [`Take-Home Assignments/`](Take-Home%20Assignments) | [Introduction](Take-Home%20Assignments/Introduction%20to%20Take-Home%20Assignments.md) | Going above and beyond, AI prompt toolkit, [Rubric](Take-Home%20Assignments/Rubric%20for%20Take-Home%20Assignments.md) | — |
+| [`intro/`](intro) | [PM Interview Framework](intro/pm-interview-framework.md), [Types of PM Interview Questions](intro/types-of-pm-interview-questions.md) | [Understanding Leveling](intro/understanding-leveling.md), [How AI Labs and FAANG Evaluate PMs](intro/how-frontier-ai-labs-and-faang-evaluate-pms.md), [Glossary](intro/interview-glossary.md) | — |
+| [`product-sense/`](product-sense) | [Introduction](product-sense/introduction-to-product-sense-questions.md), [How to Answer](product-sense/how-to-answer-product-sense-questions.md) | Deep dives (users, pain points, ideas, clarifying questions), [Rubric](product-sense/rubric-for-product-sense-interviews.md), favourite product, case studies | [Sample Questions](product-sense/sample-product-sense-questions.md), [Idea Bank](product-sense/idea-bank.md) |
+| [`product-strategy/`](product-strategy) | [Introduction](product-strategy/introduction-to-product-strategy.md), [How to Answer](product-strategy/how-to-answer-product-strategy-questions.md) | Go-to-market, growth, pricing, [Rubric](product-strategy/rubric-for-product-strategy-interviews.md), staying up to date | [Sample Questions](product-strategy/sample-product-strategy-questions.md) |
+| [`analytics-and-execution/`](analytics-and-execution) | [Introduction](analytics-and-execution/introduction-to-analytical-and-execution-questions.md) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, [Rubric](analytics-and-execution/rubric-for-analytical-and-execution-interviews.md) | Examples inside each how-to |
+| [`leadership-and-drive/`](leadership-and-drive) | [Introduction](leadership-and-drive/introduction-to-leadership-and-drive-questions.md), [How to Find Your Stories](leadership-and-drive/how-to-find-your-stories.md) | Practising stories, signalling level, introducing yourself, "why our company", [Rubric](leadership-and-drive/rubric-for-leadership-and-drive-interviews.md) | Your own story bank |
+| [`technical-and-ai-questions/`](technical-and-ai-questions) | [Introduction](technical-and-ai-questions/introduction-to-technical-questions.md) | [AI Technical Fluency](technical-and-ai-questions/ai-technical-fluency.md), [System Design for PMs](technical-and-ai-questions/system-design-for-pms.md), [Rubric](technical-and-ai-questions/rubric-for-technical-and-ai-interviews.md) | — |
+| [`take-home-assignments/`](take-home-assignments) | [Introduction](take-home-assignments/introduction-to-take-home-assignments.md) | Going above and beyond, AI prompt toolkit, [Rubric](take-home-assignments/rubric-for-take-home-assignments.md) | — |
 
 ---
 
@@ -189,7 +189,7 @@ watches for your weak spots in its coach notes. After each scorecard it adds the
 | 3 | Company-specific prep, story bank, intro and "why this company" | leadership, technical-ai, strategy |
 
 Score yourself honestly. Coming in at a level you can crush beats stretching into one you struggle at
-(see [`Intro/Understanding Leveling.md`](Intro/Understanding%20Leveling.md)).
+(see [`intro/understanding-leveling.md`](intro/understanding-leveling.md)).
 
 ---
 
@@ -210,8 +210,10 @@ These are real, billed model runs. They compare each case with and without the s
 
 ## Contributing
 
-- File and folder names for the practice log use lowercase with hyphens and no spaces
-  (`my-profile/daily-practice/day-04-2026-11-18-improve-zoom.md`).
+- Name every file and folder in lowercase with hyphens and no spaces, for example
+  `product-sense/how-to-answer-product-sense-questions.md` or
+  `my-profile/daily-practice/day-04-2026-11-18-improve-zoom.md`. Only `README.md` and `SKILL.md` keep
+  their standard names.
 - Add questions to the sample banks in each folder. The skills append the questions they invent under
   `### Invented — YYYY-MM-DD`.
 - Improve a skill by editing its `SKILL.md` or `references/`, then add or update an eval case.

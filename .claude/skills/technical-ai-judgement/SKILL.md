@@ -129,7 +129,7 @@ checklist, trade-off tables, probes, transition lines, freeze recovery, common p
 
 **Open** with the sub-type in one line, the question in the interviewer's voice, the time budget,
 and the rules: one stage at a time, "hint" when stuck, "show me" for a model turn. If the working
-directory has `Technical & AI Questions/Introduction to Technical Questions.md`, pull real asked
+directory has `technical-and-ai-questions/introduction-to-technical-questions.md`, pull real asked
 questions from it; otherwise use `references/question-bank.md`. Append any question you invent to
 that bank under `### Invented — YYYY-MM-DD`.
 

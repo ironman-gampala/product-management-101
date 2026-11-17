@@ -90,7 +90,7 @@ jobs, their access). So:
 - Use B2B metrics: activation, time to value, seats, retention, expansion, admin hours saved.
 
 **Level gap:** PM2 and Senior PM are different bars. The jump from L4 to L5 is bigger than from L3 to L4
-(`Intro/Understanding Leveling.md`), and the strategy part of product sense is where the level is decided.
+(`intro/understanding-leveling.md`), and the strategy part of product sense is where the level is decided.
 
 ---
 
@@ -223,4 +223,4 @@ Company-style, invented:
 | Okta | "What should Okta build in response to AI agents needing access to company apps?" | Strategy (Senior signal) |
 | Okta | "Passwordless sign-in adoption is low among Okta's customers. Why, and what would you do?" | Execution / RCA |
 
-**Idea bank for practised questions:** [Product Sense/Idea Bank.md](../Product%20Sense/Idea%20Bank.md)
+**Idea bank for practised questions:** [product-sense/idea-bank.md](../product-sense/idea-bank.md)

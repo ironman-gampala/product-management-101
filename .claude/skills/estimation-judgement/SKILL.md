@@ -103,11 +103,11 @@ one scope line, the tree, the math, one sanity line, one so-what line.
 
 **Open** with the question type in one line, the question in the interviewer's voice, the 15-minute
 budget, and the rules: one stage at a time, write the tree as text, type "hint" when stuck, "show me"
-to see a model turn. If the working directory has `Analytics & Execution/Estimation - Introduction.md`,
+to see a model turn. If the working directory has `analytics-and-execution/estimation-introduction.md`,
 draw from its example questions; otherwise, and for more variety, use `references/question-bank.md`.
 Mix families across sessions and prefer India-relevant prompts unless the learner's target roles
-point elsewhere. For framework detail, the repo's `Analytics & Execution/Estimation - How to Answer.md`,
-`Estimation - Strategies and Tricks.md` and `Estimation - Rubric.md` are the source material.
+point elsewhere. For framework detail, the repo's `analytics-and-execution/estimation-how-to-answer.md`,
+`estimation-strategies-and-tricks.md` and `estimation-rubric.md` are the source material.
 
 **Stay a real interviewer.** Answer scoping questions with concrete facts ("Assume urban India, this
 year, revenue at retail price"). Don't hand over anchors the candidate should know — reply "What would

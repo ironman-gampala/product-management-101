@@ -124,10 +124,10 @@ Each rule exists because it is where candidates at the L4/L5 line most often los
 **Open** with the sub-type in one line, the question in the interviewer's voice, the time budget, and
 the rules: one stage at a time, type "hint" when stuck, "show me" to see a model turn. Prefer
 well-known products (Spotify, Instagram, Uber, Airbnb, Google Maps, Slack, Zoom, Stripe) unless the
-user names a company. If `Analytics & Execution/Introduction to Analytical and Execution Questions.md`
+user names a company. If `analytics-and-execution/introduction-to-analytical-and-execution-questions.md`
 exists in the working directory, pull examples from it, and append any question you invent under a
 `### Invented — YYYY-MM-DD` heading with a type tag such as `[Metrics — north star]` or `[A/B — ship
-call]`. The repo's `Analytics & Execution/` notes are the source material for deeper detail.
+call]`. The repo's `analytics-and-execution/` notes are the source material for deeper detail.
 
 **A/B mocks hold a hidden result.** At the start, pick a result card from `references/route-and-tools.md`
 (section 12), don't show it, and don't change it to fit what the candidate says. Reveal it with real

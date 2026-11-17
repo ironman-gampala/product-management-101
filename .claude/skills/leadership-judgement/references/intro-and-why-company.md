@@ -32,7 +32,7 @@ same structure. **60–90 seconds** (about 150–220 spoken words); never over t
 strongest stories in one line each so the interviewer asks about them.
 
 **Tailor from the profile.** Pull level, current role, domain strengths and positioning line from
-`my-profile/profile.md`, and the two biggest flagship stories from `My Stories.md`. Line 5 changes for each
+`my-profile/profile.md`, and the two biggest flagship stories from `my-profile/my-stories.md`. Line 5 changes for each
 target company in the profile; lines 1–4 mostly stay the same.
 
 **Career changers:** one sentence on the move ("I spent four years as an engineer, then moved into
@@ -117,7 +117,7 @@ Never criticise your current employer. Never share a down-levelled competing off
 
 ## 5. Running Intro mode
 
-1. Read `my-profile/profile.md` (level, role, strengths, target companies) and `My Stories.md` (two biggest
+1. Read `my-profile/profile.md` (level, role, strengths, target companies) and `my-profile/my-stories.md` (two biggest
    flagship stories). If missing, ask, one short question at a time: current role and scope, biggest
    result with a number, previous role and its best result, target company and role.
 2. Draft the pitch using only their facts. Mark anything missing as `[placeholder]`.
@@ -125,7 +125,7 @@ Never criticise your current employer. Never share a down-levelled competing off
 4. Coach note: what landed, the top 2–3 cuts or fixes, one tightened line.
 5. Repeat until it's under 90 seconds with a number in each project and a company-specific line 5.
 6. Do the same for "why this company", one company at a time.
-7. Offer to save the final versions under the "Intro" section of `My Stories.md`.
+7. Offer to save the final versions under the "Intro" section of `my-profile/my-stories.md`.
 
 Drills: say the pitch with a 90-second timer; say it in 30 seconds (forces the headline); swap only
 line 5 for each target company.

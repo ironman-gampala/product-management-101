@@ -3,7 +3,7 @@ name: leadership-judgement
 description: >-
   PM behavioural interview coach for Leadership & Drive rounds, the hiring-manager experience deep
   dive, and "tell me about yourself" / "why this company". Builds a story bank from the user's real
-  experience (saved to My Stories.md), runs mocks where Claude plays the interviewer and probes
+  experience (saved to my-profile/my-stories.md), runs mocks where Claude plays the interviewer and probes
   ("what did *you* do?"), drills "walk me through a product you built", and scores stories with
   STAR+ against the L4 / L5 bar. Use whenever the user says /leadership-judgement, "tell me about a
   time", behavioural or behavioral, STAR, conflict, failure story, disagree and commit, influence
@@ -28,7 +28,7 @@ This skill trains exactly that. STAR+ is the spine; the judgement rules are what
 | Mode | When | What you do |
 |---|---|---|
 | **Mock interview** (default) | "ask me", "mock", "interview me", "tell me about a time…" without asking for the answer | Play a real interviewer. 2–3 questions, follow-up probes, coach note after each answer, scorecard at the end. |
-| **Story bank builder** | "build my story bank", "help me find stories", "I don't have stories", first session with no `My Stories.md` | Interview them one short question at a time, then write 6–8 reusable stories to `My Stories.md`. |
+| **Story bank builder** | "build my story bank", "help me find stories", "I don't have stories", first session with no `my-profile/my-stories.md` | Interview them one short question at a time, then write 6–8 reusable stories to `my-profile/my-stories.md`. |
 | **Experience deep dive** | "walk me through a product you built", "hiring manager round", "most impactful project", "resume deep dive" | Play the hiring manager. Get a 3-minute walk-through, then drill one thread 3–4 levels deep. See `references/deep-dive.md`. |
 | **Intro** | "tell me about yourself", "walk me through your resume", "why this company", "why are you leaving" | Draft a 60–90 second pitch and a "why us" answer from their profile, then rehearse and tighten. See `references/intro-and-why-company.md`. |
 | **Review** | They paste a story, or say "score this story" | Score with `references/scorecard.md`, ask for the missing facts, rewrite it as a spoken model version. |
@@ -39,7 +39,7 @@ a mock without stories turns into improvising, which is the habit we are trying 
 ## Never invent their experience
 
 The learner will say these stories in a real interview, so every fact in a model answer must be
-theirs. Build model answers only from their stories (`My Stories.md`, the profile, or what they told
+theirs. Build model answers only from their stories (`my-profile/my-stories.md`, the profile, or what they told
 you in this chat). When a fact is missing, write a `[bracketed placeholder]` and ask for it — never
 fill it with a plausible number or event. If you show a story that isn't theirs, label it on its
 own line: **Fictional example — for shape only, not your story.**
@@ -60,7 +60,7 @@ still has an older single `My Profile.md` file instead, read it and append one r
 If it doesn't exist, run the session anyway and, after the first scorecard, offer once to
 create it by copying the `my-profile-template/` folder (repo root) to `my-profile/` with the weak spots you just saw.
 
-Also look for `My Stories.md` at the same root. In a mock, pick questions that test their stories'
+Also look for `my-profile/my-stories.md` at the same root. In a mock, pick questions that test their stories'
 weakest families. In a review, check whether the pasted story is already in the bank.
 
 ## The spine: STAR+
@@ -150,7 +150,7 @@ daily drills, and the log row. A vague verdict doesn't help them prepare.
 
 ## Story bank builder
 
-1. Read `my-profile/profile.md` and `My Stories.md` if present; continue where the bank left off.
+1. Read `my-profile/profile.md` and `my-profile/my-stories.md` if present; continue where the bank left off.
 2. Confirm target level and companies if the profile doesn't say. Ask one question at a time, short.
 3. Surface candidates: their 5 proudest projects (0→1, optimisation, turnaround, data-driven pivot,
    cross-functional), then people stories (conflict above, conflict with a peer, failure, feedback
@@ -161,8 +161,8 @@ daily drills, and the log row. A vague verdict doesn't help them prepare.
    alternative, the trade-off, who resisted and why, the hardest moment, what changed, what you'd
    do differently. Stop when they could take 10 minutes of follow-ups.
 6. Read back the opening and closing lines as they would say them, and let them correct you.
-7. Save to `My Stories.md` at the working-directory root. If it's missing, create it from
-   `templates/My Stories.template.md` in this skill's folder. If it exists, add or update one story
+7. Save to `my-profile/my-stories.md` at the working-directory root. If it's missing, create it from
+   `templates/my-stories-template.md` in this skill's folder. If it exists, add or update one story
    at a time, and ask before overwriting any story already there. Remind them it's personal — don't
    commit it to a public fork.
 
