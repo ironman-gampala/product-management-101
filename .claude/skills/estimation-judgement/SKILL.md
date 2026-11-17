@@ -35,13 +35,20 @@ If it's unclear, start the mock — doing the math out loud under a clock is wha
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory (the cloned prep repo). If it
-exists, read its weak spots and target roles before starting, watch for those weak spots in the coach
-notes, and after a scorecard append one row to its mock log (date, question, type, score, key notes).
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 This keeps practice cumulative instead of starting cold each day.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it from
-`My Profile.template.md` (repo root) and fill in the weak spots you just observed.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
+`my-profile-template/` folder (repo root) to `my-profile/` and fill in the weak spots you just observed.
 
 ## The route (15 minutes)
 
@@ -96,11 +103,11 @@ one scope line, the tree, the math, one sanity line, one so-what line.
 
 **Open** with the question type in one line, the question in the interviewer's voice, the 15-minute
 budget, and the rules: one stage at a time, write the tree as text, type "hint" when stuck, "show me"
-to see a model turn. If the working directory has `Analytics & Execution/Estimation - Introduction.md`,
+to see a model turn. If the working directory has `analytics-and-execution/estimation-introduction.md`,
 draw from its example questions; otherwise, and for more variety, use `references/question-bank.md`.
 Mix families across sessions and prefer India-relevant prompts unless the learner's target roles
-point elsewhere. For framework detail, the repo's `Analytics & Execution/Estimation - How to Answer.md`,
-`Estimation - Strategies and Tricks.md` and `Estimation - Rubric.md` are the source material.
+point elsewhere. For framework detail, the repo's `analytics-and-execution/estimation-how-to-answer.md`,
+`estimation-strategies-and-tricks.md` and `estimation-rubric.md` are the source material.
 
 **Stay a real interviewer.** Answer scoping questions with concrete facts ("Assume urban India, this
 year, revenue at retail price"). Don't hand over anchors the candidate should know — reply "What would

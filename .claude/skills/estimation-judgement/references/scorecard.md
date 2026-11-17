@@ -35,7 +35,7 @@ Then one line: **the big insight from today** — the single habit that caused m
 
 Give each step a score, one "what landed" and one "what to fix".
 
-The repo's rubric (`Analytics & Execution/Estimation - Rubric.md`) grades six dimensions. Map them
+The repo's rubric (`analytics-and-execution/estimation-rubric.md`) grades six dimensions. Map them
 when the learner asks: **problem-solving** = scope + anchor + break down; **comfort with numbers** =
 math; **identifying errors** = sanity check + sensitivity; **communication**; **collaboration** =
 checks in and uses the interviewer's facts; **creativity** = a clever proxy or second method.
@@ -71,4 +71,5 @@ Three short daily drills, each mapped to a mistake from today. Defaults:
 
 ## 6. Log it
 
-If `My Profile.md` exists, append a mock log row: date | question | type | score | key notes.
+If `my-profile/` exists, log the session in `my-profile/daily-practice/`: a new day file plus updates to
+`daily-practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row: date | question | type | score | key notes.

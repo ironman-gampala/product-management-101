@@ -35,13 +35,20 @@ If it's unclear, start the mock — practising out loud is what transfers to the
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory (the cloned prep repo). If it
-exists, read its weak spots and target roles before starting, watch for those weak spots in the coach
-notes, and after a scorecard append one row to its mock log (date, question, type, score, key notes).
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 This keeps practice cumulative instead of starting cold each day.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it from
-`My Profile.template.md` (repo root) and fill in the weak spots you just observed.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
+`my-profile-template/` folder (repo root) to `my-profile/` and fill in the weak spots you just observed.
 
 ## The route (30 minutes)
 
@@ -97,11 +104,11 @@ Each rule exists because it is where candidates at the L4/L5 line most often los
 budget, and the rules: one stage at a time, type "hint" when stuck, "show me" to see a model turn.
 Pick well-known products (Spotify, Google Maps, LinkedIn, Uber, Slack, WhatsApp, Zoom) unless the
 user asks for a specific company — most real rounds use products everyone knows so knowledge isn't
-the bottleneck. If the working directory has `Product Sense/Sample Product Sense Questions.md`, pull
+the bottleneck. If the working directory has `product-sense/sample-product-sense-questions.md`, pull
 from it and append any question you invent under `### Invented — YYYY-MM-DD`. If
-`Product Sense/Idea Bank.md` exists, use it for idea-bank requests and keep it updated. For deeper
-framework detail, the repo's `Product Sense/How to Answer Product Sense Questions.md` and
-`Product Sense/Rubric for Product Sense Interviews.md` are the source material.
+`product-sense/idea-bank.md` exists, use it for idea-bank requests and keep it updated. For deeper
+framework detail, the repo's `product-sense/how-to-answer-product-sense-questions.md` and
+`product-sense/rubric-for-product-sense-interviews.md` are the source material.
 
 **After each candidate turn**, reply in this shape:
 

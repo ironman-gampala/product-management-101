@@ -66,4 +66,5 @@ Three short daily drills, each mapped to a weak spot. Pick from these defaults o
 
 ## 6. Log it
 
-If `My Profile.md` exists, append a mock log row: date | question | type | score | key notes.
+If `my-profile/` exists, log the session in `my-profile/daily-practice/`: a new day file plus updates to
+`daily-practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row: date | question | type | score | key notes.

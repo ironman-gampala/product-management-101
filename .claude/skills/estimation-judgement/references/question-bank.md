@@ -1,6 +1,6 @@
 # Question bank
 
-Use these when the repo's `Analytics & Execution/Estimation - Introduction.md` examples are used up,
+Use these when the repo's `analytics-and-execution/estimation-introduction.md` examples are used up,
 or for speed drills (pick three different families). Add new invented prompts at the bottom under
 `### Invented — YYYY-MM-DD`.
 

@@ -35,13 +35,20 @@ practised as a conversation.
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory (the cloned prep repo). If it
-exists, read its weak spots and target roles before starting, watch for those weak spots in the coach
-notes, and after a scorecard append one row to its mock log (date, question, type, score, key notes).
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 This keeps practice cumulative instead of starting cold each day.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it from
-`My Profile.template.md` (repo root) and fill in the weak spots you just observed.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
+`my-profile-template/` folder (repo root) to `my-profile/` and fill in the weak spots you just observed.
 
 ## The route (25–30 minutes)
 
@@ -112,10 +119,10 @@ gave, and derive anything not on the card from the truth.
 **Open** with the type line, the prompt in the interviewer's voice, the time budget, and the rules:
 one stage at a time, ask for any data you want, "hint" when stuck, "show me" for a model turn. Use
 well-known products unless the user names a company. If the working directory has
-`Analytics & Execution/Introduction to Analytical and Execution Questions.md`, pull prompts from it
+`analytics-and-execution/introduction-to-analytical-and-execution-questions.md`, pull prompts from it
 and append any you invent under `### Invented — YYYY-MM-DD`. The source material is in the same
-folder: `How to Answer Root Cause Questions.md`, `Making and Defending Decisions.md`, and
-`Rubric for Analytical and Execution Interviews.md`.
+folder: `how-to-answer-root-cause-questions.md`, `making-and-defending-decisions.md`, and
+`rubric-for-analytical-and-execution-interviews.md`.
 
 **Answering data questions** is how real RCA rounds work, so do it like an analyst, not a helper:
 - Give only what was asked, with concrete numbers. Volunteer nothing.

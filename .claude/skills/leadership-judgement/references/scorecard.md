@@ -50,7 +50,7 @@ company-specific line, clean invitation at the end.
 | 8 | Strong L4, borderline L5. Decision + alternative most of the time. | Hire at L4, lean Hire at L5 |
 | 9+ | L5 / Senior pass. Team-level scope, real tension, insight at the close. | Hire / Strong Hire at L5 |
 
-The repo's interviewer rubric (`Leadership & Drive/Rubric for Leadership and Drive Interviews.md`,
+The repo's interviewer rubric (`leadership-and-drive/rubric-for-leadership-and-drive-interviews.md`,
 if present) scores scope, stakeholder management, ownership, communication and passion on a
 Strong No Hire → Strong Hire scale. The six dimensions above cover the same ground: scope = level
 signal; stakeholders = judgement and trade-off; communication and passion = delivery + STAR+.
@@ -68,7 +68,7 @@ minutes, STAR+ beats in order, headline first, closing on change.
 - Use only the learner's facts. Put every missing fact in `[brackets]` — `[the baseline]`, `[the
   eng lead's concern]`, `[what you cut]` — never a made-up number or event.
 - Under the rewrite, list the bracketed gaps as questions for them to answer, then offer to finish
-  the story and save it to `My Stories.md`.
+  the story and save it to `my-profile/my-stories.md`.
 - If you need to show what a strong version sounds like before they've given the facts, label it on
   its own line: **Fictional example — for shape only, not your story.**
 
@@ -91,5 +91,6 @@ Three short daily drills, each tied to a specific mistake from today. Defaults:
 
 ## 6. Log it
 
-If `My Profile.md` exists, append a mock log row: date | question | type (Behavioural / Deep dive /
-Intro) | score | key notes. If a story was improved, offer to update it in `My Stories.md`.
+If `my-profile/` exists, log the session in `my-profile/daily-practice/`: a new day file plus updates to
+`daily-practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row:
+date | question | type (Behavioural / Deep dive / Intro) | score | key notes. If a story was improved, offer to update it in `my-profile/my-stories.md`.

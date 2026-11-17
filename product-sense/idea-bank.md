@@ -15,7 +15,7 @@
 | 3 | Quick commerce price-compare app | "How would you improve a quick commerce compare platform?" | 10 | Q3, Q1, Q9 | [Quick commerce compare](#3-quick-commerce-price-compare-app) |
 | 4 | Quick commerce notifications | "Build the notifications product for the compare app" | 10 | N3, N2, N1 | [Notifications](#4-quick-commerce-notifications-product) |
 
-**Related:** [My Profile](../My%20Profile.md) · [Sample Product Sense Questions](Sample%20Product%20Sense%20Questions.md)
+**Related:** [My Profile](../my-profile/profile.md) · [Daily Practice](../my-profile/daily-practice/daily-practice.md) · [Sample Product Sense Questions](sample-product-sense-questions.md)
 
 ### Lens key
 

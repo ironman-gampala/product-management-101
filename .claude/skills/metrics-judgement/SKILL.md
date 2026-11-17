@@ -43,12 +43,19 @@ If it's unclear, start the mock — practising out loud is what transfers to the
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory (the cloned prep repo). If it
-exists, read its weak spots and target roles before starting, watch for those weak spots in the coach
-notes, and after a scorecard append one row to its mock log (date, question, type, score, key notes).
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it from
-`My Profile.template.md` (repo root) and fill in the weak spots you just observed.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by copying the
+`my-profile-template/` folder (repo root) to `my-profile/` and fill in the weak spots you just observed.
 
 ## The routes (20–25 minutes)
 
@@ -117,10 +124,10 @@ Each rule exists because it is where candidates at the L4/L5 line most often los
 **Open** with the sub-type in one line, the question in the interviewer's voice, the time budget, and
 the rules: one stage at a time, type "hint" when stuck, "show me" to see a model turn. Prefer
 well-known products (Spotify, Instagram, Uber, Airbnb, Google Maps, Slack, Zoom, Stripe) unless the
-user names a company. If `Analytics & Execution/Introduction to Analytical and Execution Questions.md`
+user names a company. If `analytics-and-execution/introduction-to-analytical-and-execution-questions.md`
 exists in the working directory, pull examples from it, and append any question you invent under a
 `### Invented — YYYY-MM-DD` heading with a type tag such as `[Metrics — north star]` or `[A/B — ship
-call]`. The repo's `Analytics & Execution/` notes are the source material for deeper detail.
+call]`. The repo's `analytics-and-execution/` notes are the source material for deeper detail.
 
 **A/B mocks hold a hidden result.** At the start, pick a result card from `references/route-and-tools.md`
 (section 12), don't show it, and don't change it to fit what the candidate says. Reveal it with real

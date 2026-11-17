@@ -1,9 +1,9 @@
 # Question bank
 
 Real asked questions live in the repo notes when the working directory has them — use those first:
-`Technical & AI Questions/Introduction to Technical Questions.md` (recently asked questions),
-`Technical & AI Questions/AI Technical Fluency.md` and `System Design for PMs.md` (questions quoted
-inside each lesson), and the Technical section of `Intro/Types of PM Interview Questions.md`.
+`technical-and-ai-questions/introduction-to-technical-questions.md` (recently asked questions),
+`technical-and-ai-questions/ai-technical-fluency.md` and `system-design-for-pms.md` (questions quoted
+inside each lesson), and the Technical section of `intro/types-of-pm-interview-questions.md`.
 
 The prompts below are practice questions written for this skill, not attributed to any company.
 Tags: **[Fluency]** AI fluency · **[AI design]** AI product design + evaluation · **[System]**

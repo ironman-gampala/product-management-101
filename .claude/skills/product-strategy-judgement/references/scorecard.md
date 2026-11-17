@@ -34,7 +34,7 @@ Give each step a score, one "what landed" and one "what to fix".
 
 ## 3. Rubric read — the five dimensions
 
-The repo's rubric (`Product Strategy/Rubric for Product Strategy Interviews.md`) scores five equal
+The repo's rubric (`product-strategy/rubric-for-product-strategy-interviews.md`) scores five equal
 dimensions on Strong No Hire / No Hire / Hire / Strong Hire. Give each one a rating and one line of
 evidence:
 
@@ -83,5 +83,6 @@ Three short daily drills, each mapped to a weak spot. Pick from these defaults o
 
 ## 7. Log it
 
-If `My Profile.md` exists, append a mock log row: date | question | type | score | key notes.
-If it doesn't, offer once to create it from `My Profile.template.md` with today's weak spots filled in.
+If `my-profile/` exists, log the session in `my-profile/daily-practice/`: a new day file plus updates to
+`daily-practice.md` (see SKILL.md → Learner profile). With an older single `My Profile.md`, append a mock log row: date | question | type | score | key notes.
+If it doesn't, offer once to create it by copying the `my-profile-template/` folder to `my-profile/` with today's weak spots filled in.

@@ -46,16 +46,24 @@ product-sense-judgement. If it asks how the AI works, ships and is measured, kee
 
 ## Learner profile
 
-Look for `My Profile.md` at the root of the current working directory. If it exists, read
-background, target roles and weak spots before starting, and watch those weak spots in coach notes.
+Look for the `my-profile/` folder at the root of the current working directory (the cloned prep
+repo). Before starting, read `my-profile/profile.md` (background, target roles) and
+`my-profile/daily-practice/daily-practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
+`my-profile/daily-practice/day-NN-YYYY-MM-DD-<question-slug>.md` (lowercase, hyphens, no
+spaces, e.g. `day-04-2026-11-18-improve-zoom.md`; score, how it went, weak spots, step
+scores, model turn, drills; copy the shape of the latest day file, or `day-template.md` from
+`my-profile-template/daily-practice/`) and update `daily-practice.md` (a row in Days,
+a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
+still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
+
 **Background changes the bar:** with an engineering or ML background, expect depth under pressure
 (real metrics, real decisions) and watch for drifting into implementation and losing the user;
 without one, the bar is plain explanation, the right lever, an evaluation plan and owned
-trade-offs — not trivia. After a scorecard, append one mock-log row (date, question, type, score,
-key notes).
+trade-offs — not trivia.
 
-If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it
-from `My Profile.template.md` (repo root) with the weak spots you just saw.
+If it doesn't exist, run the session anyway. After the first scorecard, offer once to create it by
+copying the `my-profile-template/` folder (repo root) to `my-profile/` with the weak spots you just saw.
 
 ## The routes
 
@@ -121,7 +129,7 @@ checklist, trade-off tables, probes, transition lines, freeze recovery, common p
 
 **Open** with the sub-type in one line, the question in the interviewer's voice, the time budget,
 and the rules: one stage at a time, "hint" when stuck, "show me" for a model turn. If the working
-directory has `Technical & AI Questions/Introduction to Technical Questions.md`, pull real asked
+directory has `technical-and-ai-questions/introduction-to-technical-questions.md`, pull real asked
 questions from it; otherwise use `references/question-bank.md`. Append any question you invent to
 that bank under `### Invented — YYYY-MM-DD`.
 

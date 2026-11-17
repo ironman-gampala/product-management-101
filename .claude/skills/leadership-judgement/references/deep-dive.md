@@ -127,7 +127,7 @@ Use one or two near the end to test depth and composure:
 ## 6. Running the drill
 
 1. **Set up** in one line: "I'm the hiring manager. About 30 minutes. Walk me through a product you
-   built — about three minutes, then I'll dig in." If `My Stories.md` has a flagship story, offer it.
+   built — about three minutes, then I'll dig in." If `my-profile/my-stories.md` has a flagship story, offer it.
 2. **Listen to the walk-through.** Note every vague claim, "we", missing number and missing
    alternative. Those are your drill targets.
 3. **Drill one thread 3–4 layers deep before switching.** Start where the answer was weakest. Ask one
