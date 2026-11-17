@@ -3,8 +3,19 @@
 Notes, frameworks, question banks and **Claude skills** for preparing for Product Manager interviews,
 from PM2 / mid-level up to Senior PM (L4–L5).
 
-The notes teach the frameworks. The skills make you **practise them out loud, on the clock**, with
-Claude playing the interviewer, coaching you between turns, and scoring you against the senior bar.
+The repo works in three parts:
+
+```
+   1. READ                    2. PRACTISE                    3. TRACK
+   ───────────                ───────────────                ─────────────────
+   The study folders          Claude skills play the         My Profile/ — who you are,
+   teach each question        interviewer, coach you         and Daily Practice/ — one
+   type: how to answer,       between turns and score        file per day: question,
+   rubrics, sample            you against the L4 / L5        score, what went well,
+   questions.                 bar.                           what to improve, where
+                                                             you stand.
+   Stays the same.            Every session.                 Changes every day.
+```
 
 ---
 
@@ -13,11 +24,76 @@ Claude playing the interviewer, coaching you between turns, and scoring you agai
 ```bash
 git clone --recurse-submodules <this-repo-url> "Product Management 101"
 cd "Product Management 101"
-cp -R "My Profile.template" "My Profile"     # optional, but makes coaching personal
+cp -R "My Profile.template" "My Profile"     # your profile and daily practice log
 claude                                         # open Claude Code in the repo
 ```
 
-Then just ask, for example:
+Then:
+1. Fill in `My Profile/Profile.md` (experience, target roles). Five minutes is enough.
+2. Read the [Intro](#1-read--the-study-material) folder, then the folder for the question type you want to practise.
+3. Ask Claude for a mock, for example *"Let's do a mock: how would you improve Spotify?"*
+4. After the scorecard, your day is logged in `My Profile/Daily Practice/`. Open
+   `Daily Practice.md` to see where you stand.
+
+---
+
+## Repo structure
+
+```
+Product Management 101/
+│
+├── README.md                     ← you are here
+│
+│   1. READ — study material (stays the same)
+├── Intro/                        how PMs are evaluated, levels, question types, glossary
+├── Product Sense/                design / improve a product, idea bank
+├── Product Strategy/             strategy, go-to-market, growth, pricing
+├── Analytics & Execution/        root cause, metrics, A/B tests, estimation, decisions
+├── Leadership & Drive/           stories, signalling level, intro, "why our company"
+├── Technical & AI Questions/      AI fluency, system design for PMs
+├── Take-Home Assignments/        take-homes and presentations
+│
+│   2. PRACTISE — Claude skills
+├── .claude/skills/               7 interview coach skills (mocks, model answers, scoring)
+├── install-skills.sh             install the skills for use in any project
+│
+│   3. TRACK — your progress (changes every day)
+├── My Profile.template/          copy this to My Profile/ to start
+│   ├── Profile.md                  about you, experience, target roles, plan
+│   └── Daily Practice/
+│       ├── Daily Practice.md       where you stand each day + a table of every day's file
+│       └── Day template.md         copy for each new practice day
+├── My Profile/                   your copy (personal — keep it out of public forks)
+│
+│   Extras
+├── rag-eval-lab/                 hands-on lab: chunking, hybrid search, reranking, RAG evaluation
+├── multi-agent-demo/             hands-on lab: LLM → agent → multi-agent orchestration
+└── cloud-daily-mail/             submodule: daily PM practice-question email
+```
+
+---
+
+## 1. Read — the study material
+
+Suggested order: **Intro first**, then the folder for each question type you'll face. In each folder,
+read the *Introduction*, then *How to Answer*, then the *Rubric*, then practise with the *Sample Questions*.
+
+| Folder | Read first | Then | Practise with |
+|---|---|---|---|
+| [`Intro/`](Intro) | [PM Interview Framework](Intro/PM%20Interview%20Framework.md), [Types of PM Interview Questions](Intro/Types%20of%20PM%20Interview%20Questions.md) | [Understanding Leveling](Intro/Understanding%20Leveling.md), [How AI Labs and FAANG Evaluate PMs](Intro/How%20Frontier%20AI%20Labs%20and%20FAANG%20Evaluate%20PMs.md), [Glossary](Intro/Interview%20Glossary.md) | — |
+| [`Product Sense/`](Product%20Sense) | [Introduction](Product%20Sense/Introduction%20to%20Product%20Sense%20Questions.md), [How to Answer](Product%20Sense/How%20to%20Answer%20Product%20Sense%20Questions.md) | Deep dives (users, pain points, ideas, clarifying questions), [Rubric](Product%20Sense/Rubric%20for%20Product%20Sense%20Interviews.md), favourite product, case studies | [Sample Questions](Product%20Sense/Sample%20Product%20Sense%20Questions.md), [Idea Bank](Product%20Sense/Idea%20Bank.md) |
+| [`Product Strategy/`](Product%20Strategy) | [Introduction](Product%20Strategy/Introduction%20to%20Product%20Strategy.md), [How to Answer](Product%20Strategy/How%20to%20Answer%20Product%20Strategy%20Questions.md) | Go-to-market, growth, pricing, [Rubric](Product%20Strategy/Rubric%20for%20Product%20Strategy%20Interviews.md), staying up to date | [Sample Questions](Product%20Strategy/Sample%20Product%20Strategy%20Questions.md) |
+| [`Analytics & Execution/`](Analytics%20%26%20Execution) | [Introduction](Analytics%20%26%20Execution/Introduction%20to%20Analytical%20and%20Execution%20Questions.md) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, [Rubric](Analytics%20%26%20Execution/Rubric%20for%20Analytical%20and%20Execution%20Interviews.md) | Examples inside each how-to |
+| [`Leadership & Drive/`](Leadership%20%26%20Drive) | [Introduction](Leadership%20%26%20Drive/Introduction%20to%20Leadership%20and%20Drive%20Questions.md), [How to Find Your Stories](Leadership%20%26%20Drive/How%20to%20Find%20Your%20Stories.md) | Practising stories, signalling level, introducing yourself, "why our company", [Rubric](Leadership%20%26%20Drive/Rubric%20for%20Leadership%20and%20Drive%20Interviews.md) | Your own story bank |
+| [`Technical & AI Questions/`](Technical%20%26%20AI%20Questions) | [Introduction](Technical%20%26%20AI%20Questions/Introduction%20to%20Technical%20Questions.md) | [AI Technical Fluency](Technical%20%26%20AI%20Questions/AI%20Technical%20Fluency.md), [System Design for PMs](Technical%20%26%20AI%20Questions/System%20Design%20for%20PMs.md), [Rubric](Technical%20%26%20AI%20Questions/Rubric%20for%20Technical%20and%20AI%20Interviews.md) | — |
+| [`Take-Home Assignments/`](Take-Home%20Assignments) | [Introduction](Take-Home%20Assignments/Introduction%20to%20Take-Home%20Assignments.md) | Going above and beyond, AI prompt toolkit, [Rubric](Take-Home%20Assignments/Rubric%20for%20Take-Home%20Assignments.md) | — |
+
+---
+
+## 2. Practise — the Claude skills
+
+Claude Code loads the skills from this repo's `.claude/skills/` automatically when you work inside the repo.
+Just ask, for example:
 
 - *"Let's do a mock: how would you improve Spotify?"*
 - *"Give me a proper transcript for: what should Airbnb build next?"*
@@ -26,7 +102,31 @@ Then just ask, for example:
 - *"Help me build my story bank for behavioural rounds."*
 - *"Explain RAG to me like I'm the CEO, then score my explanation."*
 
-Claude Code loads skills from this repo's `.claude/skills/` automatically when you work inside the repo.
+| Skill | Use it for | Try saying |
+|---|---|---|
+| [`product-sense-judgement`](.claude/skills/product-sense-judgement/SKILL.md) | Design or improve a product | "Mock: improve Google Calendar" · "10 features for Spotify" |
+| [`product-strategy-judgement`](.claude/skills/product-strategy-judgement/SKILL.md) | What should X build, go-to-market, growth, pricing, market entry, competitive response | "What should Netflix do about short video? Interview me." |
+| [`rca-judgement`](.claude/skills/rca-judgement/SKILL.md) | A metric moved — find the root cause and decide what to do | "Uber rides are up but revenue is down. Mock me." |
+| [`metrics-judgement`](.claude/skills/metrics-judgement/SKILL.md) | North star, success metrics, goals, A/B test design and ship decisions | "Check my north star: weekly active users of the app." |
+| [`estimation-judgement`](.claude/skills/estimation-judgement/SKILL.md) | Market sizing and back-of-the-envelope estimates | "Speed drill: 3 estimation questions." |
+| [`leadership-judgement`](.claude/skills/leadership-judgement/SKILL.md) | Behavioural rounds, experience deep dive, "tell me about yourself", "why this company" | "Build my story bank." · "Deep-dive me on a product I built." |
+| [`technical-ai-judgement`](.claude/skills/technical-ai-judgement/SKILL.md) | AI fluency, AI product evaluation, system design for PMs, technical trade-offs | "How would you evaluate an LLM support bot? Mock me." |
+
+Every skill follows the same pattern, so once you know one you know them all.
+
+| Mode | What happens | Say |
+|---|---|---|
+| **Mock interview** (default) | Claude plays a real interviewer, one stage at a time. After each of your turns you get a short coach note (what landed, what to fix, one model line) and a time check. | "Mock me on…", "Interview me", or just paste a question |
+| **Model answer** | A realistic spoken Interviewer/Candidate transcript you can read out loud, with board notes and interviewer push-back | "Show me", "proper transcript", "how would you answer…" |
+| **Review** | Scores your written or pasted answer and rewrites your weakest step as a spoken model turn | "Score my answer: …" |
+| Skill-specific extras | Idea banks (product sense), metric check (metrics), speed drills (estimation), story bank builder and intro coaching (leadership), "explain it simply" drills (technical) | See each SKILL.md |
+
+**Stuck mid-mock?** Type `hint` (names the tool), `hint` again (asks the right questions), or
+`show me` (writes the model turn for that stage, then hands it back to you).
+
+**What "judgement" means here:** the frameworks are the route. The skills grade **judgement**: at every
+step you make a call, give the reason, and say what you rejected — on the clock, without the interviewer
+pulling you along.
 
 ### Use the skills in any project
 
@@ -42,66 +142,38 @@ can also zip a single skill folder (for example `.claude/skills/rca-judgement`) 
 
 ---
 
-## The skills
+## 3. Track — your profile and daily practice
 
-| Skill | Use it for | Try saying |
+This is the part **you change every day**. Start by copying the template:
+
+```bash
+cp -R "My Profile.template" "My Profile"
+```
+
+| File | What it holds | How often it changes |
 |---|---|---|
-| [`product-sense-judgement`](.claude/skills/product-sense-judgement/SKILL.md) | Design or improve a product | "Mock: improve Google Calendar" · "10 features for Spotify" |
-| [`product-strategy-judgement`](.claude/skills/product-strategy-judgement/SKILL.md) | What should X build, go-to-market, growth, pricing, market entry, competitive response | "What should Netflix do about short video? Interview me." |
-| [`rca-judgement`](.claude/skills/rca-judgement/SKILL.md) | A metric moved — find the root cause and decide what to do | "Uber rides are up but revenue is down. Mock me." |
-| [`metrics-judgement`](.claude/skills/metrics-judgement/SKILL.md) | North star, success metrics, goals, A/B test design and ship decisions | "Check my north star: weekly active users of the app." |
-| [`estimation-judgement`](.claude/skills/estimation-judgement/SKILL.md) | Market sizing and back-of-the-envelope estimates | "Speed drill: 3 estimation questions." |
-| [`leadership-judgement`](.claude/skills/leadership-judgement/SKILL.md) | Behavioural rounds, experience deep dive, "tell me about yourself", "why this company" | "Build my story bank." · "Deep-dive me on a product I built." |
-| [`technical-ai-judgement`](.claude/skills/technical-ai-judgement/SKILL.md) | AI fluency, AI product evaluation, system design for PMs, technical trade-offs | "How would you evaluate an LLM support bot? Mock me." |
+| `My Profile/Profile.md` | About you, experience, target roles, likely question types, strengths, plan | When your targets or plan change |
+| `My Profile/Daily Practice/Daily Practice.md` | **Where you stand each day**, a table linking every day's file, what keeps working, the weak-spot tracker, and what to watch in the next mock | Every practice day |
+| `My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` | One practice day: the question, score, **what went well, what to improve, where you stand today**, step scores, a model turn for your weakest step, drills | One new file per day |
 
-Every skill follows the same pattern, so once you know one you know them all.
+**The daily loop:**
 
-### Modes
+```
+  read the folder for today's question type
+        ↓
+  mock with a skill  →  scorecard
+        ↓
+  new Day file  +  Daily Practice.md updated (score, where you stand, weak spots)
+        ↓
+  before the next mock, read "Next mock: watch for"
+```
 
-| Mode | What happens | Say |
-|---|---|---|
-| **Mock interview** (default) | Claude plays a real interviewer, one stage at a time. After each of your turns you get a short coach note (what landed, what to fix, one model line) and a time check. | "Mock me on…", "Interview me", or just paste a question |
-| **Model answer** | A realistic spoken Interviewer/Candidate transcript you can read out loud, with board notes and interviewer push-back | "Show me", "proper transcript", "how would you answer…" |
-| **Review** | Scores your written or pasted answer and rewrites your weakest step as a spoken model turn | "Score my answer: …" |
-| Skill-specific extras | Idea banks (product sense), metric check (metrics), speed drills (estimation), story bank builder and intro coaching (leadership), "explain it simply" drills (technical) | See each SKILL.md |
+If `My Profile/` exists, every skill reads your profile and `Daily Practice.md` before a session and
+watches for your weak spots in its coach notes. After each scorecard it adds the day file and updates
+`Daily Practice.md` for you. You can also fill a day in by hand with
+[`Day template.md`](My%20Profile.template/Daily%20Practice/Day%20template.md).
 
-**Stuck mid-mock?** Type `hint` (names the tool), `hint` again (asks the right questions), or
-`show me` (writes the model turn for that stage, then hands it back to you).
-
-### What "judgement" means here
-
-The frameworks are the route. The skills grade **judgement**: at every step you make a call, give the
-reason, and say what you rejected — on the clock, without the interviewer pulling you along. Each
-skill lists the specific judgement rules where candidates at the L4/L5 line usually lose the round.
-
-### Your profile and progress
-
-If a `My Profile/` folder exists at the repo root, every skill reads your background and target roles
-(`Profile.md`) and where you stand (`Daily Practice/Index.md`) before a session, and watches for your
-weak spots in its coach notes. After each scorecard it adds a day file to `Daily Practice/` and updates
-the index: your score from day to day, the weak-spot tracker and what to watch in the next mock.
-Start from [`My Profile.template/`](My%20Profile.template). `My Profile/` is personal — keep it out of
-public forks.
-
----
-
-## Repo map
-
-| Folder / file | What's inside |
-|---|---|
-| [`Intro/`](Intro) | How PMs are evaluated, leveling (L3–L7), question types, glossary, the overall framework |
-| [`Product Sense/`](Product%20Sense) | How to answer, rubric, deep dives (users, pain points, ideas, clarifying questions), sample questions, [Idea Bank](Product%20Sense/Idea%20Bank.md) |
-| [`Product Strategy/`](Product%20Strategy) | Strategy, go-to-market, growth, pricing, rubric, sample questions |
-| [`Analytics & Execution/`](Analytics%20%26%20Execution) | Root cause, north star and goal setting, A/B testing, estimation, decisions, trade-offs, rubric |
-| [`Leadership & Drive/`](Leadership%20%26%20Drive) | Finding and practising stories, signalling level, introductions, "why our company", rubric |
-| [`Technical & AI Questions/`](Technical%20%26%20AI%20Questions) | AI technical fluency, system design for PMs, rubric |
-| [`Take-Home Assignments/`](Take-Home%20Assignments) | How to approach take-homes, going above and beyond, AI prompt toolkit, rubric |
-| [`.claude/skills/`](.claude/skills) | The interview-practice skills described above |
-| [`My Profile.template/`](My%20Profile.template) | Template for your profile and daily practice log (copy it to `My Profile/`) |
-| [`install-skills.sh`](install-skills.sh) | Installs the skills into `~/.claude/skills` |
-| [`rag-eval-lab/`](rag-eval-lab) | Hands-on lab: chunking, hybrid search, reranking and evaluating a RAG system |
-| [`multi-agent-demo/`](multi-agent-demo) | Hands-on lab: LLM → agent → multi-agent orchestration, with a visible timeline |
-| `cloud-daily-mail/` | Git submodule: a daily PM practice-question email on a GitHub Actions schedule |
+> `My Profile/` is personal. Keep it out of public forks.
 
 ---
 
@@ -109,7 +181,7 @@ public forks.
 
 | Week | Do | Skills |
 |---|---|---|
-| 1 | Daily 10–15 minute drills on your weak spots; one full mock per question type | All, one per day |
+| 1 | Read Intro and your main question types; daily 10–15 minute drills on your weak spots; one full mock per question type | All, one per day |
 | 2 | Three full timed mocks a week in the types your target companies ask most | product-sense, metrics, rca, strategy |
 | 3 | Company-specific prep, story bank, intro and "why this company" | leadership, technical-ai, strategy |
 

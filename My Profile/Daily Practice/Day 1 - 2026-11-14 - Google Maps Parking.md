@@ -1,6 +1,6 @@
 # Day 1 — Google Maps Parking
 
-[← Index](Index.md) · Next: [Day 2 — Google Calendar →](Day%202%20-%202026-11-16%20-%20Google%20Calendar.md)
+[← Daily Practice](Daily%20Practice.md) · Next: [Day 2 — Google Calendar →](Day%202%20-%202026-11-16%20-%20Google%20Calendar.md)
 
 | | |
 |---|---|
@@ -9,6 +9,26 @@
 | **Type** | Product Sense: improve (consumer) |
 | **Score** | **~5/10** |
 | **Verdict** | PM / PM2: lean reject · Senior PM: reject |
+
+---
+
+## What went well
+- Opened with a strong strategic question: "why is Google building this now?"
+- Came up with a smart, measurable success signal: no circling near the destination.
+- Had three real solution ideas (list, booking, auto re-route) from three lenses, even without noticing.
+- Sensible launch scoping: top 5 cities, busy areas first, partner with existing vendors.
+- Got visibly better within the session once I used the lens tools.
+
+## What to improve
+1. **Go wide before deep.** Say 3 numbered one-liners before detailing any idea.
+2. **Walk the whole flow.** Entry → screen → action → behind the scenes → result → edge case.
+3. **Stay consistent.** Booking depends on find parking, so it can't be in v1.
+4. **A prerequisite is what must be true** (data accuracy), not where I launch (top 5 cities).
+5. **Finish the close:** what waits, guardrails, and "To summarise…".
+6. **Lock in decisions:** pick the market myself; say "I'll assume", not "I hope".
+
+## Where I stand today
+**~5/10.** PM / PM2: lean reject. Senior PM: reject. The ideas are there; the gaps are habits, not knowledge.
 
 ---
 
@@ -95,4 +115,4 @@ blocks everything else. Every freeze started that way.
 
 ## Follow-up: summary drill (pending)
 
-Say the 4-part summary for this question in 20–30 seconds. See [Index → Summary drill](Index.md#summary-drill--pending).
+Say the 4-part summary for this question in 20–30 seconds. See [Daily Practice → Summary drill](Daily%20Practice.md#summary-drill--pending).

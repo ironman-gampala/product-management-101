@@ -1,6 +1,6 @@
 # Day 2 — Google Calendar
 
-[← Day 1 — Google Maps Parking](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md) · [Index](Index.md) · Next: [Day 3 — Slack →](Day%203%20-%202026-11-17%20-%20Slack.md)
+[← Day 1 — Google Maps Parking](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md) · [Daily Practice](Daily%20Practice.md) · Next: [Day 3 — Slack →](Day%203%20-%202026-11-17%20-%20Slack.md)
 
 | | |
 |---|---|
@@ -9,6 +9,27 @@
 | **Type** | Product Sense: improve (B2B angle) |
 | **Score** | **~5.5/10** (up from 5) |
 | **Verdict** | Rippling: borderline, leaning reject · Eightfold AI: borderline, leaning reject · Okta: reject |
+
+---
+
+## What went well
+- **Three numbered, different ideas.** The "only one solution" habit is fixed.
+- A strong user insight: four free hours a day, but scattered in 30-minute gaps.
+- Reframed the persona to the player-coach lead under challenge. My best moment.
+- A concrete stacking example (4, 5 and 6 pm calls → free 5:30–7).
+- A real guardrail ("inaccurate suggestions"), not the north star flipped.
+- Kept users and the day in the life apart.
+
+## What to improve
+1. **Start within 3 seconds.** I asked for time or announced the next step 4 times.
+2. **Land each step:** "So my ___ is ___, because ___." No problem statement with "because"; picked two problems.
+3. **Keep the north star the same** as on the board (it drifted from 3h to 2h).
+4. **Know what exists.** Focus time is already in Calendar; build on it.
+5. **Finish the MVP:** prerequisite, v1 scope, what waits, then "To summarise…" (not "and also, if yeah").
+
+## Where I stand today
+**~5.5/10 (+0.5).** Rippling and Eightfold AI: borderline, leaning reject. Okta Senior PM: reject. Content
+caught up; landing decisions is the gap.
 
 ---
 

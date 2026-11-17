@@ -1,7 +1,7 @@
 # My Profile — PM Interview Prep
 
 > Who I am, what I've done, where I'm applying, and how I practise.
-> **Day-by-day scores and feedback live in [Daily Practice](Daily%20Practice/Index.md).**
+> **Day-by-day scores and feedback live in [Daily Practice](Daily%20Practice/Daily%20Practice.md).**
 > Last updated: 2026-11-17
 
 | Section | |
@@ -119,7 +119,7 @@ past-experience deep dive → company tech (AI for Eightfold, identity for Okta)
 
 ## 5. Strengths
 
-Seen across three mocks (details in [Daily Practice](Daily%20Practice/Index.md)):
+Seen across three mocks (details in [Daily Practice](Daily%20Practice/Daily%20Practice.md)):
 
 - **Real user insight when I slow down:** "no circling near the destination" (parking), "4 free hours
   scattered in 30-minute gaps" (Calendar), "a VP's tag vs an L&D reminder" (Slack).
@@ -146,7 +146,7 @@ Seen across three mocks (details in [Daily Practice](Daily%20Practice/Index.md))
 | **Product sense round (today)** | Borderline, leaning reject | Reject: needs to drive every step and land each decision unprompted |
 | **Target after the 3-week plan** | Pass | Borderline → pass, if strategy depth and B2B fluency land |
 
-The full weak-spot tracker and day-by-day feedback: **[Daily Practice → Index](Daily%20Practice/Index.md)**.
+The full weak-spot tracker and day-by-day feedback: **[Daily Practice](Daily%20Practice/Daily%20Practice.md)**.
 
 ---
 

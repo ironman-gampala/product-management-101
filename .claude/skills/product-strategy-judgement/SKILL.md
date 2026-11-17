@@ -38,10 +38,11 @@ If it's unclear, start the mock — practising out loud is what transfers to the
 
 Look for the `My Profile/` folder at the root of the current working directory (the cloned prep
 repo). Before starting, read `My Profile/Profile.md` (background, target roles) and
-`My Profile/Daily Practice/Index.md` (where they stand day to day, the weak-spot tracker and "Next mock:
+`My Profile/Daily Practice/Daily Practice.md` (where they stand day to day, the weak-spot tracker and "Next mock:
 watch for"), and watch for those weak spots in the coach notes. After a scorecard, log the session: add
 `My Profile/Daily Practice/Day N - YYYY-MM-DD - <Question>.md` (score, how it went, weak spots, step
-scores, model turn, drills; copy the shape of the latest day file) and update `Index.md` (a row in Days,
+scores, model turn, drills; copy the shape of the latest day file, or `Day template.md` from
+`My Profile.template/Daily Practice/`) and update `Daily Practice.md` (a row in Days,
 a column in "Where I stand" and in the weak-spot tracker, and refresh "Next mock: watch for"). If the repo
 still has an older single `My Profile.md` file instead, read it and append one row to its mock log.
 Use the target roles to pick companies and to set the level verdicts in the scorecard.

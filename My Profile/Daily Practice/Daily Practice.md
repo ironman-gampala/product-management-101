@@ -1,6 +1,6 @@
-# Daily Practice — Index
+# Daily Practice
 
-One file per practice day, plus this index: where I stand from day to day and the feedback that keeps
+One file per practice day, plus this page: where I stand from day to day and the feedback that keeps
 coming back. Read **[Where I stand](#where-i-stand-day-to-day)** and **[Next mock: watch for](#next-mock-watch-for)**
 before every mock.
 
@@ -10,7 +10,7 @@ before every mock.
 
 ## Days
 
-| Day | Date | Question | Type | Score | What landed | Top fix | File |
+| Day | Date | Question | Type | Score | What went well | What to improve | File |
 |---|---|---|---|---|---|---|---|
 | 1 | 2026-11-14 | How would you improve Google Maps for parking (India)? | Product Sense: improve | **~5/10** | "No circling near the destination" signal; good launch scoping | Name 3 one-liners before detailing; keep booking out of v1 | [Day 1](Day%201%20-%202026-11-14%20-%20Google%20Maps%20Parking.md) |
 | 2 | 2026-11-16 | How would you improve Google Calendar (work users)? | Product Sense: improve (B2B angle) | **~5.5/10** | 3 numbered ideas; "4 free hours scattered in 30-min gaps" | Stop asking for time; land each step | [Day 2](Day%202%20-%202026-11-16%20-%20Google%20Calendar.md) |
@@ -142,6 +142,7 @@ ideas are there; the habits aren't automatic yet.
 
 ## Adding a new day
 
-After each mock, add `Day N - YYYY-MM-DD - <Question>.md` in this folder (copy the shape of Day 3), then
-update this index: a row in **Days**, a column in **Where I stand** and the **weak-spot tracker**, and
+After each mock, add `Day N - YYYY-MM-DD - <Question>.md` in this folder (copy
+[`Day template.md`](../../My%20Profile.template/Daily%20Practice/Day%20template.md) or the latest day), then
+update this page: a row in **Days**, a column in **Where I stand** and the **weak-spot tracker**, and
 refresh **Next mock: watch for**. The interview skills in `.claude/skills/` do this for you after a scorecard.

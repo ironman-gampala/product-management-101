@@ -1,11 +1,11 @@
 # My Profile — PM Interview Prep
 
 > Copy this whole folder to `My Profile/` at the repo root: `cp -R "My Profile.template" "My Profile"`.
-> The interview skills in `.claude/skills/` read `Profile.md` and `Daily Practice/Index.md` before every
+> The interview skills in `.claude/skills/` read `Profile.md` and `Daily Practice/Daily Practice.md` before every
 > session, and add a day file to `Daily Practice/` after every scorecard.
 > Tip: `My Profile/` is personal. Don't commit it to a public fork.
 >
-> **Day-by-day scores and feedback live in [Daily Practice](Daily%20Practice/Index.md).**
+> **Day-by-day scores and feedback live in [Daily Practice](Daily%20Practice/Daily%20Practice.md).**
 > Last updated: YYYY-MM-DD
 
 ---
@@ -61,7 +61,7 @@
 | **Latest score** | |
 | **Top 3 to fix** | |
 
-Full weak-spot tracker: [Daily Practice → Index](Daily%20Practice/Index.md).
+Full weak-spot tracker: [Daily Practice](Daily%20Practice/Daily%20Practice.md).
 
 ---
 

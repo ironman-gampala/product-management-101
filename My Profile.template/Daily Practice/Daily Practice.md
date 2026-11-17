@@ -1,8 +1,16 @@
-# Daily Practice — Index
+# Daily Practice
 
-One file per practice day (`Day N - YYYY-MM-DD - <Question>.md`), plus this index: where I stand from day
-to day and the feedback that keeps coming back. The interview skills add a day file and update this index
-after every scorecard.
+Your practice log. **Update it every day you practise.** One file per day, plus this page: where you stand
+from day to day and the feedback that keeps coming back.
+
+**After each practice:**
+1. Copy [`Day template.md`](Day%20template.md) to `Day N - YYYY-MM-DD - <Question>.md` and fill it in:
+   the question, score, what went well, what to improve, and where you stand today.
+2. Add a row to **Days** below, linking the new file.
+3. Add a column to **Where I stand** and to the **weak-spot tracker**.
+4. Rewrite **Next mock: watch for** with your top 3–5 fixes.
+
+The interview skills in `.claude/skills/` do all four for you after a scorecard.
 
 [← Back to my profile](../Profile.md)
 
@@ -10,8 +18,9 @@ after every scorecard.
 
 ## Days
 
-| Day | Date | Question | Type | Score | What landed | Top fix | File |
+| Day | Date | Question | Type | Score | What went well | What to improve | File |
 |---|---|---|---|---|---|---|---|
+| 1 | YYYY-MM-DD | | | /10 | | | [Day 1](Day%20template.md) |
 
 ---
 
@@ -20,7 +29,7 @@ after every scorecard.
 | | Day 1 |
 |---|---|
 | **Score** | |
-| **Target company 1** | |
+| **Target company 1 (level)** | |
 | **What changed** | |
 | **Biggest gap** | |
 
@@ -32,6 +41,7 @@ after every scorecard.
 
 | Strength | Seen on |
 |---|---|
+| | |
 
 ### What keeps coming back (weak-spot tracker)
 
@@ -39,6 +49,7 @@ after every scorecard.
 
 | # | Weak spot | What it looks like | Day 1 | Fix |
 |---|---|---|---|---|
+| 1 | | | | |
 
 Common ones to check yourself against: freezing under time pressure, only one solution, stopping the
 solution flow at the screen, not landing a decision ("so my ___ is ___ because ___"), asking for time
