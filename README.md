@@ -52,6 +52,7 @@ Product Management 101/
 ├── leadership-and-drive/         stories, signalling level, intro, "why our company"
 ├── technical-and-ai-questions/   AI fluency, system design for PMs
 ├── take-home-assignments/        take-homes and presentations
+├── senior-bar/                   what a Senior (SNR) and Senior+ answer must say, per question type
 │
 │   2. PRACTISE — Claude skills
 ├── .claude/skills/               7 interview coach skills (mocks, model answers, scoring)
@@ -90,6 +91,10 @@ read the *Introduction*, then *How to Answer*, then the *Rubric*, then practise 
 | [`leadership-and-drive/`](leadership-and-drive) | [Introduction](leadership-and-drive/introduction-to-leadership-and-drive-questions.md), [How to Find Your Stories](leadership-and-drive/how-to-find-your-stories.md) | Practising stories, signalling level, introducing yourself, "why our company", [Rubric](leadership-and-drive/rubric-for-leadership-and-drive-interviews.md) | Your own story bank |
 | [`technical-and-ai-questions/`](technical-and-ai-questions) | [Introduction](technical-and-ai-questions/introduction-to-technical-questions.md) | [AI Technical Fluency](technical-and-ai-questions/ai-technical-fluency.md), [System Design for PMs](technical-and-ai-questions/system-design-for-pms.md), [Rubric](technical-and-ai-questions/rubric-for-technical-and-ai-interviews.md) | — |
 | [`take-home-assignments/`](take-home-assignments) | [Introduction](take-home-assignments/introduction-to-take-home-assignments.md) | Going above and beyond, AI prompt toolkit, [Rubric](take-home-assignments/rubric-for-take-home-assignments.md) | — |
+
+**Before a mock, check the senior bar.** [`senior-bar/`](senior-bar/README.md) has one page per question
+type: sample questions, what a Senior (SNR) answer must say, what Senior+ (SNR+) adds, a checklist and
+red flags. Start with [product sense](senior-bar/product-sense.md).
 
 ---
 

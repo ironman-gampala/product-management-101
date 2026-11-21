@@ -68,6 +68,12 @@ Questions that ask you to make a real product better — start with users and th
 
 - *"How would you redesign Netflix’s kids profile by solving content filtering, age-appropriate UX, and parental control across ages 2–12?"* — Product Sense — improve / redesign; dual user (parent + child)
 
+### Invented — 2026-11-21
+
+- *"How would you improve LinkedIn for recruiters?"* — Product Sense — improve (B2B side of a consumer product); buyer / admin / end user, match quality and fairness guardrails
+- *"How would you improve Uber for airport trips?"* — Product Sense — improve (B2C marketplace); rider, driver and airport as stakeholders
+- *"How would you improve YouTube for people who use it to learn?"* — Product Sense — improve (B2C); learning outcome vs watch-time north star trap
+
 ---
 
 ## Novel Tech Framing
